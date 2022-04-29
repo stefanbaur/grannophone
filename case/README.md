@@ -13,7 +13,7 @@ At present, the base model consists of the following sheets:
 (in the works: sheets for an OpisTech telephone receiver (with t-coil hearing aid support)
 	- sheet_1_digitus.pdf
 	- sheet_2_digitus.pdf
-	- sheet_3_digitus.pdf
+	- sheet_3_digitus.pdf - this sheet is needed twice! As with sheets 5 and 6 from the siedle_noamp series, you can simply attach two sheets (good sides facing each other) with masking tape and cut two sheets at the same time.
 
 
 - base plates to accommodate two Siedle speakers, connected directly to the SBC, no amplifier
@@ -24,7 +24,7 @@ At present, the base model consists of the following sheets:
 
 
 - currently generic parts
-	- sheet_7.pdf - this sheet is needed twice! As with sheets 5 and 6 from the siedle_noamp series, you can simply attach two sheets (good sides facing each other) with masking tape and cut two sheets at the same time.
+	- sheet_7.pdf
 	- sheet_8.pdf
 
 - the back cover isn't finished yet - a full-sized DIN A5 sheet of plywood is currently used in its place.
