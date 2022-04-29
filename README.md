@@ -1,6 +1,8 @@
 # Grannophone
 
-Grannophone code snippets and hardware plans
+This is the repository for Grannophone code snippets and hardware plans.
+
+The main project website can be found at https://www.grannophone.de
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
