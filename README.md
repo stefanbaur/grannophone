@@ -1,4 +1,4 @@
-# grannophone
+# Grannophone
 
 Grannophone code snippets and hardware plans
 
