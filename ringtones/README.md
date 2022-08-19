@@ -1,8 +1,10 @@
 # Grannophone ringtones
 
-This directory contains some sample ringtones.
+This directory contains some sample soundfiles that can be used as ringtones.
 
-They were all recorded by myself, using a mechanical cash register bell as the source of the sound.
+They mechanical ringtones were all recorded by Stefan Baur (https://github.com/stefanbaur), using a mechanical cash register bell as the source of the sound.
+
+The spoken "incoming call" messages in German and English (eingehender_anruf_kris_rothe.wav and incoming_call_kris_rothe.wav) were kindly provided by Kristina Rothe (https://www.kristina-rothe.com/).
 
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
