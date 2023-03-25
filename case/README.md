@@ -2,7 +2,9 @@
 
 This directory contains the plans for a plywood case.
 
-Note that this is a work in progress. Most sheets should be usable already, but may lack information about where to drill holes when using a fretsaw/scrollsaw (the sheets *should* work with a lasercutter, too - feedback welcome!), and where to place screws.
+Note that this is a work in progress. Most sheets should be usable already, but may lack information about where to drill holes when using a fretsaw/scrollsaw, and where to place screws.
+The sheets *should* work with a lasercutter, too - feedback welcome!
+Note that for lasercutting, you should use the individual SVG files and arrange them to match the size of the plywood sheets you have available. We tried auto-generating merged SVGs for the more common sizes, but the merge tool never really worked.
 
 At present, the base model consists of the following sheets:
 
