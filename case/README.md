@@ -3,7 +3,7 @@
 This directory contains the plans for a plywood case.
 
 Note that this is a work in progress. Most sheets should be usable already, but may lack information about where to drill holes when using a fretsaw/scrollsaw, and where to place screws.
-The sheets *should* work with a lasercutter, too - feedback welcome!
+The sheets *should* work with a lasercutter, too (if you use the SVG versions instead of the PDF ones) - feedback welcome!
 Note that for lasercutting, you should use the individual SVG files and arrange them to match the size of the plywood sheets you have available. We tried auto-generating merged SVGs for the more common sizes, but the merge tool never really worked.
 
 At present, the base model consists of the following sheets:
@@ -15,11 +15,13 @@ At present, the base model consists of the following sheets:
 	- sheet_1_digitus.pdf
 	- sheet_2_digitus.pdf
 	- sheet_3_digitus.pdf - this sheet is needed twice! As with sheets 5 and 6 from the siedle_noamp series, you can simply attach two sheets (good sides facing each other) with masking tape and cut two sheets at the same time.
+        - sheet_3_digitus_gespiegelt.pdf - this is a mirrored and partially stripped version of sheet 3 for easier lasercutting.
 
 - telephone hook for the OpisTech telephone receiver/handset (with t-coil hearing aid support)
 	- sheet_1_opistech.pdf
 	- sheet_2_opistech.pdf
 	- sheet_3_opistech.pdf - this sheet is needed twice! As with sheets 5 and 6 from the siedle_noamp series, you can simply attach two sheets (good sides facing each other) with masking tape and cut two sheets at the same time.
+        - sheet_3_opistech_gespiegelt.pdf - this is a mirrored and partially stripped version of sheet 3 for easier lasercutting.
 
 
 - base plates to accommodate two Siedle speakers, connected directly to the SBC, no amplifier
