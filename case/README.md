@@ -10,22 +10,33 @@ At present, the base model consists of the following sheets:
 	- sheet_0.pdf
 
 - telephone hook for the Digitus USB telephone receiver/headset
-(in the works: sheets for an OpisTech telephone receiver (with t-coil hearing aid support)
 	- sheet_1_digitus.pdf
 	- sheet_2_digitus.pdf
 	- sheet_3_digitus.pdf - this sheet is needed twice! As with sheets 5 and 6 from the siedle_noamp series, you can simply attach two sheets (good sides facing each other) with masking tape and cut two sheets at the same time.
 
+- telephone hook for the OpisTech telephone receiver/handset (with t-coil hearing aid support)
+	- sheet_1_opistech.pdf
+	- sheet_2_opistech.pdf
+	- sheet_3_opistech.pdf - this sheet is needed twice! As with sheets 5 and 6 from the siedle_noamp series, you can simply attach two sheets (good sides facing each other) with masking tape and cut two sheets at the same time.
+
 
 - base plates to accommodate two Siedle speakers, connected directly to the SBC, no amplifier
-(in the works: sheets for larger, potentially amplifier-driven speakers by Visaton, sheets for Siedle amplifier-driven speakers)
 	- sheet_4_siedle_noamp.pdf
 	- sheet_5_siedle_noamp.pdf
 	- sheet_6_siedle_noamp.pdf - place this sheet on top of sheet 5, firmly secure them by wrapping them with masking tape, and start drilling/sawing/filing - this will help reduce splintering, and the affected areas on sheet 5 will be cut out later on anyway.
 
 
+- base plates to accommodate two Visaton speakers, connected directly to the SBC or via amplifier
+	- sheet_4_visaton.pdf
+	- sheet_5_visaton.pdf - place this sheet on top of sheet 4, it is exactly the same
+	- sheet_6_visaton.pdf - place this sheet on top of sheets 4 and 5, firmly secure all of them by wrapping them with masking tape, and start drilling/sawing/filing - this will help reduce splintering, and the affected areas on sheets 4 and 5 will be cut out later on anyway.
+
 - currently generic parts
 	- sheet_7.pdf
 	- sheet_8.pdf
+
+- optional: a template to cut a DIN A3 sheet into four DIN A5 sheets - useful if you're using a lasercutter, as the larger sheets of plywood tend to warp easily
+        - cut_a3_into_4_times_a5.pdf
 
 - the back cover isn't finished yet - a full-sized DIN A5 sheet of plywood is currently used in its place.
 
