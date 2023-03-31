@@ -116,12 +116,6 @@
            style="stroke:none;" />
       </symbol>
     </g>
-    <clipPath
-       id="clip1">
-      <path
-         id="path37"
-         d="M 58.257812 93.546875 L 537.457031 93.546875 L 537.457031 748.488281 L 58.257812 748.488281 Z M 58.257812 93.546875 " />
-    </clipPath>
   </defs>
   <path
      style="fill:none;stroke:#eb008a;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.5;stroke-opacity:1"
