@@ -6,11 +6,35 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg115"
    version="1.1"
    viewBox="0 0 595.68 842.16"
    height="842.16pt"
-   width="595.68pt">
+   width="595.68pt"
+   sodipodi:docname="sheet_0.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="976"
+     id="namedview5272"
+     showgrid="false"
+     inkscape:zoom="0.70621974"
+     inkscape:cx="397.12"
+     inkscape:cy="618.07958"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg115" />
   <metadata
      id="metadata119">
     <rdf:RDF>
@@ -19,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -118,16 +142,13 @@
     </g>
   </defs>
   <path
-     style="fill:none;stroke:#eb008a;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.5;stroke-opacity:1"
-     d="M 88.09375,718.65234 H 507.62109 V 123.37891 H 88.09375 Z m 0,0"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#eb008a;stroke-width:0.99797434;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.5;stroke-opacity:1"
+     d="M 88.075321,718.7177 H 506.60491 V 124.44008 H 88.075321 Z m 0,0"
      id="path42" />
-  <path
-     id="path44"
-     d="m 85.257812,123.37891 h -27 m 452.195308,0 h 27 M 85.257812,718.65234 h -27 m 452.195308,0 h 27 M 88.09375,120.54297 v -27 m 0,627.94531 v 27 M 507.62109,120.54297 v -27 m 0,627.94531 v 27"
-     style="clip-rule:nonzero;fill:none;stroke:#ffffff;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
   <g
      style="fill:#000000;fill-opacity:1;stroke:none"
-     transform="rotate(-90,576.02761,336.6837)"
+     transform="matrix(0,-0.99832719,0.99762175,0,238.96576,912.45212)"
      id="g983">
     <g
        id="g52"
@@ -203,6 +224,7 @@
     </g>
   </g>
   <g
+     transform="matrix(0.99762175,0,0,0.99832719,0.19108444,1.2675561)"
      style="fill:#00aeee;fill-opacity:1;stroke:none"
      id="g76">
     <use
@@ -215,6 +237,7 @@
        height="100%" />
   </g>
   <g
+     transform="matrix(0.99762175,0,0,0.99832719,0.19108444,1.2675561)"
      style="fill:#00aeee;fill-opacity:1;stroke:none"
      id="g80">
     <use
@@ -227,6 +250,7 @@
        height="100%" />
   </g>
   <g
+     transform="matrix(0.99762175,0,0,0.99832719,0.19108444,1.2675561)"
      style="fill:#00aeee;fill-opacity:1;stroke:none"
      id="g84">
     <use
@@ -239,6 +263,7 @@
        height="100%" />
   </g>
   <g
+     transform="matrix(0.99762175,0,0,0.99832719,0.19108444,1.2675561)"
      style="fill:#00aeee;fill-opacity:1;stroke:none"
      id="g88">
     <use
@@ -251,6 +276,7 @@
        height="100%" />
   </g>
   <g
+     transform="matrix(0.99762175,0,0,0.99832719,0.19108444,1.2675561)"
      style="fill:#00aeee;fill-opacity:1;stroke:none"
      id="g92">
     <use
@@ -263,6 +289,7 @@
        height="100%" />
   </g>
   <g
+     transform="matrix(0.99762175,0,0,0.99832719,0.19108444,1.2675561)"
      style="fill:#00aeee;fill-opacity:1;stroke:none"
      id="g96">
     <use
@@ -275,6 +302,7 @@
        height="100%" />
   </g>
   <g
+     transform="matrix(0.99762175,0,0,0.99832719,0.19108444,1.2675561)"
      style="fill:#00aeee;fill-opacity:1;stroke:none"
      id="g100">
     <use
@@ -287,6 +315,7 @@
        height="100%" />
   </g>
   <g
+     transform="matrix(0.99762175,0,0,0.99832719,0.19108444,1.2675561)"
      style="fill:#00aeee;fill-opacity:1;stroke:none"
      id="g104">
     <use
@@ -299,6 +328,7 @@
        height="100%" />
   </g>
   <g
+     transform="matrix(0.99762175,0,0,0.99832719,0.19108444,1.2675561)"
      style="fill:#00aeee;fill-opacity:1;stroke:none"
      id="g108">
     <use
@@ -311,6 +341,7 @@
        height="100%" />
   </g>
   <g
+     transform="matrix(0.99762175,0,0,0.99832719,0.19108444,1.2675561)"
      style="fill:#00aeee;fill-opacity:1;stroke:none"
      id="g112">
     <use

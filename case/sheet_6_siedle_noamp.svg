@@ -14,7 +14,7 @@
    version="1.1"
    id="svg1054"
    sodipodi:docname="sheet_6_siedle_noamp.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata1058">
     <rdf:RDF>
@@ -36,12 +36,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
-     inkscape:window-height="820"
+     inkscape:window-width="1920"
+     inkscape:window-height="976"
      id="namedview1056"
      showgrid="false"
      inkscape:zoom="0.5944614"
-     inkscape:cx="405.90042"
+     inkscape:cx="-44.927842"
      inkscape:cy="660.27774"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
@@ -592,16 +592,16 @@
   <path
      inkscape:connector-curvature="0"
      id="path207"
-     d="m 288.68359,591.19922 -24.90625,-24.90625 v -35.22656 l 24.90625,-24.90625 h 35.22657 l 24.90625,24.90625 v 35.22656 l -24.90625,24.90625 z m 0,0"
-     style="fill:none;stroke:#eb008a;stroke-width:0.79900002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
+     d="m 288.18793,591.4223 -24.84489,-24.86292 v -35.16527 l 24.84489,-24.86293 h 35.13978 l 24.84488,24.86293 v 35.16527 l -24.84488,24.86292 z m 0,0"
+     style="fill:none;stroke:#eb008a;stroke-width:0.79732072;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
   <path
      inkscape:connector-curvature="0"
      id="path209"
-     d="M 87.941406,718.80859 H 507.46875 V 123.53125 H 87.941406 Z m 0,0"
-     style="fill:none;stroke:#eb008a;stroke-width:1.03600001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
+     d="M 87.940317,718.80968 H 506.43406 V 124.56791 H 87.940317 Z m 0,0"
+     style="fill:none;stroke:#eb008a;stroke-width:1.03382266;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
   <g
      id="g2469"
-     transform="translate(75,213)">
+     transform="matrix(0.99753627,0,0,0.99826031,75.030795,213.88101)">
     <g
        transform="rotate(-90,456.1225,286.44415)"
        style="fill:#211e1e;fill-opacity:1"
@@ -677,7 +677,7 @@
   </g>
   <g
      id="g2493"
-     transform="translate(75,145.5)">
+     transform="matrix(0.99753627,0,0,0.99826031,75.030795,146.49844)">
     <g
        transform="rotate(-90,456.1225,286.44415)"
        style="fill:#211e1e;fill-opacity:1"
@@ -813,7 +813,8 @@
   </g>
   <g
      id="g397"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -824,7 +825,8 @@
   </g>
   <g
      id="g401"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -835,7 +837,8 @@
   </g>
   <g
      id="g405"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -846,7 +849,8 @@
   </g>
   <g
      id="g409"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -857,7 +861,8 @@
   </g>
   <g
      id="g413"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -868,7 +873,8 @@
   </g>
   <g
      id="g417"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -879,7 +885,8 @@
   </g>
   <g
      id="g421"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -890,7 +897,8 @@
   </g>
   <g
      id="g425"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -901,7 +909,8 @@
   </g>
   <g
      id="g429"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -912,7 +921,8 @@
   </g>
   <g
      id="g433"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -923,7 +933,8 @@
   </g>
   <g
      id="g437"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -934,7 +945,8 @@
   </g>
   <g
      id="g441"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -945,7 +957,8 @@
   </g>
   <g
      id="g445"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -956,7 +969,8 @@
   </g>
   <g
      id="g449"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -967,7 +981,8 @@
   </g>
   <g
      id="g453"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -978,7 +993,8 @@
   </g>
   <g
      id="g457"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -989,7 +1005,8 @@
   </g>
   <g
      id="g461"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1000,7 +1017,8 @@
   </g>
   <g
      id="g465"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1011,7 +1029,8 @@
   </g>
   <g
      id="g469"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1022,7 +1041,8 @@
   </g>
   <g
      id="g473"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1033,7 +1053,8 @@
   </g>
   <g
      id="g477"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1044,7 +1065,8 @@
   </g>
   <g
      id="g481"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1055,7 +1077,8 @@
   </g>
   <g
      id="g485"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1066,7 +1089,8 @@
   </g>
   <g
      id="g489"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1077,7 +1101,8 @@
   </g>
   <g
      id="g493"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1088,7 +1113,8 @@
   </g>
   <g
      id="g497"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1099,7 +1125,8 @@
   </g>
   <g
      id="g501"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1110,7 +1137,8 @@
   </g>
   <g
      id="g505"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1121,7 +1149,8 @@
   </g>
   <g
      id="g509"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1132,7 +1161,8 @@
   </g>
   <g
      id="g513"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1143,7 +1173,8 @@
   </g>
   <g
      id="g517"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1154,7 +1185,8 @@
   </g>
   <g
      id="g521"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1165,7 +1197,8 @@
   </g>
   <g
      id="g525"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1176,7 +1209,8 @@
   </g>
   <g
      id="g529"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1187,7 +1221,8 @@
   </g>
   <g
      id="g533"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1198,7 +1233,8 @@
   </g>
   <g
      id="g537"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1209,7 +1245,8 @@
   </g>
   <g
      id="g541"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1220,7 +1257,8 @@
   </g>
   <g
      id="g545"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1231,7 +1269,8 @@
   </g>
   <g
      id="g549"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1242,7 +1281,8 @@
   </g>
   <g
      id="g553"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1253,7 +1293,8 @@
   </g>
   <g
      id="g557"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1264,7 +1305,8 @@
   </g>
   <g
      id="g561"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1275,7 +1317,8 @@
   </g>
   <g
      id="g565"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1286,7 +1329,8 @@
   </g>
   <g
      id="g569"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1297,7 +1341,8 @@
   </g>
   <g
      id="g573"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1308,7 +1353,8 @@
   </g>
   <g
      id="g577"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1319,7 +1365,8 @@
   </g>
   <g
      id="g581"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1330,7 +1377,8 @@
   </g>
   <g
      id="g585"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1341,7 +1389,8 @@
   </g>
   <g
      id="g589"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1352,7 +1401,8 @@
   </g>
   <g
      id="g593"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1363,7 +1413,8 @@
   </g>
   <g
      id="g597"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1374,7 +1425,8 @@
   </g>
   <g
      id="g601"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1385,7 +1437,8 @@
   </g>
   <g
      id="g605"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1396,7 +1449,8 @@
   </g>
   <g
      id="g609"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1407,7 +1461,8 @@
   </g>
   <g
      id="g613"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1418,7 +1473,8 @@
   </g>
   <g
      id="g617"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1429,7 +1485,8 @@
   </g>
   <g
      id="g621"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1440,7 +1497,8 @@
   </g>
   <g
      id="g625"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1451,7 +1509,8 @@
   </g>
   <g
      id="g629"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1462,7 +1521,8 @@
   </g>
   <g
      id="g633"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1473,7 +1533,8 @@
   </g>
   <g
      id="g637"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1484,7 +1545,8 @@
   </g>
   <g
      id="g641"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1495,7 +1557,8 @@
   </g>
   <g
      id="g645"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1506,7 +1569,8 @@
   </g>
   <g
      id="g649"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1517,7 +1581,8 @@
   </g>
   <g
      id="g653"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1528,7 +1593,8 @@
   </g>
   <g
      id="g657"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1539,7 +1605,8 @@
   </g>
   <g
      id="g661"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1550,7 +1617,8 @@
   </g>
   <g
      id="g665"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1561,7 +1629,8 @@
   </g>
   <g
      id="g669"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1572,7 +1641,8 @@
   </g>
   <g
      id="g673"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1583,7 +1653,8 @@
   </g>
   <g
      id="g677"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1594,7 +1665,8 @@
   </g>
   <g
      id="g681"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1605,7 +1677,8 @@
   </g>
   <g
      id="g685"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1616,7 +1689,8 @@
   </g>
   <g
      id="g689"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1627,7 +1701,8 @@
   </g>
   <g
      id="g693"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1638,7 +1713,8 @@
   </g>
   <g
      id="g697"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1649,7 +1725,8 @@
   </g>
   <g
      id="g701"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1660,7 +1737,8 @@
   </g>
   <g
      id="g705"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1671,7 +1749,8 @@
   </g>
   <g
      id="g709"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1682,7 +1761,8 @@
   </g>
   <g
      id="g713"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1693,7 +1773,8 @@
   </g>
   <g
      id="g717"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1704,7 +1785,8 @@
   </g>
   <g
      id="g721"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1715,7 +1797,8 @@
   </g>
   <g
      id="g725"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1726,7 +1809,8 @@
   </g>
   <g
      id="g729"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1737,7 +1821,8 @@
   </g>
   <g
      id="g733"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1748,7 +1833,8 @@
   </g>
   <g
      id="g737"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1759,7 +1845,8 @@
   </g>
   <g
      id="g741"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1770,7 +1857,8 @@
   </g>
   <g
      id="g745"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1781,7 +1869,8 @@
   </g>
   <g
      id="g749"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1792,7 +1881,8 @@
   </g>
   <g
      id="g753"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1803,7 +1893,8 @@
   </g>
   <g
      id="g757"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1814,7 +1905,8 @@
   </g>
   <g
      id="g761"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1825,7 +1917,8 @@
   </g>
   <g
      id="g765"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1836,7 +1929,8 @@
   </g>
   <g
      id="g769"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1847,7 +1941,8 @@
   </g>
   <g
      id="g773"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1858,7 +1953,8 @@
   </g>
   <g
      id="g777"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1869,7 +1965,8 @@
   </g>
   <g
      id="g781"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1880,7 +1977,8 @@
   </g>
   <g
      id="g785"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1891,7 +1989,8 @@
   </g>
   <g
      id="g789"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1902,7 +2001,8 @@
   </g>
   <g
      id="g793"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1913,7 +2013,8 @@
   </g>
   <g
      id="g797"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1924,7 +2025,8 @@
   </g>
   <g
      id="g801"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1935,7 +2037,8 @@
   </g>
   <g
      id="g805"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1946,7 +2049,8 @@
   </g>
   <g
      id="g809"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1957,7 +2061,8 @@
   </g>
   <g
      id="g813"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1968,7 +2073,8 @@
   </g>
   <g
      id="g817"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1979,7 +2085,8 @@
   </g>
   <g
      id="g821"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -1990,7 +2097,8 @@
   </g>
   <g
      id="g825"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2001,7 +2109,8 @@
   </g>
   <g
      id="g829"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2012,7 +2121,8 @@
   </g>
   <g
      id="g833"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2023,7 +2133,8 @@
   </g>
   <g
      id="g837"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2034,7 +2145,8 @@
   </g>
   <g
      id="g841"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2045,7 +2157,8 @@
   </g>
   <g
      id="g845"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2056,7 +2169,8 @@
   </g>
   <g
      id="g849"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2067,7 +2181,8 @@
   </g>
   <g
      id="g853"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2078,7 +2193,8 @@
   </g>
   <g
      id="g857"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2089,7 +2205,8 @@
   </g>
   <g
      id="g861"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2100,7 +2217,8 @@
   </g>
   <g
      id="g865"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2111,7 +2229,8 @@
   </g>
   <g
      id="g869"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2122,7 +2241,8 @@
   </g>
   <g
      id="g873"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2133,7 +2253,8 @@
   </g>
   <g
      id="g877"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2144,7 +2265,8 @@
   </g>
   <g
      id="g881"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2155,7 +2277,8 @@
   </g>
   <g
      id="g885"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2166,7 +2289,8 @@
   </g>
   <g
      id="g889"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2177,7 +2301,8 @@
   </g>
   <g
      id="g893"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2188,7 +2313,8 @@
   </g>
   <g
      id="g897"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2199,7 +2325,8 @@
   </g>
   <g
      id="g901"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2210,7 +2337,8 @@
   </g>
   <g
      id="g905"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2221,7 +2349,8 @@
   </g>
   <g
      id="g909"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2232,7 +2361,8 @@
   </g>
   <g
      id="g913"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2243,7 +2373,8 @@
   </g>
   <g
      id="g917"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2254,7 +2385,8 @@
   </g>
   <g
      id="g921"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2265,7 +2397,8 @@
   </g>
   <g
      id="g925"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2276,7 +2409,8 @@
   </g>
   <g
      id="g929"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2287,7 +2421,8 @@
   </g>
   <g
      id="g933"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2298,7 +2433,8 @@
   </g>
   <g
      id="g937"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2309,7 +2445,8 @@
   </g>
   <g
      id="g941"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2320,7 +2457,8 @@
   </g>
   <g
      id="g945"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2331,7 +2469,8 @@
   </g>
   <g
      id="g949"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2342,7 +2481,8 @@
   </g>
   <g
      id="g953"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2353,7 +2493,8 @@
   </g>
   <g
      id="g957"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2364,7 +2505,8 @@
   </g>
   <g
      id="g961"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2375,7 +2517,8 @@
   </g>
   <g
      id="g965"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2386,7 +2529,8 @@
   </g>
   <g
      id="g969"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2397,7 +2541,8 @@
   </g>
   <g
      id="g973"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2408,7 +2553,8 @@
   </g>
   <g
      id="g977"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2419,7 +2565,8 @@
   </g>
   <g
      id="g981"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2430,7 +2577,8 @@
   </g>
   <g
      id="g985"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2441,7 +2589,8 @@
   </g>
   <g
      id="g989"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2452,7 +2601,8 @@
   </g>
   <g
      id="g993"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2463,7 +2613,8 @@
   </g>
   <g
      id="g997"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2474,7 +2625,8 @@
   </g>
   <g
      id="g1001"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2485,7 +2637,8 @@
   </g>
   <g
      id="g1005"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2496,7 +2649,8 @@
   </g>
   <g
      id="g1009"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2507,7 +2661,8 @@
   </g>
   <g
      id="g1013"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2518,7 +2673,8 @@
   </g>
   <g
      id="g1017"
-     style="fill:#211e1e;fill-opacity:1">
+     style="fill:#211e1e;fill-opacity:1"
+     transform="matrix(0.99753627,0,0,0.99826031,0.21557556,1.2515589)">
     <use
        height="100%"
        width="100%"
@@ -2530,153 +2686,153 @@
   <path
      inkscape:connector-curvature="0"
      id="path1019"
-     d="m 288.68359,449.51562 -24.90625,-24.90625 v -35.22656 l 24.90625,-24.90625 h 35.22657 l 24.90625,24.90625 v 35.22656 l -24.90625,24.90625 z m 0,0"
-     style="fill:none;stroke:#eb008a;stroke-width:0.79900002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
+     d="m 288.18793,449.98518 -24.84489,-24.86292 v -35.16528 l 24.84489,-24.86292 h 35.13978 l 24.84488,24.86292 v 35.16528 l -24.84488,24.86292 z m 0,0"
+     style="fill:none;stroke:#eb008a;stroke-width:0.79732072;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
   <path
      inkscape:connector-curvature="0"
      id="path1021"
-     d="m 306.29687,402.98828 v 8.01953"
-     style="fill:none;stroke:#211e1e;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
+     d="m 305.75781,403.53878 v 8.00558"
+     style="fill:none;stroke:#211e1e;stroke-width:0.24947457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
   <path
      inkscape:connector-curvature="0"
      id="path1023"
-     d="m 310.30469,406.99609 h -8.01563"
-     style="fill:none;stroke:#211e1e;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
+     d="m 309.75576,407.53962 h -7.99588"
+     style="fill:none;stroke:#211e1e;stroke-width:0.24947457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
   <path
      inkscape:connector-curvature="0"
      id="path1025"
-     d="m 306.29687,544.67187 v 8.01954"
-     style="fill:none;stroke:#211e1e;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
+     d="m 305.75781,544.97589 v 8.00559"
+     style="fill:none;stroke:#211e1e;stroke-width:0.24947457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
   <path
      inkscape:connector-curvature="0"
      id="path1027"
-     d="m 310.30469,548.67969 h -8.01563"
-     style="fill:none;stroke:#211e1e;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
+     d="m 309.75576,548.97674 h -7.99588"
+     style="fill:none;stroke:#211e1e;stroke-width:0.24947457;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
   <path
      inkscape:connector-curvature="0"
      id="path42"
-     d="M 87.94142,718.80465 H 507.46875 V 123.53125 H 87.94142 Z m 0,0"
-     style="fill:none;stroke:#000000;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.5;stroke-opacity:1" />
+     d="M 87.940331,718.80575 H 506.43406 V 124.56791 H 87.940331 Z m 0,0"
+     style="fill:none;stroke:#000000;stroke-width:0.99789822;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.5;stroke-opacity:1" />
   <g
      aria-label="Bodenplatte Layer 1 Siedle NoAmp"
-     transform="matrix(0,-0.75000001,0.75000001,0,-223.57102,335.021)"
+     transform="matrix(0,-0.74869528,0.74815221,0,-222.80463,335.68975)"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';letter-spacing:0px;word-spacing:0px;fill:#00aeee;fill-opacity:1;stroke:none"
      id="flowRoot18887">
     <path
        d="m -427.97331,533.08398 v 2.87761 h 1.27604 q 0.91797,0 1.28256,-0.3125 0.37109,-0.3125 0.37109,-1.08724 0,-0.78776 -0.38411,-1.13281 -0.38412,-0.34506 -1.26954,-0.34506 z m 0,-3.78906 v 2.25912 h 1.27604 q 0.72917,0 1.03516,-0.26042 0.3125,-0.26042 0.3125,-0.85938 0,-0.59895 -0.31901,-0.86588 -0.3125,-0.27344 -1.02865,-0.27344 z m -1.85547,-1.52995 h 3.13151 q 1.6211,0 2.4349,0.61849 0.82031,0.61198 0.82031,1.83594 0,0.9375 -0.48177,1.46484 -0.48177,0.52735 -1.41276,0.61198 1.11328,0.11068 1.67318,0.7487 0.5664,0.63802 0.5664,1.78386 0,1.40625 -0.84635,2.03776 -0.84635,0.63151 -2.75391,0.63151 h -3.13151 z"
-       style=""
-       id="path19438" />
+       id="path19438"
+       inkscape:connector-curvature="0" />
     <path
        d="m -418.60482,531.58008 q -0.68359,0 -1.07422,0.60547 -0.39062,0.59896 -0.39062,1.67317 0,1.07422 0.39062,1.67969 0.39063,0.59896 1.07422,0.59896 0.69011,0 1.08073,-0.59896 0.39063,-0.60547 0.39063,-1.67969 0,-1.07421 -0.39063,-1.67317 -0.39062,-0.60547 -1.08073,-0.60547 z m -3.37239,2.27864 q 0,-1.76432 0.91145,-2.79296 0.91797,-1.03516 2.46094,-1.03516 1.54948,0 2.46094,1.03516 0.91797,1.02864 0.91797,2.79296 0,1.76433 -0.91797,2.79948 -0.91146,1.02865 -2.46094,1.02865 -1.54297,0 -2.46094,-1.02865 -0.91145,-1.03515 -0.91145,-2.79948 z"
-       style=""
-       id="path19440" />
+       id="path19440"
+       inkscape:connector-curvature="0" />
     <path
        d="m -409.43815,531.24154 v -3.8737 h 1.90104 v 10.13021 h -1.90104 v -1.08073 q -0.30599,0.63151 -0.79427,0.95052 -0.48177,0.31901 -1.13932,0.31901 -1.25,0 -1.94011,-1.00261 -0.6901,-1.0026 -0.6901,-2.82552 0,-1.84895 0.69661,-2.83854 0.70313,-0.98958 1.9987,-0.98958 0.58594,0 1.04818,0.30599 0.46875,0.29948 0.82031,0.90495 z m -2.65625,2.6302 q 0,1.05469 0.35156,1.65365 0.35156,0.59896 0.97005,0.59896 0.61849,0 0.97657,-0.59896 0.35807,-0.59896 0.35807,-1.65365 0,-1.05468 -0.35807,-1.65364 -0.35808,-0.59896 -0.97657,-0.59896 -0.61849,0 -0.97005,0.59896 -0.35156,0.59896 -0.35156,1.65364 z"
-       style=""
-       id="path19442" />
+       id="path19442"
+       inkscape:connector-curvature="0" />
     <path
        d="m -399.38607,537.13997 q -0.66406,0.27344 -1.35416,0.41016 -0.69011,0.13672 -1.45834,0.13672 -1.82942,0 -2.79948,-0.97656 -0.96354,-0.98308 -0.96354,-2.82552 0,-1.78386 0.93099,-2.81901 0.93099,-1.03516 2.53906,-1.03516 1.6211,0 2.51302,0.96354 0.89844,0.95703 0.89844,2.70182 v 0.77474 h -4.9414 q 0.007,0.85938 0.50781,1.28255 0.5013,0.42318 1.49739,0.42318 0.65756,0 1.29558,-0.1888 0.63802,-0.1888 1.33463,-0.59896 z m -1.61458,-4.10156 q -0.013,-0.75521 -0.39063,-1.13932 -0.37109,-0.39063 -1.10026,-0.39063 -0.65755,0 -1.04817,0.40365 -0.39063,0.39713 -0.46224,1.13281 z"
-       style=""
-       id="path19444" />
+       id="path19444"
+       inkscape:connector-curvature="0" />
     <path
        d="m -391.56055,532.76497 v 4.73308 h -1.89453 v -4.44011 q 0,-0.79427 -0.22786,-1.13281 -0.22136,-0.34505 -0.72917,-0.34505 -0.51432,0 -0.8138,0.46224 -0.29297,0.46224 -0.29297,1.28255 v 4.17318 h -1.89453 v -7.29167 h 1.89453 v 1.09375 q 0.20182,-0.60547 0.6901,-0.9375 0.48829,-0.33203 1.17839,-0.33203 1.03516,0 1.5625,0.6901 0.52734,0.6836 0.52734,2.04427 z"
-       style=""
-       id="path19446" />
+       id="path19446"
+       inkscape:connector-curvature="0" />
     <path
        d="m -387.62826,536.4694 v 3.80208 h -1.90104 v -10.0651 h 1.90104 v 1.09375 q 0.29948,-0.63151 0.78777,-0.95052 0.48828,-0.31901 1.14583,-0.31901 1.25,0 1.9401,1.0026 0.69011,1.00261 0.69011,2.82552 0,1.84896 -0.70313,2.83855 -0.69661,0.98958 -1.99219,0.98958 -0.58593,0 -1.05468,-0.29948 -0.46224,-0.30599 -0.81381,-0.91797 z m 2.65625,-2.6237 q 0,-1.05468 -0.35156,-1.65364 -0.35156,-0.59896 -0.97005,-0.59896 -0.61849,0 -0.97656,0.59896 -0.35808,0.59896 -0.35808,1.65364 0,1.05469 0.35808,1.65365 0.35807,0.59896 0.97656,0.59896 0.61849,0 0.97005,-0.59896 0.35156,-0.59896 0.35156,-1.65365 z"
-       style=""
-       id="path19448" />
+       id="path19448"
+       inkscape:connector-curvature="0" />
     <path
        d="m -379.95898,534.45768 v -5.625 h -1.9336 v -1.46484 h 3.84115 v 7.08984 q 0,0.85938 0.26692,1.21745 0.26693,0.35807 0.90495,0.35807 h 1.52344 v 1.46485 h -2.05729 q -1.36068,0 -1.95313,-0.70313 -0.59244,-0.70312 -0.59244,-2.33724 z"
-       style=""
-       id="path19450" />
+       id="path19450"
+       inkscape:connector-curvature="0" />
     <path
        d="m -369.89388,534.07357 q -1.06771,0 -1.49089,0.27344 -0.42317,0.27343 -0.42317,0.93749 0,0.4948 0.29297,0.78777 0.29296,0.29296 0.79427,0.29296 0.75521,0 1.17187,-0.5664 0.41667,-0.57292 0.41667,-1.59505 v -0.13021 z m 2.65625,-0.73568 v 4.16016 h -1.89453 v -0.81381 q -0.34505,0.48178 -0.88542,0.74219 -0.54036,0.26042 -1.1914,0.26042 -1.24349,0 -1.94011,-0.65755 -0.6901,-0.65756 -0.6901,-1.83594 0,-1.27604 0.82682,-1.88151 0.82682,-0.61198 2.55859,-0.61198 h 1.32162 v -0.31901 q 0,-0.46224 -0.33854,-0.69662 -0.33203,-0.24088 -0.98308,-0.24088 -0.68359,0 -1.32812,0.17578 -0.63802,0.16927 -1.33464,0.54688 v -1.62761 q 0.63151,-0.26042 1.28256,-0.38411 0.65104,-0.1237 1.3802,-0.1237 1.77735,0 2.49349,0.72266 0.72266,0.72265 0.72266,2.58463 z"
-       style=""
-       id="path19452" />
+       id="path19452"
+       inkscape:connector-curvature="0" />
     <path
        d="m -361.93164,528.13607 v 2.07031 h 2.49349 v 1.46484 h -2.49349 v 3.45052 q 0,0.48829 0.23437,0.70313 0.24089,0.20833 0.79428,0.20833 h 1.46484 v 1.46485 h -1.60156 q -1.64063,0 -2.22006,-0.52084 -0.57942,-0.52734 -0.57942,-1.94661 v -3.35938 h -1.86198 v -1.46484 h 1.86198 v -2.07031 z"
-       style=""
-       id="path19454" />
+       id="path19454"
+       inkscape:connector-curvature="0" />
     <path
        d="m -353.9043,528.13607 v 2.07031 h 2.49349 v 1.46484 h -2.49349 v 3.45052 q 0,0.48829 0.23438,0.70313 0.24088,0.20833 0.79427,0.20833 h 1.46484 v 1.46485 h -1.60156 q -1.64062,0 -2.22005,-0.52084 -0.57943,-0.52734 -0.57943,-1.94661 v -3.35938 h -1.86198 v -1.46484 h 1.86198 v -2.07031 z"
-       style=""
-       id="path19456" />
+       id="path19456"
+       inkscape:connector-curvature="0" />
     <path
        d="m -343.19466,537.13997 q -0.66406,0.27344 -1.35417,0.41016 -0.6901,0.13672 -1.45833,0.13672 -1.82943,0 -2.79948,-0.97656 -0.96354,-0.98308 -0.96354,-2.82552 0,-1.78386 0.93099,-2.81901 0.93099,-1.03516 2.53906,-1.03516 1.62109,0 2.51302,0.96354 0.89844,0.95703 0.89844,2.70182 v 0.77474 h -4.94141 q 0.007,0.85938 0.50781,1.28255 0.50131,0.42318 1.4974,0.42318 0.65755,0 1.29557,-0.1888 0.63802,-0.1888 1.33464,-0.59896 z m -1.61458,-4.10156 q -0.013,-0.75521 -0.39063,-1.13932 -0.37109,-0.39063 -1.10026,-0.39063 -0.65755,0 -1.04818,0.40365 -0.39062,0.39713 -0.46224,1.13281 z"
-       style=""
-       id="path19458" />
+       id="path19458"
+       inkscape:connector-curvature="0" />
     <path
        d="m -332.84961,537.49805 v -9.72006 h 1.92057 v 8.02735 h 4.10808 v 1.69271 z"
-       style=""
-       id="path19460" />
+       id="path19460"
+       inkscape:connector-curvature="0" />
     <path
        d="m -321.72982,534.07357 q -1.06771,0 -1.49088,0.27344 -0.42318,0.27343 -0.42318,0.93749 0,0.4948 0.29297,0.78777 0.29297,0.29296 0.79427,0.29296 0.75521,0 1.17187,-0.5664 0.41667,-0.57292 0.41667,-1.59505 v -0.13021 z m 2.65625,-0.73568 v 4.16016 h -1.89453 v -0.81381 q -0.34505,0.48178 -0.88542,0.74219 -0.54036,0.26042 -1.1914,0.26042 -1.24349,0 -1.94011,-0.65755 -0.6901,-0.65756 -0.6901,-1.83594 0,-1.27604 0.82682,-1.88151 0.82683,-0.61198 2.5586,-0.61198 h 1.32161 v -0.31901 q 0,-0.46224 -0.33854,-0.69662 -0.33203,-0.24088 -0.98307,-0.24088 -0.6836,0 -1.32813,0.17578 -0.63802,0.16927 -1.33463,0.54688 v -1.62761 q 0.63151,-0.26042 1.28255,-0.38411 0.65104,-0.1237 1.38021,-0.1237 1.77734,0 2.49349,0.72266 0.72265,0.72265 0.72265,2.58463 z"
-       style=""
-       id="path19462" />
+       id="path19462"
+       inkscape:connector-curvature="0" />
     <path
        d="m -313.63086,538.28581 q -0.38411,1.02864 -0.92448,1.49739 -0.53385,0.47526 -1.30208,0.47526 h -1.57552 v -1.45182 h 0.77474 q 0.58593,0 0.85937,-0.20182 0.27344,-0.19532 0.55339,-0.91797 l 0.14323,-0.39063 -2.77344,-7.08984 h 2.00521 l 1.66666,4.73307 1.59506,-4.73307 h 2.0052 z"
-       style=""
-       id="path19464" />
+       id="path19464"
+       inkscape:connector-curvature="0" />
     <path
        d="m -303.05794,537.13997 q -0.66407,0.27344 -1.35417,0.41016 -0.6901,0.13672 -1.45833,0.13672 -1.82943,0 -2.79948,-0.97656 -0.96354,-0.98308 -0.96354,-2.82552 0,-1.78386 0.93099,-2.81901 0.93099,-1.03516 2.53906,-1.03516 1.62109,0 2.51302,0.96354 0.89844,0.95703 0.89844,2.70182 v 0.77474 h -4.94141 q 0.007,0.85938 0.50781,1.28255 0.50131,0.42318 1.4974,0.42318 0.65755,0 1.29557,-0.1888 0.63802,-0.1888 1.33464,-0.59896 z m -1.61459,-4.10156 q -0.013,-0.75521 -0.39062,-1.13932 -0.37109,-0.39063 -1.10026,-0.39063 -0.65755,0 -1.04818,0.40365 -0.39062,0.39713 -0.46224,1.13281 z"
-       style=""
-       id="path19466" />
+       id="path19466"
+       inkscape:connector-curvature="0" />
     <path
        d="m -294.71159,532.2181 q -0.3125,-0.28646 -0.73568,-0.42969 -0.41666,-0.14323 -0.91796,-0.14323 -0.60547,0 -1.0612,0.21485 -0.44922,0.20833 -0.69662,0.61198 -0.15625,0.24739 -0.22135,0.59895 -0.0586,0.35157 -0.0586,1.06771 v 3.35938 h -1.90756 v -7.29167 h 1.90756 v 1.13281 q 0.27994,-0.625 0.85937,-0.96354 0.57943,-0.34505 1.35417,-0.34505 0.39062,0 0.76172,0.0977 0.3776,0.0911 0.71614,0.27343 z"
-       style=""
-       id="path19468" />
+       id="path19468"
+       inkscape:connector-curvature="0" />
     <path
        d="m -284.92643,535.80534 h 2.14844 v -6.3086 l -1.9987,0.4948 v -1.73177 l 2.01172,-0.48178 h 1.85546 v 8.02735 h 2.14844 v 1.69271 h -6.16536 z"
-       style=""
-       id="path19470" />
+       id="path19470"
+       inkscape:connector-curvature="0" />
     <path
        d="m -266.77539,533.23372 q -1.45182,-0.55338 -1.96615,-1.15885 -0.51432,-0.61198 -0.51432,-1.64063 0,-1.32161 0.84635,-2.07682 0.84636,-0.75521 2.32422,-0.75521 0.67058,0 1.34115,0.15625 0.67057,0.14974 1.32812,0.44922 v 1.875 q -0.61849,-0.4362 -1.25651,-0.66406 -0.63802,-0.22786 -1.26302,-0.22786 -0.69661,0 -1.06771,0.27994 -0.37109,0.27995 -0.37109,0.80078 0,0.40365 0.26693,0.67058 0.27344,0.26041 1.13281,0.57942 l 0.82682,0.3125 q 1.17188,0.42969 1.72526,1.13933 0.55339,0.70963 0.55339,1.79036 0,1.47136 -0.8724,2.20052 -0.86588,0.72266 -2.62369,0.72266 -0.72266,0 -1.45183,-0.17578 -0.72265,-0.16927 -1.39974,-0.50782 v -1.98567 q 0.76823,0.54687 1.48438,0.8138 0.72265,0.26693 1.42578,0.26693 0.70963,0 1.10026,-0.31901 0.39062,-0.32552 0.39062,-0.90495 0,-0.4362 -0.26041,-0.76172 -0.26042,-0.33203 -0.75521,-0.52083 z"
-       style=""
-       id="path19472" />
+       id="path19472"
+       inkscape:connector-curvature="0" />
     <path
        d="m -260.62956,530.20638 h 3.77604 v 5.82682 h 2.3698 v 1.46485 h -6.65365 v -1.46485 h 2.3763 v -4.36198 h -1.86849 z m 1.86849,-3.54818 h 1.90755 v 2.22657 h -1.90755 z"
-       style=""
-       id="path19474" />
+       id="path19474"
+       inkscape:connector-curvature="0" />
     <path
        d="m -246.86654,537.13997 q -0.66406,0.27344 -1.35416,0.41016 -0.69011,0.13672 -1.45834,0.13672 -1.82942,0 -2.79948,-0.97656 -0.96354,-0.98308 -0.96354,-2.82552 0,-1.78386 0.93099,-2.81901 0.93099,-1.03516 2.53906,-1.03516 1.6211,0 2.51303,0.96354 0.89843,0.95703 0.89843,2.70182 v 0.77474 h -4.9414 q 0.007,0.85938 0.50781,1.28255 0.5013,0.42318 1.4974,0.42318 0.65755,0 1.29557,-0.1888 0.63802,-0.1888 1.33463,-0.59896 z m -1.61458,-4.10156 q -0.013,-0.75521 -0.39062,-1.13932 -0.3711,-0.39063 -1.10027,-0.39063 -0.65755,0 -1.04817,0.40365 -0.39063,0.39713 -0.46224,1.13281 z"
-       style=""
-       id="path19476" />
+       id="path19476"
+       inkscape:connector-curvature="0" />
     <path
        d="m -240.86393,531.24154 v -3.8737 h 1.90104 v 10.13021 h -1.90104 v -1.08073 q -0.30599,0.63151 -0.79427,0.95052 -0.48177,0.31901 -1.13933,0.31901 -1.25,0 -1.9401,-1.00261 -0.6901,-1.0026 -0.6901,-2.82552 0,-1.84895 0.69661,-2.83854 0.70313,-0.98958 1.9987,-0.98958 0.58594,0 1.04818,0.30599 0.46875,0.29948 0.82031,0.90495 z m -2.65625,2.6302 q 0,1.05469 0.35156,1.65365 0.35156,0.59896 0.97005,0.59896 0.61849,0 0.97656,-0.59896 0.35808,-0.59896 0.35808,-1.65365 0,-1.05468 -0.35808,-1.65364 -0.35807,-0.59896 -0.97656,-0.59896 -0.61849,0 -0.97005,0.59896 -0.35156,0.59896 -0.35156,1.65364 z"
-       style=""
-       id="path19478" />
+       id="path19478"
+       inkscape:connector-curvature="0" />
     <path
        d="m -235.4668,534.45768 v -5.625 h -1.93359 v -1.46484 h 3.84115 v 7.08984 q 0,0.85938 0.26692,1.21745 0.26693,0.35807 0.90495,0.35807 h 1.52344 v 1.46485 h -2.05729 q -1.36068,0 -1.95313,-0.70313 -0.59245,-0.70312 -0.59245,-2.33724 z"
-       style=""
-       id="path19480" />
+       id="path19480"
+       inkscape:connector-curvature="0" />
     <path
        d="m -222.78451,537.13997 q -0.66406,0.27344 -1.35416,0.41016 -0.69011,0.13672 -1.45834,0.13672 -1.82942,0 -2.79947,-0.97656 -0.96355,-0.98308 -0.96355,-2.82552 0,-1.78386 0.93099,-2.81901 0.93099,-1.03516 2.53907,-1.03516 1.62109,0 2.51302,0.96354 0.89843,0.95703 0.89843,2.70182 v 0.77474 h -4.9414 q 0.007,0.85938 0.50781,1.28255 0.5013,0.42318 1.4974,0.42318 0.65755,0 1.29557,-0.1888 0.63802,-0.1888 1.33463,-0.59896 z m -1.61458,-4.10156 q -0.013,-0.75521 -0.39062,-1.13932 -0.3711,-0.39063 -1.10026,-0.39063 -0.65756,0 -1.04818,0.40365 -0.39063,0.39713 -0.46224,1.13281 z"
-       style=""
-       id="path19482" />
+       id="path19482"
+       inkscape:connector-curvature="0" />
     <path
        d="m -213.12956,527.77799 h 2.0638 l 2.70834,7.06381 v -7.06381 h 1.69271 v 9.72006 h -2.05078 l -2.72136,-7.06381 v 7.06381 h -1.69271 z"
-       style=""
-       id="path19484" />
+       id="path19484"
+       inkscape:connector-curvature="0" />
     <path
        d="m -201.86654,531.58008 q -0.68359,0 -1.07422,0.60547 -0.39062,0.59896 -0.39062,1.67317 0,1.07422 0.39062,1.67969 0.39063,0.59896 1.07422,0.59896 0.69011,0 1.08073,-0.59896 0.39063,-0.60547 0.39063,-1.67969 0,-1.07421 -0.39063,-1.67317 -0.39062,-0.60547 -1.08073,-0.60547 z m -3.37239,2.27864 q 0,-1.76432 0.91146,-2.79296 0.91796,-1.03516 2.46093,-1.03516 1.54948,0 2.46094,1.03516 0.91797,1.02864 0.91797,2.79296 0,1.76433 -0.91797,2.79948 -0.91146,1.02865 -2.46094,1.02865 -1.54297,0 -2.46093,-1.02865 -0.91146,-1.03515 -0.91146,-2.79948 z"
-       style=""
-       id="path19486" />
+       id="path19486"
+       inkscape:connector-curvature="0" />
     <path
        d="m -193.83919,529.53581 -0.90495,3.97786 h 1.81641 z m -1.17188,-1.75782 h 2.35026 l 2.6237,9.72006 h -1.92057 l -0.59896,-2.40235 h -2.57162 l -0.58593,2.40235 h -1.92058 z"
-       style=""
-       id="path19488" />
+       id="path19488"
+       inkscape:connector-curvature="0" />
     <path
        d="m -185.33008,530.93555 q 0.21485,-0.46224 0.54688,-0.6836 0.33203,-0.22135 0.8138,-0.22135 0.94401,0 1.30208,0.65104 0.36459,0.65104 0.36459,2.70833 v 4.10808 h -1.5625 v -4.68099 q 0,-0.8138 -0.1237,-1.08724 -0.1237,-0.27344 -0.44922,-0.27344 -0.32552,0 -0.45573,0.27995 -0.13021,0.27995 -0.13021,1.08073 v 4.68099 h -1.54297 v -4.68099 q 0,-0.80078 -0.13021,-1.08073 -0.1302,-0.27995 -0.45572,-0.27995 -0.32553,0 -0.44922,0.27344 -0.1237,0.27344 -0.1237,1.08724 v 4.68099 h -1.5625 v -7.29167 h 1.38672 v 0.75521 q 0.16276,-0.42969 0.52083,-0.67708 0.35807,-0.25391 0.80078,-0.25391 0.44271,0 0.80729,0.26693 0.36459,0.26041 0.44271,0.63802 z"
-       style=""
-       id="path19490" />
+       id="path19490"
+       inkscape:connector-curvature="0" />
     <path
        d="m -178.91732,536.4694 v 3.80208 h -1.90104 v -10.0651 h 1.90104 v 1.09375 q 0.29948,-0.63151 0.78776,-0.95052 0.48828,-0.31901 1.14584,-0.31901 1.25,0 1.9401,1.0026 0.6901,1.00261 0.6901,2.82552 0,1.84896 -0.70312,2.83855 -0.69662,0.98958 -1.99219,0.98958 -0.58594,0 -1.05469,-0.29948 -0.46224,-0.30599 -0.8138,-0.91797 z m 2.65625,-2.6237 q 0,-1.05468 -0.35156,-1.65364 -0.35156,-0.59896 -0.97005,-0.59896 -0.61849,0 -0.97656,0.59896 -0.35808,0.59896 -0.35808,1.65364 0,1.05469 0.35808,1.65365 0.35807,0.59896 0.97656,0.59896 0.61849,0 0.97005,-0.59896 0.35156,-0.59896 0.35156,-1.65365 z"
-       style=""
-       id="path19492" />
+       id="path19492"
+       inkscape:connector-curvature="0" />
   </g>
   <g
-     transform="matrix(-0.75000001,0,0,0.75000001,581.39992,-71.638351)"
+     transform="matrix(-0.74815221,0,0,0.74869528,580.18308,-70.262167)"
      style="clip-rule:evenodd;fill-rule:evenodd;stroke-miterlimit:10"
      id="g28365-5">
     <g
@@ -2711,7 +2867,7 @@
     </g>
   </g>
   <g
-     transform="matrix(-0.75000001,0,0,0.75000001,864.86476,-71.638354)"
+     transform="matrix(-0.74815221,0,0,0.74869528,862.94954,-70.26217)"
      style="clip-rule:evenodd;fill-rule:evenodd;stroke-miterlimit:10"
      id="g28365-5-8">
     <g
@@ -2746,7 +2902,7 @@
     </g>
   </g>
   <g
-     transform="matrix(-0.75000001,0,0,0.75000001,581.39992,481.11555)"
+     transform="matrix(-0.74815221,0,0,0.74869528,580.18308,481.53014)"
      style="clip-rule:evenodd;fill-rule:evenodd;stroke-miterlimit:10"
      id="g28365-5-3">
     <g
@@ -2781,7 +2937,7 @@
     </g>
   </g>
   <g
-     transform="matrix(-0.75000001,0,0,0.75000001,864.86476,481.11556)"
+     transform="matrix(-0.74815221,0,0,0.74869528,862.94954,481.53015)"
      style="clip-rule:evenodd;fill-rule:evenodd;stroke-miterlimit:10"
      id="g28365-5-89">
     <g
