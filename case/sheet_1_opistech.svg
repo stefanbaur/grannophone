@@ -6,16 +6,39 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
    height="297mm"
    viewBox="0 0 793.70079 1122.5197"
    version="1.1"
    xml:space="preserve"
    style="clip-rule:evenodd;fill-rule:evenodd;stroke-miterlimit:10"
-   id="svg714"><metadata
+   id="svg714"
+   sodipodi:docname="sheet_1_opistech.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="976"
+   id="namedview1251"
+   showgrid="false"
+   inkscape:zoom="0.99906609"
+   inkscape:cx="199.42229"
+   inkscape:cy="580.43367"
+   inkscape:window-x="-4"
+   inkscape:window-y="-4"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg714" /><metadata
    id="metadata720"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
    id="defs718" />
     <g
    transform="translate(-226.26325,310.35505)"
@@ -221,14 +244,18 @@
                     <path
    id="path698"
    style="fill:none;stroke:#ff00c0;stroke-width:4.78999996px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
-   d="m 4164.18,343 h -396.09 v 945.48 H 4807.82 V 934.152 H 4411.73 V 815.441 h 396.09 V 343 h -330.07 v 94.488 h -313.57 z" />
+   d="m 4164.18,343 h -396.09 v 945.48 H 4807.82 V 910.53533 H 4411.73 V 791.8206 h 396.09 V 343 h -330.07 v 94.488 h -313.57 z"
+   inkscape:connector-curvature="0"
+   sodipodi:nodetypes="ccccccccccccc" />
                 </g><g
    id="g704"
    transform="matrix(-0.22900805,0,0,0.31999426,1258.3788,54.788354)">
                     <path
    id="path702"
    style="fill:none;stroke:#ff00c0;stroke-width:4.78999996px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
-   d="m 4338.42,343 h -396.08 v 945.48 H 4982.07 V 934.152 H 4585.98 V 815.441 h 396.09 V 343 h -330.08 v 94.488 h -313.57 z" />
+   d="m 4338.42,343 h -396.08 v 945.48 H 4982.07 V 910.52714 H 4585.98 V 791.82422 h 396.09 V 343 h -330.08 v 94.488 h -313.57 z"
+   inkscape:connector-curvature="0"
+   sodipodi:nodetypes="ccccccccccccc" />
                 </g><g
    id="g708"
    transform="matrix(0.31999426,0,0,0.31999426,-639.3408,170.55588)">
@@ -572,6 +599,7 @@
      x="-432.89691"
      y="637.23633"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;font-family:monospace;-inkscape-font-specification:monospace;fill:#000000;fill-opacity:1;stroke-width:1">Hier vorsichtig sägen/feilen</tspan></text>
+
 
 
 
