@@ -5,11 +5,35 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="595.68pt"
    height="842.16pt"
    viewBox="0 0 595.68 842.16"
    version="1.1"
-   id="svg115">
+   id="svg115"
+   sodipodi:docname="sheet_3_digitus.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="976"
+     id="namedview3434"
+     showgrid="false"
+     inkscape:zoom="2.3778456"
+     inkscape:cx="257.44877"
+     inkscape:cy="309.11073"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg115" />
   <metadata
      id="metadata119">
     <rdf:RDF>
@@ -18,7 +42,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -377,9 +401,9 @@
     </g>
   </g>
   <g
-     style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke:#b8ae00;stroke-opacity:1"
+     style="clip-rule:evenodd;fill-rule:evenodd;stroke:#b8ae00;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-opacity:1"
      id="g5"
-     transform="matrix(-0.35787488,0,0,-0.19882793,2873.3722,780.63308)">
+     transform="matrix(-0.35787488,0,0,-0.19882793,2853.531,780.63308)">
     <rect
        id="rect3"
        style="fill:none;stroke:#b8ae00;stroke-width:3.45000005px;stroke-opacity:1"
@@ -443,9 +467,9 @@
        x="399.82501" />
   </g>
   <g
-     style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke:#b8ae00;stroke-opacity:1"
+     style="clip-rule:evenodd;fill-rule:evenodd;stroke:#b8ae00;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-opacity:1"
      id="g777"
-     transform="matrix(-0.22267753,0,0,-0.24853417,1757.9755,688.47637)">
+     transform="matrix(-0.22267753,0,0,-0.24853417,1757.9755,699.81385)">
     <rect
        id="rect775"
        style="fill:none;stroke:#b8ae00;stroke-width:4.23999977px;stroke-opacity:1"
@@ -853,8 +877,7 @@
      id="flowRoot12627-4"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      transform="matrix(0.75,0,0,0.75,698.92512,525.45257)"
-     aria-label="Gelbe Linien
-nur 1 x aussägen">
+     aria-label="Gelbe Linien nur 1 x aussägen">
     <path
        id="path15901"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace"
