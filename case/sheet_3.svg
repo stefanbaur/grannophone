@@ -28,7 +28,7 @@
      id="namedview2375"
      showgrid="false"
      inkscape:zoom="1.6813908"
-     inkscape:cx="113.15631"
+     inkscape:cx="223.43513"
      inkscape:cy="415.28491"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
@@ -389,18 +389,6 @@
   </g>
   <g
      style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
-     id="g13"
-     transform="matrix(-0.22205743,0,0,-0.19882843,1821.272,539.67387)">
-    <rect
-       id="rect11"
-       style="fill:none;stroke:#bbae00;stroke-width:4.73999977px"
-       height="114"
-       width="356.26401"
-       y="312"
-       x="7054.7402" />
-  </g>
-  <g
-     style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
      id="g17"
      transform="matrix(-0.99673865,0,0,0.9995246,593.92633,-240.79289)">
     <path
@@ -570,7 +558,7 @@
   <g
      style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
      id="g613"
-     transform="matrix(0.99673865,0,0,0.9995246,913.01879,273.43016)">
+     transform="matrix(0.99673865,0,0,0.9995246,913.01879,270.59551)">
     <g
        id="g583"
        transform="matrix(10,0,0,10,-696.791,359.75)">
@@ -724,7 +712,7 @@
   <g
      style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
      id="g681"
-     transform="matrix(0.99673865,0,0,0.9995246,891.01083,109.64071)">
+     transform="matrix(0.99673865,0,0,0.9995246,895.51083,109.64071)">
     <g
        id="g651"
        transform="matrix(10,0,0,10,-696.791,359.75)">
@@ -825,7 +813,7 @@
   <g
      style="clip-rule:evenodd;fill-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
      id="g773"
-     transform="matrix(-0.22205743,0,0,-0.2485348,1849.3003,722.47988)">
+     transform="matrix(-0.22205743,0,0,-0.2485348,1849.3003,719.64523)">
     <rect
        id="rect771"
        style="fill:none;stroke:#bbae00;stroke-width:4.23999977px"
@@ -1630,4 +1618,17 @@
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.33333302px;line-height:125%;font-family:monospace;-inkscape-font-specification:'monospace Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.74895591px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      id="path9572"
      inkscape:connector-curvature="0" />
+  <g
+     transform="matrix(-0.12819592,0,0,-0.19914589,1295.4949,522.07317)"
+     id="g13-0"
+     style="clip-rule:evenodd;fill-rule:evenodd;stroke:#b8ae00;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-opacity:1">
+    <rect
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#b8ae00;stroke-width:3.51717758;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect14607"
+       width="699.76239"
+       height="110.74348"
+       x="-8715.2393"
+       y="-331.10574"
+       transform="scale(-1)" />
+  </g>
 </svg>

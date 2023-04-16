@@ -28,7 +28,7 @@
      id="namedview9977"
      showgrid="false"
      inkscape:zoom="1.4142136"
-     inkscape:cx="397.12"
+     inkscape:cx="207.61539"
      inkscape:cy="391.73435"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
@@ -61,16 +61,17 @@
        id="rect7" />
   </g>
   <g
-     transform="matrix(-0.22207395,0,0,-0.1984687,1821.4006,539.99824)"
+     transform="matrix(-0.12819592,0,0,-0.19914589,1295.4949,522.07317)"
      id="g13"
      style="clip-rule:evenodd;fill-rule:evenodd;stroke:#b8ae00;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-opacity:1">
     <rect
-       x="7054.7402"
-       y="312"
-       width="356.26401"
-       height="114"
-       style="fill:none;stroke:#b8ae00;stroke-width:4.73999977px;stroke-opacity:1"
-       id="rect11" />
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#b8ae00;stroke-width:3.51717758;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect14607"
+       width="699.76239"
+       height="110.74348"
+       x="-8715.2393"
+       y="-331.10574"
+       transform="scale(-1)" />
   </g>
   <g
      transform="matrix(0.9968128,0,0,1.0110158,0.26727776,378.92693)"
@@ -109,7 +110,7 @@
        id="rect743" />
   </g>
   <g
-     transform="matrix(-0.22207395,0,0,-0.24808514,1849.4309,722.4851)"
+     transform="matrix(-0.22207395,0,0,-0.24808514,1849.4309,719.65046)"
      id="g773"
      style="clip-rule:evenodd;fill-rule:evenodd;stroke:#b8ae00;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-opacity:1">
     <rect
