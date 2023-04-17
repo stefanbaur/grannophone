@@ -39,7 +39,7 @@ At present, the base model consists of the following sheets:
 	- sheet_7.pdf
 	- sheet_8.pdf
 
-- optional:
+- optional templates
 	- cut_a3_into_4_times_a5.pdf - a template to cut a DIN A3 sheet into four DIN A5 sheets - useful if you're using a lasercutter, as the larger sheets of plywood tend to warp easily
 	- a3_a5_position_marker.pdf - this draws little boxes in each corner of four DIN A5 sheets arranged in DIN A3 landscape mode - useful if you want to use masking tape on the bottom of your lasercutter to position your plywood sheets (use minimum power/engraving rather than cutting mode so you don't damage your device)
 	- cut_a3_into_4_times_a5_with_corner_markers.pdf - a combination of the two templates listed above
