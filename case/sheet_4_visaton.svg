@@ -41,8 +41,8 @@
      id="namedview289"
      showgrid="false"
      inkscape:zoom="0.59446142"
-     inkscape:cx="95.482154"
-     inkscape:cy="800.97412"
+     inkscape:cx="-86.194901"
+     inkscape:cy="733.68632"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
      inkscape:window-maximized="1"
@@ -757,4 +757,11 @@
      id="path304"
      d="m 379.16002,256.0802 v -8.00607"
      style="fill:none;stroke:#211e1e;stroke-width:0.24949281;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
+  <rect
+     style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ec008c;stroke-width:1.00199997;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect10258"
+     width="127.25525"
+     height="56.596218"
+     x="334.6178"
+     y="449.8479" />
 </svg>
