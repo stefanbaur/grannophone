@@ -32,7 +32,7 @@ At present, the base model consists of the following sheets:
 
 - base plates to accommodate two Visaton speakers, connected directly to the SBC or via amplifier
 	- sheet_4_visaton.pdf
-	- sheet_5_visaton.pdf - place this sheet on top of sheet 4, it is exactly the same
+	- sheet_5_visaton.pdf - place this sheet on top of sheet 4, it is exactly the same, except for missing the cutout for the audio plug that's on sheet_4_visaton.pdf (and you could actually cut that out of sheet_5_visaton.pdf as well, it wouldn't matter)
 	- sheet_6_visaton.pdf - place this sheet on top of sheets 4 and 5, firmly secure all of them by wrapping them with masking tape, and start drilling/sawing/filing - this will help reduce splintering, and the affected areas on sheets 4 and 5 will be cut out later on anyway.
 
 - currently generic parts
