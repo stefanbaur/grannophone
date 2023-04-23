@@ -30,7 +30,7 @@ At present, the base model consists of the following sheets:
 	- sheet_6_siedle_noamp.pdf - place this sheet on top of sheet 5, firmly secure them by wrapping them with masking tape, and start drilling/sawing/filing - this will help reduce splintering, and the affected areas on sheet 5 will be cut out later on anyway.
 
 
-- base plates to accommodate two Visaton speakers, connected directly to the SBC or via amplifier
+- base plates to accommodate two Visaton K50 WP speakers, connected directly to the SBC (or via amplifier, if you find one that works with them)
 	- sheet_4_visaton.pdf
 	- sheet_5_visaton.pdf - place this sheet on top of sheet 4, it is exactly the same, except for missing the cutout for the audio plug that's on sheet_4_visaton.pdf (and you could actually cut that out of sheet_5_visaton.pdf as well, it wouldn't matter)
 	- sheet_6_visaton.pdf - place this sheet on top of sheets 4 and 5, firmly secure all of them by wrapping them with masking tape, and start drilling/sawing/filing - this will help reduce splintering, and the affected areas on sheets 4 and 5 will be cut out later on anyway.
@@ -39,12 +39,14 @@ At present, the base model consists of the following sheets:
 	- sheet_7.pdf
 	- sheet_8.pdf
 
+- backplates for Digitus and OpisTech variants, including optional cutouts for Visaton SC 5.9 ND speakers (these require an amplifier)
+	- sheet_9_digitus.pdf
+	- sheet_9_opistech.pdf
+
 - optional templates
 	- a3_a5_position_marker.pdf - this draws little boxes in each corner of four DIN A5 sheets arranged in DIN A3 landscape mode - useful if you want to use masking tape on the bottom of your lasercutter to position your plywood sheets (use minimum power/engraving rather than cutting mode so you don't damage your device)
 	- cut_a3_into_4_times_a5.pdf - a template to cut a DIN A3 sheet into four DIN A5 sheets - useful if you're using a lasercutter, as the larger sheets of plywood tend to warp easily
 	- cut_a3_into_4_times_a5_with_corner_markers.pdf - a combination of the two templates listed above
-
-- the back cover isn't finished yet - a full-sized DIN A5 sheet of plywood is currently used in its place.
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
