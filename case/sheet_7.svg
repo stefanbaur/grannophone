@@ -27,9 +27,9 @@
      inkscape:window-height="976"
      id="namedview7637"
      showgrid="false"
-     inkscape:zoom="1.1893044"
-     inkscape:cx="321.34561"
-     inkscape:cy="719.57446"
+     inkscape:zoom="0.5946522"
+     inkscape:cx="96.003805"
+     inkscape:cy="517.77583"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
      inkscape:window-maximized="1"
@@ -513,17 +513,6 @@
      style="opacity:1;stroke-linejoin:miter;vector-effect:none;stroke-opacity:1;fill-rule:evenodd;fill-opacity:1;stroke-dashoffset:0;stroke:#bbae00;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:0.17064153;fill:none"
      d="m 152.97411,68.917513 v 4.312916 h 0.01 v 31.199641 h -0.01 v 4.31602 h -34.80717 v -4.31291 h -0.01 v -0.003 -6.433719 h -6.56293 V 79.667247 h 6.56291 v -6.436815 h 0.01 V 68.91752 Z"
      id="rect2190-3" />
-  <text
-     transform="matrix(1.000000,0.000000,0.000000,1.000000,0.000000,0.000000)"
-     xml:space="preserve"
-     style="stroke-linejoin:miter;letter-spacing:0px;font-family:sans-serif;stroke-opacity:1;fill-opacity:1;font-weight:normal;font-size:10.58333302px;font-style:normal;word-spacing:0px;stroke:none;stroke-linecap:butt;stroke-width:0.26458332px;line-height:125%;fill:#000000"
-     x="-129.34978"
-     y="42.706535"
-     id="text968"><tspan
-       x="-129.34978"
-       y="52.070301"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777767px;font-family:monospace;-inkscape-font-specification:'monospace Bold';stroke-width:0.26458332px"
-       id="tspan986" /></text>
   <path
      d="m 69.072963,52.322833 c 0.550775,0 0.99773,-0.446916 0.99773,-0.998077 0,-0.551513 -0.446955,-0.998429 -0.99773,-0.998429 -0.550775,0 -0.997378,0.446916 -0.997378,0.998429 0,0.551161 0.446603,0.998077 0.997378,0.998077"
      style="clip-rule:evenodd;fill:none;fill-rule:nonzero;stroke:#ea0088;stroke-width:0.35205615;stroke-miterlimit:10;stroke-opacity:1"
