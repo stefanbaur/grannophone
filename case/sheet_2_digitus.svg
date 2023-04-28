@@ -23,12 +23,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
-     inkscape:window-height="820"
+     inkscape:window-width="1920"
+     inkscape:window-height="976"
      id="namedview2893"
      showgrid="false"
-     inkscape:zoom="0.42034769"
-     inkscape:cx="290.10479"
+     inkscape:zoom="1.6813908"
+     inkscape:cx="508.97122"
      inkscape:cy="778.34089"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
@@ -48,10 +48,6 @@
   </metadata>
   <defs
      id="defs2069" />
-  <path
-     id="path2079"
-     d="M 485.45751,315.59762 V 188.26151 h 22.36056 v -65.12448 h -200.7775 v 594.23516 h 200.7775 V 315.59762 Z m 0,0"
-     style="fill:none;stroke:#ec008c;stroke-width:1.00492013;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
   <path
      id="path2071"
      d="M 89.291937,264.6203 H 179.78639 V 123.13703 H 89.291937 Z m 0,0"
@@ -1182,4 +1178,10 @@
      d="m 254.35892,643.85104 v -5.99999"
      style="stroke:#000000;stroke-miterlimit:10;stroke-opacity:1;fill-rule:nonzero;clip-rule:evenodd;stroke-width:0.67473525px;fill:none"
      id="path569-2-26-7" />
+  <path
+     id="path2079"
+     d="M 485.45859,315.5992 V 188.26205 h 22.35947 V 123.13703 H 308.9756 V 717.37705 H 507.81806 V 315.5992 Z"
+     style="fill:none;stroke:#ec008c;stroke-width:1.00006986;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccccccc" />
 </svg>
