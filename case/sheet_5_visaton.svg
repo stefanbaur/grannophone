@@ -29,7 +29,7 @@
      showgrid="false"
      inkscape:zoom="1.6819304"
      inkscape:cx="396.85039"
-     inkscape:cy="681.19237"
+     inkscape:cy="800.10335"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
      inkscape:window-maximized="1"
@@ -48,11 +48,6 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path
-     id="path96"
-     d="M 41.059276,253.48472 H 178.73475 V 43.836791 H 41.059276 Z m 0,0"
-     style="fill:none;stroke:#ec008c;stroke-width:0.35206211;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     inkscape:connector-curvature="0" />
   <path
      id="path260"
      d="m 106.92272,101.73963 h 3.93869 l 10.01101,9.98363 h 10e-4 v 1.99755 h 25.93762 v -1.99755 l 9.9409,-9.98363 h 2.03052 V 75.783852 h -2.03052 l -9.94079,-9.983632 v -1.996175 h -25.93762 v 1.996175 h -0.001 l -10.01104,9.983632 H 106.9228 L 96.981905,65.80022 h -0.05087 V 63.804045 H 70.992042 v 2.047077 l -9.960147,9.93273 H 59.02062 v 25.955778 h 2.011275 l 9.960147,9.93273 v 2.04845 h 25.938994 v -1.99755 h 0.05087 z m 0,0"
@@ -686,4 +681,9 @@
      id="path17422"
      style="stroke-linejoin:miter;font-size:13.33333302px;-inkscape-font-specification:'monospace Bold';fill-opacity:1;letter-spacing:0px;word-spacing:0px;stroke:none;stroke-linecap:butt;stroke-width:1px;font-style:normal;fill:#000000;font-family:monospace;stroke-opacity:1;font-stretch:normal;font-variant:normal;font-weight:bold;line-height:125%"
      d="m 40.770828,428.60286 v 4.73308 h -1.894531 v -4.44011 q 0,-0.79427 -0.227865,-1.13281 -0.221354,-0.34505 -0.729166,-0.34505 -0.514323,0 -0.813802,0.46224 -0.292969,0.46224 -0.292969,1.28255 v 4.17318 h -1.894531 v -7.29167 h 1.894531 v 1.09375 q 0.201823,-0.60547 0.690104,-0.9375 0.488281,-0.33203 1.178385,-0.33203 1.035157,0 1.5625,0.6901 0.527344,0.6836 0.527344,2.04427 z" />
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#ec008c;stroke-width:0.35078275;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     d="M 41.977598,253.45569 H 178.65481 V 43.806473 H 41.977598 Z m 0,0"
+     id="path294" />
 </svg>
