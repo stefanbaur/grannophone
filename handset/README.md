@@ -11,7 +11,7 @@ At present, the base model consists of the following sheets:
 - scale check - print this first, to check that your printer is printing everything to scale
 	- ../case/sheet_0.pdf
 
-- handset based on the EKULIT 210030 (ETR-35/21A) dynamic receiver and a Siedle STS/CTB 711 electret microphone. Note that this handset will require an adapted sheet 1 / sheet 2 (based on the Digitus model), which hasn't been designed yet.
+- handset based on the EKULIT 210030 (ETR-35/21A) dynamic receiver and a Siedle STS/CTB 711-... (200019224-00) electret microphone. Note that this handset will require an adapted sheet 1 / sheet 2 (based on the Digitus model), which hasn't been designed yet.
         - sheet_a_ekulit_siedle.pdf
         - sheet_b_ekulit_siedle.pdf
 
