@@ -2,7 +2,7 @@
 
 This directory contains the plans for a plywood handset.
 
-Note that this is a work in progress. Most sheets should be usable already, but may lack information about where to drill holes when using a fretsaw/scrollsaw, and where to place screws.
+Note that this is a work in progress. Most sheets should be usable already, but may lack information about where to drill holes when using a fretsaw/scrollsaw, and where to place screws. Screw positions may also be entirely wrong.
 The sheets *should* work with a lasercutter, too (if you use the SVG versions instead of the PDF ones) - feedback welcome!
 Note that for lasercutting, you should use the individual SVG files and arrange them to match the size of the plywood sheets you have available. We tried auto-generating merged SVGs for the more common sizes, but the merge tool never really worked.
 
@@ -11,7 +11,7 @@ At present, the base model consists of the following sheets:
 - scale check - print this first, to check that your printer is printing everything to scale
 	- ../case/sheet_0.pdf
 
-- handset based on the EKULIT 210030 (ETR-35/21A) dynamic receiver and a Siedle STS/CTB 711-... (200019224-00) electret microphone. Note that this handset will require an adapted sheet 1 / sheet 2 (based on the Digitus model), which hasn't been designed yet.
+- handset based on the EKULIT 210030 (ETR-35/21A) dynamic receiver and a Siedle STS/CTB 711-... (200019224-00) electret microphone. The handset should work as a drop-in replacement for the Digitus one, but will require a USB soundcard and a shielded audio cable with a TRRS plug (plus a TRRS - 2 x TRS splitter cable if your USB soundcard has separate ports for Audio in and Audio out). Note that there are two gaps in the two middle layers that SHOULD be large enough to fit two pairs of WAGO 221-2411 cage clamps, but they MUST be inserted *horizontally* (i.e. with their orange "wings" folded flat in and pointing *to the left and right*, NOT upwards).
         - sheet_a_ekulit_siedle.pdf
         - sheet_b_ekulit_siedle.pdf
 
