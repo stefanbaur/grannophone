@@ -11,9 +11,9 @@ At present, the base model consists of the following sheets:
 - scale check - print this first, to check that your printer is printing everything to scale
 	- ../case/sheet_0.pdf
 
-- handset based on the EKULIT 210030 (ETR-35/21A) dynamic receiver and a Siedle STS/CTB 711-... (200019224-00) electret microphone. The handset should work as a drop-in replacement for the Digitus one, but will require a USB soundcard and a shielded audio cable with a TRRS plug (plus a TRRS - 2 x TRS splitter cable if your USB soundcard has separate ports for Audio in and Audio out). Note that there are two gaps in the two middle layers that SHOULD be large enough to fit two pairs of WAGO 221-2411 cage clamps, but they MUST be inserted *horizontally* (i.e. with their orange "wings" folded flat in and pointing *to the left and right*, NOT upwards).
-        - sheet_a_ekulit_siedle.pdf
-        - sheet_b_ekulit_siedle.pdf
+- handset based on the EKULIT 210030 (ETR-35/21A) dynamic receiver (alternatively a VISATON K16 50 Ohm speaker) and a Siedle STS/CTB 711-... (200019224-00) electret microphone. The handset should work as a drop-in replacement for the Digitus one, but will require a USB soundcard and a shielded audio cable with a TRRS plug (plus a TRRS - 2 x TRS splitter cable if your USB soundcard has separate ports for Audio in and Audio out). Note that there are two gaps in the two middle layers that SHOULD be large enough to fit two pairs of WAGO 221-2411 cage clamps, but they MUST be inserted *horizontally* (i.e. with their orange "wings" folded flat in and pointing *to the left and right*, NOT upwards).
+        - sheet_a_ekulit_visaton_siedle.pdf
+        - sheet_b_ekulit_visaton_siedle.pdf
 
 - optional templates
 	- ../case/a3_a5_position_marker.pdf - this draws little boxes in each corner of four DIN A5 sheets arranged in DIN A3 landscape mode - useful if you want to use masking tape on the bottom of your lasercutter to position your plywood sheets (use minimum power/engraving rather than cutting mode so you don't damage your device)
