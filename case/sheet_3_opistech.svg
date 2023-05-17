@@ -5,11 +5,35 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
    height="297mm"
    viewBox="0 0 595.2756 841.88979"
    version="1.1"
-   id="svg115">
+   id="svg115"
+   sodipodi:docname="sheet_3_opistech.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="820"
+     id="namedview8757"
+     showgrid="false"
+     inkscape:zoom="1.1893044"
+     inkscape:cx="396.85039"
+     inkscape:cy="460.36053"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg115" />
   <metadata
      id="metadata119">
     <rdf:RDF>
@@ -18,7 +42,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -422,10 +446,6 @@
      height="220.54715"
      x="87.990135"
      y="497.86111" />
-  <path
-     id="rect771-9"
-     d="m 198.27392,608.29104 v 28.28174 h 5.36573 73.75049 5.36572 v -28.28174 h -5.36572 -73.75049 z"
-     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#bbae00;stroke-width:0.99525005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:none;stroke-opacity:1" />
   <rect
      id="rect739"
      style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#bbae00;stroke-width:0.79747307px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
@@ -1146,4 +1166,9 @@
      d="m 457.28184,524.6429 h 3.54981 v 1.4209 h -3.33008 q -0.5957,0 -0.84961,0.17089 -0.25879,0.16602 -0.25879,0.54688 0,0.38574 0.34668,0.61035 0.34668,0.21973 0.96192,0.21973 h 3.12988 v 1.4209 h -5.46875 v -1.4209 h 0.82031 q -0.4541,-0.15137 -0.70312,-0.51758 -0.24902,-0.36621 -0.24902,-0.88379 0,-0.77636 0.51757,-1.17187 0.51269,-0.39551 1.5332,-0.39551 z"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
      id="path39789" />
+  <path
+     id="rect771-9"
+     d="m 201.10829,608.28275 v 28.2983 h 5.18561 71.2749 5.1856 v -28.2983 h -5.1856 -71.2749 z"
+     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#bbae00;stroke-width:0.99525005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:none;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
 </svg>
