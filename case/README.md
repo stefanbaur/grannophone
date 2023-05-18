@@ -8,7 +8,7 @@ Note that for lasercutting, you should use the individual SVG files and arrange 
 
 At present, the base model consists of the following sheets:
 
-- scale check - print this first, to check that your printer is printing everything to scale
+- scale check - print/lasercut this first, to check that your printer is printing/your lasercutter ist cutting everything to scale (for lasercutting: if you don't want to waste a sheet of plywood, check if your lasercutter's beam intensity can be set low enough to cut/engrave paper without setting it on fire)
 	- sheet_0.pdf
 
 - telephone hook for the Digitus USB telephone receiver/headset
