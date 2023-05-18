@@ -35,6 +35,11 @@ At present, the base model consists of the following sheets:
 	- sheet_5_visaton.pdf - place this sheet on top of sheet 4, it is exactly the same, except for missing the cutout for the audio plug that's on sheet_4_visaton.pdf (and you could actually cut that out of sheet_5_visaton.pdf as well, it wouldn't matter)
 	- sheet_6_visaton.pdf - place this sheet on top of sheets 4 and 5, firmly secure all of them by wrapping them with masking tape, and start drilling/sawing/filing - this will help reduce splintering, and the affected areas on sheets 4 and 5 will be cut out later on anyway.
 
+- base plates to accommodate two VECO 40KS04PN-1 speakers, connected to a DAC/amplifier hat (e.g. HiFiBerry MiniAmp, or WaveShare WM8960) 
+	- sheet_4_veco.pdf - place this sheet on top of sheet 5, as sheets 4 and 6 need the same octagonal cutouts (sheet 4 has some connections between them, though, so you will need to work on that separately)
+	- sheet_5_veco.pdf - this sheet has rectangular cutouts and is thus the least critical of them all
+	- sheet_6_veco.pdf - place this sheet on top of sheets 4 and 5, firmly secure all of them by wrapping them with masking tape, and start drilling/sawing/filing - this will help reduce splintering, and the affected areas on sheets 4 and 5 will be cut out later on anyway.
+
 - currently generic parts
 	- sheet_7.pdf
 	- sheet_8.pdf
