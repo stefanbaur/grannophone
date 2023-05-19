@@ -12,8 +12,13 @@ At present, the base model consists of the following sheets:
 	- ../case/sheet_0.pdf
 
 - handset based on the EKULIT 210030 (ETR-35/21A) dynamic receiver (alternatively a VISATON K16 50 Ohm speaker) and a Siedle STS/CTB 711-... (200019224-00) electret microphone. The handset should work as a drop-in replacement for the Digitus one, but will require a USB soundcard and a shielded audio cable with a TRRS plug (plus a TRRS - 2 x TRS splitter cable if your USB soundcard has separate ports for Audio in and Audio out). Note that there are two gaps in the two middle layers that SHOULD be large enough to fit two pairs of WAGO 221-2411 cage clamps, but they MUST be inserted *horizontally* (i.e. with their orange "wings" folded flat in and pointing *to the left and right*, NOT upwards).
-        - sheet_a_ekulit_visaton_siedle.pdf
-        - sheet_b_ekulit_visaton_siedle.pdf
+        - sheet_a_ekulit_visaton_siedle_wago_trrs.pdf
+        - sheet_b_ekulit_visaton_siedle_wago_trrs.pdf
+
+- handset based on all the above, but integrating a DELOCK 65453 TRRS-to-terminalblock adapter and a USB-TRRS soundcard directly into the receiver, using a USB extension cord to further mimic the Digitus receiver.
+LOGILINK UA0299
+        - sheet_a_ekulit_visaton_siedle_delock_logilink_usb.pdf
+        - sheet_b_ekulit_visaton_siedle.delock_logilink_usb.pdf
 
 - optional templates
 	- ../case/a3_a5_position_marker.pdf - this draws little boxes in each corner of four DIN A5 sheets arranged in DIN A3 landscape mode - useful if you want to use masking tape on the bottom of your lasercutter to position your plywood sheets (use minimum power/engraving rather than cutting mode so you don't damage your device)
