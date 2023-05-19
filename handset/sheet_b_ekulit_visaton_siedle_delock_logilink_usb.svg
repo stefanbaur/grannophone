@@ -28,8 +28,8 @@
      id="namedview1984"
      showgrid="false"
      inkscape:zoom="0.56996295"
-     inkscape:cx="341.25186"
-     inkscape:cy="351.09625"
+     inkscape:cx="4.3878586"
+     inkscape:cy="842.35625"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
      inkscape:window-maximized="1"
@@ -54,11 +54,6 @@
   </metadata>
   <defs
      id="defs178" />
-  <path
-     style="fill:none;fill-opacity:1;stroke:#ec008c;stroke-width:1.82753813;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-     d="M 476.94922 165.91992 L 476.94922 365.26367 L 491.8125 365.26367 L 491.8125 798.87305 L 476.94922 798.87305 L 476.94922 873.92773 L 675.4375 873.92773 L 675.4375 798.87305 L 660.57422 798.87305 L 660.57422 365.26367 L 675.4375 365.26367 L 675.4375 165.91992 L 476.94922 165.91992 z "
-     transform="scale(0.75)"
-     id="rect1797-6-5-3-9-7-5-5" />
   <path
      inkscape:connector-curvature="0"
      d="m 373.23565,137.13457 c 0,-1.56061 -1.26669,-2.82705 -2.82884,-2.82705 -1.56314,0 -2.82982,1.26644 -2.82982,2.82705 0,1.56062 1.26668,2.82609 2.82982,2.82609 1.56215,0 2.82884,-1.26547 2.82884,-2.82609"
@@ -817,4 +812,9 @@
        d="m 238.70752,618.98685 h 5.98916"
        inkscape:connector-curvature="0" />
   </g>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;fill-opacity:1;stroke:#ec008c;stroke-width:1.37065363;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     d="m 357.71192,124.43994 v 149.50782 h 11.14746 7.08691 V 599.1548 h -7.08691 -11.14746 v 56.29101 H 506.57813 V 599.1548 h -11.14746 -7.08692 V 273.94776 h 7.08692 11.14746 V 124.43994 Z"
+     id="rect1797-6-5-3-9-7-5-5" />
 </svg>
