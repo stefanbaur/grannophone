@@ -5,11 +5,35 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg1771"
    version="1.1"
    viewBox="0 0 210 297"
    height="297mm"
-   width="210mm">
+   width="210mm"
+   sodipodi:docname="sheet_4_veco.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="820"
+     id="namedview9902"
+     showgrid="false"
+     inkscape:zoom="1.6819304"
+     inkscape:cx="548.01136"
+     inkscape:cy="544.44329"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1771" />
   <defs
      id="defs1765" />
   <metadata
@@ -20,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -249,10 +273,10 @@
      style="stroke:#000000;clip-rule:evenodd;stroke-opacity:1;fill-rule:nonzero;stroke-miterlimit:10;stroke-width:0.23753138px;fill:none"
      d="m 58.963539,246.97703 v -2.11298" />
   <path
-     id="rect20470-36-2-8-6-6"
+     style="display:inline;fill:none;fill-opacity:1;stroke:#ec008c;stroke-width:0.73199999;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     d="M 564.77148 358.42578 L 564.76172 358.43555 L 563.89648 358.43555 L 557.74609 364.48828 L 547.16992 374.89844 L 542.89648 379.10352 L 542.89648 488.19922 L 547.16992 492.4043 L 557.74609 502.81445 L 563.89648 508.86719 L 564.76172 508.86719 L 564.77148 508.87695 L 564.77148 540.03906 L 530.5332 574.27734 L 519.88281 584.92773 L 505.37305 599.4375 L 446.15625 599.4375 L 446.15625 614.85547 L 446.15625 674.92188 L 526.22266 674.92188 L 526.22266 614.85547 L 564.77148 614.85547 L 564.76172 614.86523 L 563.89648 614.86523 L 557.74609 620.91797 L 547.16992 631.32812 L 542.89648 635.5332 L 542.89648 744.62891 L 547.16992 748.83398 L 557.74609 759.24414 L 563.89648 765.29688 L 564.76172 765.29688 L 564.77148 765.30664 L 582.20703 765.30664 L 599.64258 765.30664 L 599.65234 765.29688 L 600.51758 765.29688 L 606.66797 759.24414 L 617.24414 748.83398 L 621.51758 744.62891 L 621.51758 635.5332 L 617.24414 631.32812 L 606.66797 620.91797 L 600.51758 614.86523 L 599.65234 614.86523 L 599.64258 614.85547 L 599.64258 599.4375 L 599.64258 508.87695 L 599.65234 508.86719 L 600.51758 508.86719 L 606.66797 502.81445 L 617.24414 492.4043 L 621.51758 488.19922 L 621.51758 379.10352 L 617.24414 374.89844 L 606.66797 364.48828 L 600.51758 358.43555 L 599.65234 358.43555 L 599.64258 358.42578 L 582.20703 358.42578 L 564.77148 358.42578 z "
      transform="scale(0.26458333)"
-     d="M 564.77148 358.42578 L 558.91602 364.48047 L 548.8457 374.89062 L 544.77734 379.0957 L 544.77734 488.20703 L 548.8457 492.41211 L 558.91602 502.82227 L 564.77148 508.87695 L 564.77148 540.03906 L 530.5332 574.27734 L 519.88281 584.92773 L 505.37305 599.4375 L 446.15625 599.4375 L 446.15625 614.85547 L 446.15625 674.92188 L 526.22266 674.92188 L 526.22266 614.85547 L 564.77148 614.85547 L 558.91602 620.91016 L 548.8457 631.32031 L 544.77734 635.52734 L 544.77734 744.63672 L 548.8457 748.8418 L 558.91602 759.25195 L 564.77148 765.30664 L 582.20703 765.30664 L 599.64258 765.30664 L 605.49805 759.25195 L 615.56836 748.8418 L 619.63672 744.63672 L 619.63672 635.52734 L 615.56836 631.32031 L 605.49805 620.91016 L 599.64258 614.85547 L 599.64258 599.4375 L 599.64258 508.87695 L 605.49805 502.82227 L 615.56836 492.41211 L 619.63672 488.20703 L 619.63672 379.0957 L 615.56836 374.89062 L 605.49805 364.48047 L 599.64258 358.42578 L 582.20703 358.42578 L 564.77148 358.42578 z "
-     style="display:inline;fill:none;fill-opacity:1;stroke:#ec008c;stroke-width:0.73199999;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" />
+     id="rect20470-36-2-8-6-6" />
   <g
      style="display:inline"
      id="layer1" />
