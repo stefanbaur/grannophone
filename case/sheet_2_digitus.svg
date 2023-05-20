@@ -5,11 +5,35 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="595.44pt"
    height="842.16pt"
    viewBox="0 0 595.44 842.16"
    version="1.1"
-   id="svg2652">
+   id="svg2652"
+   sodipodi:docname="sheet_2_digitus.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="820"
+     id="namedview9760"
+     showgrid="false"
+     inkscape:zoom="1.6813908"
+     inkscape:cx="396.96"
+     inkscape:cy="442.49083"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2652" />
   <metadata
      id="metadata2656">
     <rdf:RDF>
@@ -18,7 +42,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1065,9 +1089,9 @@
      d="m 318.20581,418.15572 v 36.57073 120.11413 36.57072 H 461.30938 V 574.84058 454.72645 418.15572 Z"
      id="rect20625-3-4-4" />
   <path
-     transform="matrix(1.000000,0.000000,0.000000,1.000000,7.888001,14.657595)"
-     style="stroke-linejoin:miter;stroke-opacity:1;fill-rule:evenodd;stroke:#eb008a;stroke-linecap:butt;clip-rule:evenodd;stroke-miterlimit:10;stroke-width:0.99975002;stroke-dasharray:none;fill:none"
-     d="m 332.63073,432.58082 v 42.51953 h 19.83984 v 79.3672 h -19.83984 v 42.51954 h 59.87033 v -164.4065 z"
+     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#eb008a;stroke-width:1.33300006;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     d="M 454.02539 596.31836 L 454.02539 653.00977 L 480.47852 653.00977 L 480.47852 758.83398 L 454.02539 758.83398 L 454.02539 781.50977 L 472.92188 781.50977 L 472.92188 815.52539 L 533.85156 815.52539 L 533.85156 596.31836 L 454.02539 596.31836 z "
+     transform="scale(0.75000001)"
      id="path14648-6-6-1" />
   <path
      transform="matrix(1.000000,0.000000,0.000000,1.000000,7.888001,14.657595)"
