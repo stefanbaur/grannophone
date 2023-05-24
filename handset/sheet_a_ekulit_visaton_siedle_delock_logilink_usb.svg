@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg711"
    version="1.1"
    viewBox="0 0 595.68 842.16"
    height="842.16pt"
    width="595.68pt"
    sodipodi:docname="sheet_a_ekulit_visaton_siedle_delock_logilink_usb.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -23,19 +23,23 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
-     inkscape:window-height="820"
+     inkscape:window-width="1517"
+     inkscape:window-height="812"
      id="namedview1727"
      showgrid="false"
-     inkscape:zoom="0.80604935"
-     inkscape:cx="212.82524"
-     inkscape:cy="527.74813"
-     inkscape:window-x="-4"
-     inkscape:window-y="-4"
-     inkscape:window-maximized="1"
+     inkscape:zoom="0.56996296"
+     inkscape:cx="137.72825"
+     inkscape:cy="639.51524"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg711"
      showguides="true"
-     inkscape:guide-bbox="true" />
+     inkscape:guide-bbox="true"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt" />
   <metadata
      id="metadata715">
     <rdf:RDF>
@@ -1397,14 +1401,6 @@
      style="font-size:13.33333302px;-inkscape-font-specification:'monospace Bold';fill-opacity:1;font-weight:bold;letter-spacing:0px;line-height:1.25;word-spacing:0px;stroke:none;font-stretch:normal;font-variant:normal;font-family:monospace;font-style:normal;fill:#bbae00"
      id="path6803"
      transform="matrix(0.000000,-0.750000,0.750000,0.000000,178.399900,1.101731)" />
-  <rect
-     transform="matrix(1.000000,0.000000,0.000000,1.000000,43.718752,222.286067)"
-     y="180.28343"
-     x="44.345734"
-     height="149.50735"
-     width="149.50735"
-     id="rect1797-6-5-3-2-2"
-     style="stroke:#ec008c;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:10;stroke-width:0.72885895;fill:none" />
   <path
      inkscape:connector-curvature="0"
      transform="matrix(0.000000,-1.000000,1.000000,0.000000,-365.213680,640.292126)"
@@ -1719,13 +1715,6 @@
      id="rect1797-6-5-6-3-4-0-9-3"
      d="m 141.78557,419.98578 -29.7435,29.74392 v 42.06431 l 29.742,29.74394 h 42.06669 l 29.74349,-29.74394 V 449.7297 l -29.745,-29.74392 z"
      style="stroke:#fdb812;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:10;stroke-width:0.49507436;fill:none" />
-  <rect
-     style="fill:none;fill-opacity:1;stroke:#ec008c;stroke-width:0.72885895;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-     id="rect1797-6-5-3-2-2-7"
-     width="149.50735"
-     height="149.50735"
-     x="87.940758"
-     y="569.34491" />
   <path
      inkscape:connector-curvature="0"
      d="m 227.22032,664.14742 h -7.29004 v -1.44043 h 6.02051 v -3.08105 h 1.26953 z"
@@ -1961,4 +1950,18 @@
      style="fill:none;fill-opacity:1;stroke:#ec008c;stroke-width:1.37065363;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
      d="m 357.71192,124.43994 v 149.50782 h 11.14746 7.08691 V 599.1548 h -7.08691 -11.14746 v 56.29101 H 506.57813 V 599.1548 h -11.14746 -7.08692 V 273.94776 h 7.08692 11.14746 V 124.43994 Z"
      id="rect1797-6-5-3-9-7-5" />
+  <rect
+     y="402.56604"
+     x="89.478348"
+     height="149.51427"
+     width="146.67963"
+     id="rect1797-6-5-3-2-2-3"
+     style="fill:none;fill-opacity:1;stroke:#ec008c;stroke-width:0.72195;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" />
+  <rect
+     y="569.34143"
+     x="89.354622"
+     height="149.51427"
+     width="146.67963"
+     id="rect1797-6-5-3-2-2-3-6"
+     style="fill:none;fill-opacity:1;stroke:#ec008c;stroke-width:0.72195;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
