@@ -5,11 +5,35 @@
    viewBox="0 0 595.68 842.16"
    height="842.16pt"
    width="595.68pt"
+   sodipodi:docname="sheet_1_digitus.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview969"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="1.0847108"
+     inkscape:cx="396.41904"
+     inkscape:cy="880.87997"
+     inkscape:window-width="1600"
+     inkscape:window-height="820"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg711" />
   <metadata
      id="metadata715">
     <rdf:RDF>
@@ -1221,10 +1245,6 @@
      style="clip-rule:evenodd;fill:none;fill-rule:nonzero;stroke:#000000;stroke-width:0.673099px;stroke-miterlimit:10;stroke-opacity:1"
      id="path569-2-4-5-6-2-5-3-1-7-1-9-6-0" />
   <path
-     style="fill:none;stroke:#eb008a;stroke-width:1.17164779;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 358.1537,696.07746 h 81.96 v -45.22299 h -81.96 z m 0,0"
-     id="path2077-3" />
-  <path
      id="path417-2-5"
      style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#ec008c;stroke-width:0.997792;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:none;stroke-opacity:1"
      d="m 88.112197,124.44559 v 28.29053 27.55664 h 67.869143 v 0.73681 28.29053 0.73535 H 88.112197 v 55.84717 H 215.30751 V 124.44705 Z" />
@@ -1232,4 +1252,8 @@
      id="path417-2-5-6"
      style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#ec008c;stroke-width:0.997792;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;stroke-dasharray:none;stroke-opacity:1"
      d="m 88.092735,577.22733 v 28.29053 27.55664 h 67.869145 v 0.73681 28.29053 0.73535 H 88.092735 v 55.84717 H 215.28805 V 577.22879 Z" />
+  <path
+     style="fill:none;stroke:#eb008a;stroke-width:1.2107;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     d="m 355.33858,696.05793 h 87.59024 V 650.874 h -87.59024 z m 0,0"
+     id="path2077-3-3" />
 </svg>
