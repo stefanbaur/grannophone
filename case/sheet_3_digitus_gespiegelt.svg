@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg115"
    version="1.1"
    viewBox="0 0 595.68 842.16"
    height="842.16pt"
    width="595.68pt"
    sodipodi:docname="sheet_3_digitus_gespiegelt.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <sodipodi:namedview
      id="namedview2614"
      pagecolor="#ffffff"
@@ -26,8 +26,8 @@
      inkscape:document-units="pt"
      showgrid="false"
      inkscape:zoom="0.56818184"
-     inkscape:cx="174.23999"
-     inkscape:cy="562.31998"
+     inkscape:cx="173.35999"
+     inkscape:cy="564.07998"
      inkscape:window-width="1517"
      inkscape:window-height="812"
      inkscape:window-x="0"
@@ -191,19 +191,6 @@
      id="path231-8"
      style="display:inline;clip-rule:evenodd;fill:none;fill-rule:nonzero;stroke:#ec008c;stroke-width:0.997229px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10"
      d="m 318.82594,477.73133 -230.605432,10e-4 V 124.21041 H 506.38025 Z"
-     transform="matrix(-1 0 0 1 594.708 0)" />
-  <rect
-     transform="matrix(1 0 -0 -1 594.708 0)"
-     id="rect3"
-     style="display:inline;clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#fdb812;stroke-width:0.919005px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
-     height="22.666391"
-     width="127.14278"
-     y="-718.45282"
-     x="-319.58197" />
-  <path
-     style="display:inline;clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#fdb812;stroke-width:0.996075px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
-     d="m 107.14014,596.7832 v 28.33301 h 5.37158 v 0.0513 h 79.11035 v -28.33304 h -5.37011 v -0.0513 z"
-     id="rect775"
      transform="matrix(-1 0 0 1 594.708 0)" />
   <rect
      style="display:inline;fill:none;fill-opacity:1;stroke:#ec008c;stroke-width:0.75;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
