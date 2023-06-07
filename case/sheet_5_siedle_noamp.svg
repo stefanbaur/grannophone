@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg5150"
-   version="1.1"
-   viewBox="0 0 210 297"
+   width="210mm"
    height="297mm"
-   width="210mm">
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5150">
   <defs
      id="defs5144" />
   <metadata
@@ -25,28 +25,13 @@
     </rdf:RDF>
   </metadata>
   <path
-     style="fill:none;stroke:#211e1e;stroke-width:0.08800907;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 107.92443,192.15744 v 2.82215"
-     id="path1025-5" />
-  <path
-     style="fill:none;stroke:#211e1e;stroke-width:0.08800907;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 109.33584,193.56783 h -2.82282"
-     id="path1027-6" />
-  <path
-     style="fill:none;stroke:#211e1e;stroke-width:0.08800907;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 107.92443,142.37644 v 2.82216"
-     id="path1025" />
-  <path
-     style="fill:none;stroke:#211e1e;stroke-width:0.08800907;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 109.33584,143.78683 h -2.82282"
-     id="path1027" />
-  <path
      style="fill:none;stroke:#211e1e;stroke-width:0.06760765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
      d="M 41.977598,253.48493 H 30.936354 V 43.806473 h 11.041244"
      id="path110" />
   <path
-     style="fill:none;stroke:#eb008a;stroke-width:0.35206211;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="m 120.82291,170.60837 v -3.94145 l 9.97664,-10.01939 h 1.99478 v -25.95579 h -1.99478 l -9.97664,-9.94786 v -2.03194 H 94.88529 v 2.03194 l -9.976646,9.94786 h -1.994776 v 25.95579 h 1.994776 l 9.976646,10.01939 v 3.94145 l -9.976646,9.94785 v 0.0509 h -1.994776 v 25.95578 h 2.045642 l 9.92578,9.96849 v 2.01132 h 25.93762 v -2.01132 l 9.92578,-9.96849 h 2.04564 v -25.95578 h -1.99478 v -0.0509 z m 0,0"
+     style="fill:none;stroke:#eb008a;stroke-width:1.33099997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     d="M 358.62109 446.78711 L 358.62109 454.4668 L 320.91406 492.06445 L 313.375 492.06445 L 313.375 590.16406 L 320.91406 590.16406 L 358.62109 628.0332 L 358.62109 646.70898 L 320.91406 684.30859 L 320.91406 684.5 L 313.375 684.5 L 313.375 782.60156 L 321.10742 782.60156 L 358.62109 820.27734 L 358.62109 827.87891 L 456.6543 827.87891 L 456.6543 820.27734 L 494.16797 782.60156 L 501.90039 782.60156 L 501.90039 684.5 L 494.36133 684.5 L 494.36133 684.30859 L 456.6543 646.70898 L 456.6543 628.0332 L 494.36133 590.16406 L 501.90039 590.16406 L 501.90039 492.06445 L 494.36133 492.06445 L 456.6543 454.4668 L 456.6543 446.78711 L 358.62109 446.78711 z "
+     transform="scale(0.26458333)"
      id="path296" />
   <path
      id="path20065"
@@ -374,4 +359,24 @@
      id="path569-2-4-8-1-1-9"
      style="stroke:#000000;clip-rule:evenodd;stroke-opacity:1;fill-rule:nonzero;stroke-miterlimit:10;stroke-width:0.23753138px;fill:none"
      d="m 58.963539,246.97703 v -2.11298" />
+  <path
+     id="path1025-5"
+     d="m 55.950948,146.75718 v 2.82215"
+     style="stroke-linejoin:miter;stroke:#211e1e;stroke-linecap:butt;stroke-miterlimit:10;stroke-opacity:1;stroke-width:0.08800907;fill:none"
+     transform="matrix(1.000000,0.000000,0.000000,1.000000,51.903192,-4.998386)" />
+  <path
+     id="path1027-6"
+     d="m 57.362358,148.16757 h -2.82282"
+     style="stroke-linejoin:miter;stroke:#211e1e;stroke-linecap:butt;stroke-miterlimit:10;stroke-opacity:1;stroke-width:0.08800907;fill:none"
+     transform="matrix(1.000000,0.000000,0.000000,1.000000,51.903192,-4.998386)" />
+  <path
+     id="path1025"
+     d="m 67.630569,156.32334 v 2.82216"
+     style="stroke-linejoin:miter;stroke:#211e1e;stroke-linecap:butt;stroke-miterlimit:10;stroke-opacity:1;stroke-width:0.08800907;fill:none"
+     transform="matrix(1.000000,0.000000,0.000000,1.000000,40.223571,36.350838)" />
+  <path
+     id="path1027"
+     d="m 69.041979,157.73373 h -2.82282"
+     style="stroke-linejoin:miter;stroke:#211e1e;stroke-linecap:butt;stroke-miterlimit:10;stroke-opacity:1;stroke-width:0.08800907;fill:none"
+     transform="matrix(1.000000,0.000000,0.000000,1.000000,40.223571,36.350838)" />
 </svg>
