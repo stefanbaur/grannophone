@@ -5,35 +5,11 @@
    viewBox="0 0 210 297"
    height="297mm"
    width="210mm"
-   sodipodi:docname="sheet_7.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <sodipodi:namedview
-     id="namedview561"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     showgrid="false"
-     inkscape:zoom="2.1701178"
-     inkscape:cx="399.28707"
-     inkscape:cy="407.12075"
-     inkscape:window-width="1600"
-     inkscape:window-height="820"
-     inkscape:window-x="-4"
-     inkscape:window-y="-4"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg1266" />
   <defs
      id="defs1260" />
   <metadata
@@ -1226,7 +1202,7 @@
      id="rect6803-2"
      width="15.999998"
      height="15.999998"
-     x="134.56029"
+     x="132.56029"
      y="106.6333" />
   <path
      d="m 98.899902,133.22926 q -0.282498,0 -0.394462,0.0724 -0.111967,0.0724 -0.111967,0.24805 0,0.13091 0.07751,0.20843 0.07751,0.0775 0.210151,0.0775 0.199816,0 0.31006,-0.14987 0.110241,-0.15158 0.110241,-0.42202 v -0.0344 z m 0.702799,-0.19464 v 1.1007 H 99.10144 V 133.92 q -0.09129,0.12747 -0.234264,0.19637 -0.142973,0.0689 -0.315228,0.0689 -0.329004,0 -0.513318,-0.17397 -0.182589,-0.17398 -0.182589,-0.48576 0,-0.33762 0.218763,-0.49782 0.218765,-0.16191 0.67696,-0.16191 h 0.349676 v -0.0844 q 0,-0.1223 -0.08957,-0.18431 -0.08785,-0.0637 -0.260104,-0.0637 -0.180869,0 -0.351401,0.0465 -0.16881,0.0448 -0.353118,0.1447 v -0.43064 q 0.167087,-0.0689 0.339338,-0.10163 0.172255,-0.0327 0.365181,-0.0327 0.470254,0 0.659736,0.1912 0.191198,0.1912 0.191198,0.68384 z"
