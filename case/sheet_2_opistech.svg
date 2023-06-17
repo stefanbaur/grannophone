@@ -5,11 +5,35 @@
    viewBox="0 0 595.44 842.16"
    version="1.1"
    id="svg2652"
+   sodipodi:docname="sheet_2_opistech.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview15796"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="1.5541639"
+     inkscape:cx="392.17227"
+     inkscape:cy="676.56956"
+     inkscape:window-width="1600"
+     inkscape:window-height="820"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2652" />
   <metadata
      id="metadata2656">
     <rdf:RDF>
@@ -623,11 +647,6 @@
      id="path22438"
      transform="matrix(0.000000,-0.750000,0.750000,0.000000,491.542120,-65.995170)"
      style="font-size:13.33333302px;-inkscape-font-specification:'monospace Bold';fill-opacity:1;font-weight:bold;letter-spacing:0px;line-height:1.25;word-spacing:0px;stroke:none;font-stretch:normal;font-variant:normal;font-family:monospace;font-style:normal;fill:#000000" />
-  <path
-     id="path14648-6-6-1"
-     transform="matrix(0.750000,0.000000,0.000000,0.750000,4.149427,-14.657589)"
-     d="m 454.02539,596.31836 v 56.69141 h 18.89649 v 105.82421 h -18.89649 v 22.67579 h 18.89649 v 34.01562 h 60.92968 58.69336 V 596.31836 h -58.69336 -60.92968 z"
-     style="stroke-linejoin:miter;stroke-opacity:1;fill-rule:evenodd;stroke:#eb008a;stroke-linecap:butt;clip-rule:evenodd;stroke-miterlimit:10;stroke-width:1.33300006;stroke-dasharray:none;fill:none" />
   <path
      id="path16123-1-0-8"
      style="stroke-linejoin:miter;font-size:medium;-inkscape-font-specification:'monospace Bold';fill-opacity:1;letter-spacing:0px;word-spacing:0px;stroke:none;stroke-linecap:butt;clip-rule:evenodd;font-family:monospace;font-style:normal;fill:#00aeef;stroke-width:0.75px;stroke-opacity:1;fill-rule:evenodd;font-stretch:normal;stroke-miterlimit:10;font-variant:normal;font-weight:bold;line-height:125%"
@@ -1824,4 +1843,8 @@
      style="clip-rule:evenodd;fill-rule:nonzero;stroke-miterlimit:10;fill:none;stroke:#000000;stroke-width:0.897468px;stroke-opacity:1"
      d="m -114.22487,1005.4542 v 7.9866"
      transform="matrix(0.75 0 0 0.75 256.833 -66.2521)" />
+  <path
+     id="path14648-6-6-1-5"
+     style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#eb008a;stroke-width:0.99975;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+     d="m 344.66847,432.58118 v 42.51856 h 14.17236 v 79.36816 h -14.17236 v 17.00684 h 5.67042 8.50194 5.67188 v 25.51171 h 40.02539 44.02002 V 432.58118 H 404.5381 358.84083 Z" />
 </svg>

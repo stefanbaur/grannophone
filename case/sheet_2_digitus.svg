@@ -25,9 +25,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="1.6070609"
-     inkscape:cx="215.61099"
-     inkscape:cy="830.39789"
+     inkscape:zoom="2.2727273"
+     inkscape:cx="563.19999"
+     inkscape:cy="723.57999"
      inkscape:window-width="1517"
      inkscape:window-height="812"
      inkscape:window-x="0"
@@ -502,9 +502,9 @@
      transform="matrix(0.000000,-0.750000,0.750000,0.000000,377.109040,-60.088270)" />
   <path
      id="path14648-6-6-1"
-     transform="matrix(0.750000,0.000000,0.000000,0.750000,5.181724,0.000000)"
-     d="m 454.02539,596.31836 v 56.69141 h 18.89649 v 105.82421 h -18.89649 v 22.67579 h 18.89649 v 34.01562 h 60.92968 58.69336 V 596.31836 h -58.69336 -60.92968 z"
-     style="stroke-linejoin:miter;stroke-opacity:1;fill-rule:evenodd;stroke:#eb008a;stroke-linecap:butt;clip-rule:evenodd;stroke-miterlimit:10;stroke-width:1.33300006;stroke-dasharray:none;fill:none" />
+     style="stroke-linejoin:miter;stroke-opacity:1;fill-rule:evenodd;stroke:#eb008a;stroke-linecap:butt;clip-rule:evenodd;stroke-miterlimit:10;stroke-width:1.33300006;stroke-dasharray:none;fill:none"
+     d="M 454.02463 596.31836 L 454.02463 653.00977 L 472.92111 653.00977 L 472.92111 758.83398 L 454.02463 758.83398 L 454.02463 781.50977 L 461.58518 781.50977 L 472.92111 781.50977 L 480.48361 781.50977 L 480.48361 815.52539 L 533.8508 815.52539 L 592.54416 815.52539 L 592.54416 596.31836 L 533.8508 596.31836 L 472.92111 596.31836 L 454.02463 596.31836 z "
+     transform="matrix(0.750000,0.000000,0.000000,0.750000,5.181724,0.000000)" />
   <path
      id="path16123-1-0-8"
      style="stroke-linejoin:miter;font-size:medium;-inkscape-font-specification:'monospace Bold';fill-opacity:1;letter-spacing:0px;word-spacing:0px;stroke:none;stroke-linecap:butt;clip-rule:evenodd;stroke-width:0.75px;font-style:normal;fill:#00aeef;font-family:monospace;stroke-opacity:1;fill-rule:evenodd;font-stretch:normal;stroke-miterlimit:10;font-variant:normal;font-weight:bold;line-height:125%"
