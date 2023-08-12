@@ -31,22 +31,31 @@ At present, the base model consists of the following sheets:
 
 
 - base plates to accommodate two Visaton K50 WP speakers, connected directly to the SBC (or via amplifier, if you find one that works with them)
-	- sheet_4_visaton.pdf
+	- sheet_4_visaton_waveshare.pdf
 	- sheet_5_visaton.pdf - place this sheet on top of sheet 4, it is exactly the same, except for missing the cutout for the audio plug that's on sheet_4_visaton.pdf (and you could actually cut that out of sheet_5_visaton.pdf as well, it wouldn't matter)
-	- sheet_6_visaton.pdf - place this sheet on top of sheets 4 and 5, firmly secure all of them by wrapping them with masking tape, and start drilling/sawing/filing - this will help reduce splintering, and the affected areas on sheets 4 and 5 will be cut out later on anyway.
+	- sheet_6_visaton_waveshare.pdf - place this sheet on top of sheets 4 and 5, firmly secure all of them by wrapping them with masking tape, and start drilling/sawing/filing - this will help reduce splintering, and the affected areas on sheets 4 and 5 will be cut out later on anyway.
 
 - base plates to accommodate two VECO 40KS04PN-1 speakers, connected to a DAC/amplifier hat (e.g. HiFiBerry MiniAmp, or WaveShare WM8960) 
 	- sheet_4_veco.pdf - place this sheet on top of sheet 5, as sheets 4 and 6 need the same octagonal cutouts (sheet 4 has some connections between them, though, so you will need to work on that separately)
 	- sheet_5_veco.pdf - this sheet has rectangular cutouts and is thus the least critical of them all
 	- sheet_6_veco.pdf - place this sheet on top of sheets 4 and 5, firmly secure all of them by wrapping them with masking tape, and start drilling/sawing/filing - this will help reduce splintering, and the affected areas on sheets 4 and 5 will be cut out later on anyway.
 
+- base plates to accommodate two WaveShare WM8960 speakers, connected to the WaveShare amplifier hat
+	- sheet_4_visaton_waveshare.pdf
+	- sheet_5_waveshare.pdf - place this sheet on top of sheet 4, it is exactly the same, except for missing the cutout for the audio plug that's on sheet_4_visaton.pdf (and you could actually cut that out of sheet_5_visaton.pdf as well, it wouldn't matter)
+	- sheet_6_visaton_waveshare.pdf - place this sheet on top of sheets 4 and 5, firmly secure all of them by wrapping them with masking tape, and start drilling/sawing/filing - this will help reduce splintering, and the affected areas on sheets 4 and 5 will be cut out later on anyway.
+
 - currently generic parts
 	- sheet_7.pdf
 	- sheet_8.pdf
 
-- backplates for Digitus and OpisTech variants, including optional cutouts for Visaton SC 5.9 ND speakers (these require an amplifier)
+- backplates for Digitus and OpisTech handset variants
 	- sheet_9_digitus.pdf
+	- sheet_9_digitus_visaton.pdf - same as above, but with cutouts for Visaton SC 5.9 ND speakers (these require a DAC/amplifier hat/amplifier)
+	- sheet_9_digitus_waveshare.pdf - same as above, but with cutouts for WaveShare WM8960 speakers, connected to the WaveShare amplifier hat
 	- sheet_9_opistech.pdf
+	- sheet_9_opistech_visaton.pdf - same as above, but with cutouts for Visaton SC 5.9 ND speakers (these require a DAC/amplifier hat/amplifier)
+	- sheet_9_opistech_waveshare.pdf - same as above, but with cutouts for WaveShare WM8960 speakers, connected to the WaveShare amplifier hat
 
 - optional templates
 	- a3_a5_position_marker.pdf - this draws little boxes in each corner of four DIN A5 sheets arranged in DIN A3 landscape mode - useful if you want to use masking tape on the bottom of your lasercutter to position your plywood sheets (use minimum power/engraving rather than cutting mode so you don't damage your device)
