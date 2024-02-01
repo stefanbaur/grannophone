@@ -48,6 +48,7 @@ At present, the base model consists of the following sheets:
 - currently generic parts
 	- sheet_7.pdf
 	- sheet_8.pdf
+	- sheet_8_buttons.pdf - has an asymmetric display position with room for optional cutouts for 2-3 buttons (up/select/down)
 
 - backplates for Digitus and OpisTech handset variants
 	- sheet_9_digitus.pdf
