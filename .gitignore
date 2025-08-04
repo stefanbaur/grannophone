@@ -1,0 +1,5 @@
+raspi_to_linphone/voip/__pycache__/
+raspi_to_linphone/my-venv/
+raspi_to_linphone/config/.env
+.idea
+raspi_to_linphone/images

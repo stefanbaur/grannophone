@@ -1,0 +1,11 @@
+baresipy
+python-dotenv
+PyQt5
+pip
+certifi
+pexpect
+ptyprocess
+urllib3
+opentone
+pydub
+idna
