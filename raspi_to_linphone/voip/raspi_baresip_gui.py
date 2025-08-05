@@ -1,46 +1,52 @@
 import queue
-import tkinter as tk
 from .raspi_baresip import RaspiBaresip
-from time import sleep
-from dotenv import load_dotenv, find_dotenv
+from dotenv import load_dotenv
 import os
-from baresipy.utils.log import LOG
-import sys
-from PyQt5.QtWidgets import QApplication, QLabel, QMainWindow
-from PyQt5.QtCore import QObject, pyqtSignal, QTimer, Qt
+from PyQt5.QtWidgets import QLabel,QVBoxLayout, QMainWindow, QPushButton, QWidget
+from PyQt5.QtCore import QTimer, Qt, QSize
+from PyQt5.QtGui import QPixmap, QIcon
 
-# --- GUI window that reacts to call events ---
+
 class CallWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Incoming Call")
-        self.label = QLabel("Idle", parent=self)
-        self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.setCentralWidget(self.label)
-        self.resize(400, 200)
+        self.setWindowTitle("Neuer Anruf")
+        self.setStyleSheet("background-color: #f0fff0;")
+        self.showFullScreen()
         self.hide()  # Start hidden
-        self.call_queue = queue.Queue() # Queue to share information between threads.
+        self.call_queue = queue.Queue()  # Queue to share information between threads.
 
         # Load .env variables and instantiate our BareSip instance.
-        load_dotenv("raspi_to_linphone/config/.env", override=True)
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        env_path = os.path.abspath(os.path.join(base_dir, '../config/.env'))
+        load_dotenv(env_path, override=True)
         user = os.getenv("SIP_USER")
         pwd = os.getenv("SIP_PASSWORD")
         gateway = os.getenv("SIP_SERVER")
         allowed_callers = os.getenv("ALLOWED_CALLERS")
-        baresip = RaspiBaresip(user=user, pwd=pwd, gateway=gateway, allowed_callers=allowed_callers, event_queue=self.call_queue)
+        self.baresip = RaspiBaresip(user=user, pwd=pwd, gateway=gateway, allowed_callers=allowed_callers,
+                               event_queue=self.call_queue)
+        # Start polling.
+        self.poll_timer = QTimer(self)
+        self.poll_timer.setInterval(1000)
+        self.poll_timer.timeout.connect(self._check_queue)
+        self.poll_timer.start()
 
+    def _check_queue(self):
+        """
+        This method checks the buffer both threads use for call actions.
+        """
+        try:
+            while True:
 
-    def check_queue(self):
-        """
-        This method checks the buffer both threads use for an incoming call.
-        :return:
-        """
-        while True:
-            if self.call_queue.empty():
-                sleep(5)
-            else:
-                caller_name = self.call_queue.get()
-                self.show_incoming(caller_name)
+                # Check if any event was put into the buffer by baresip.
+                buffer = self.call_queue.get(timeout=1)
+                if buffer["event"] == "incoming_call":
+                    self.show_incoming(buffer["caller"])
+                elif buffer["event"] == "end_call":
+                    self.show_ended()
+        except queue.Empty:
+            pass
 
 
     def show_incoming(self, caller: str):
@@ -49,12 +55,42 @@ class CallWindow(QMainWindow):
         :param caller:
         :return:
         """
-        self.setWindowTitle(f"Call from {caller}")
+        label = QLabel(f"Anruf von {caller}")
+        label.setAlignment(Qt.AlignHCenter | Qt.AlignTop)
+        label.setStyleSheet("font-size: 40px; font-weight: bold; margin-top: 30px;")
+
+        # Check if any picture of the caller exists in the images folder.
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        image_path = os.path.abspath(os.path.join(base_dir, f'../images/{caller}.jpg'))
+        image_label = QLabel()
+        if os.path.exists(image_path):
+            image_label.setPixmap(QPixmap(image_path))
+            image_label.setAlignment(Qt.AlignCenter)
+
+        # Accept call button + icons.
+        icon_path = os.path.abspath(os.path.join(base_dir, '../icons/telephone-fill.svg'))
+        icon = QIcon(icon_path)
+        button = QPushButton("  Anruf annehmen")
+        button.setIcon(icon)
+        button.setIconSize(QSize(35, 35))
+        button.setFixedSize(QSize(600, 200))
+        button.setStyleSheet("font-size:40px; background-color: green; margin-top: 30px; margin-bottom: 30px;")
+        button.clicked.connect(self.baresip.accept_call)
+
+        # Stack components vertically.
+        layout = QVBoxLayout()
+        layout.addWidget(label)
+        layout.addWidget(image_label)
+        layout.addWidget(button, alignment=Qt.AlignHCenter)
+
+        # Add layout to widget.
+        widget = QWidget()
+        widget.setLayout(layout)
+        self.setCentralWidget(widget)
         self.show()
 
     def show_established(self, caller: str):
-        self.label.setText(f"Call with {caller} established")
+        self.label.setText(f"Anruf mit {caller}")
 
-    def show_ended(self, reason: str):
-        self.label.setText(f"Call ended ({reason})")
-        QTimer.singleShot(1500, self.hide)  # auto-hide after 1.5s
+    def show_ended(self):
+        self.hide()
