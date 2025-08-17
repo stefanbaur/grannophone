@@ -4,8 +4,7 @@ import sys
 
 def main():
     """
-     Starts our main thread: the call GUI.
-    :return:
+     Starts our main thread: the call-GUI.
     """
     app = QApplication(sys.argv)
     window = CallWindow()

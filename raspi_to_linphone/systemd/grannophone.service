@@ -1,1 +1,15 @@
-# Autostart our Python script on boot
+[Unit]
+Description=Grannophone Script as a Service
+After=network-online.target sound.target local-fs.target
+Wants=network-online.target sound.target
+
+[Service]
+User=your_username
+WorkingDirectory=/home/pi/grannophone/raspi_to_linphone
+ExecStart=/home/pi/grannophone/raspi_to_linphonebin/python /home/pi/grannophone/raspi_to_linphone/main.py
+Environment="PATH=/home/pi/grannophone/raspi_to_linphone/bin:/usr/local/bin:/usr/bin:/bin"
+Environment="PYTHONUNBUFFERED=1"
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

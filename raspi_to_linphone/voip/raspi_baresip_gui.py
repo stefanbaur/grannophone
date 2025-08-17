@@ -3,7 +3,7 @@ from .raspi_baresip import RaspiBaresip
 from dotenv import load_dotenv
 import os
 from PyQt5.QtWidgets import QLabel,QVBoxLayout, QMainWindow, QPushButton, QWidget
-from PyQt5.QtCore import QTimer, Qt, QSize
+from PyQt5.QtCore import QTimer, Qt, QSize, QRect
 from PyQt5.QtGui import QPixmap, QIcon
 
 
@@ -12,7 +12,11 @@ class CallWindow(QMainWindow):
         super().__init__()
         self.setWindowTitle("Neuer Anruf")
         self.setStyleSheet("background-color: #f0fff0;")
-        self.showFullScreen()
+        width, height = 800, 480
+
+        # Force fullscreen-like behavior
+        self.setGeometry(QRect(0, 0, width, height))
+        self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
         self.hide()  # Start hidden
         self.call_queue = queue.Queue()  # Queue to share information between threads.
 
@@ -51,9 +55,8 @@ class CallWindow(QMainWindow):
 
     def show_incoming(self, caller: str):
         """
-        Adjust call window when a call is incoming.
-        :param caller:
-        :return:
+        Adjust call window when a call is incoming and provide accept-call-button.
+        :param caller: The name of the caller.
         """
         label = QLabel(f"Anruf von {caller}")
         label.setAlignment(Qt.AlignHCenter | Qt.AlignTop)
@@ -64,7 +67,9 @@ class CallWindow(QMainWindow):
         image_path = os.path.abspath(os.path.join(base_dir, f'../images/{caller}.jpg'))
         image_label = QLabel()
         if os.path.exists(image_path):
-            image_label.setPixmap(QPixmap(image_path))
+            pixmap = QPixmap(image_path)
+            scaled_pixmap = pixmap.scaled(400, 240, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+            image_label.setPixmap(scaled_pixmap)
             image_label.setAlignment(Qt.AlignCenter)
 
         # Accept call button + icons.
@@ -73,7 +78,7 @@ class CallWindow(QMainWindow):
         button = QPushButton("  Anruf annehmen")
         button.setIcon(icon)
         button.setIconSize(QSize(35, 35))
-        button.setFixedSize(QSize(600, 200))
+        button.setFixedSize(QSize(600, 150))
         button.setStyleSheet("font-size:40px; background-color: green; margin-top: 30px; margin-bottom: 30px;")
         button.clicked.connect(self.baresip.accept_call)
 
