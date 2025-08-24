@@ -18,6 +18,7 @@ sudo apt install python3-pip
 sudo apt install baresip
 sudo apt install ffmpeg
 sudo apt install python3-pyqt5
+sudo apt install libcamera-v4l2 libcamera-tools
 ```
 
 If ~/.baresip/accounts doesn't exist, run baresip once via command line using the command ```baresip```.
@@ -42,6 +43,12 @@ source new-venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
-5. TODOs
-- Camera doesn't work
+5. Run python script (within the active virtual environment)
+```
+libcamerify python3 main.py 
+```
+
+6. TODOs
+- wrap all the steps above in a script
+- use full desktop app?: https://forums.raspberrypi.com/viewtopic.php?t=325477
 

@@ -78,7 +78,7 @@ class CallWindow(QMainWindow):
         button = QPushButton("  Anruf annehmen")
         button.setIcon(icon)
         button.setIconSize(QSize(35, 35))
-        button.setFixedSize(QSize(600, 150))
+        button.setFixedSize(QSize(400, 150))
         button.setStyleSheet("font-size:40px; background-color: green; margin-top: 30px; margin-bottom: 30px;")
         button.clicked.connect(self.baresip.accept_call)
 
