@@ -117,6 +117,7 @@ echo ","  | sudo sfdisk -N 8 $BASEDEV
 while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # write rootfs contents into proper partition
+test -c ${BASEDEV}5 && \
 sudo dd if=/tmp/rootfs of=${BASEDEV}5 bs=4096k status=progress
 # delete temporary rootfs and partition table copy
 sudo rm -f /tmp/rootfs /tmp/sfdisk.$(basename $BASEDEV)
