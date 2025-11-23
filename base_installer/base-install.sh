@@ -56,6 +56,8 @@ while ! (test -L /dev/disk/by-label/bootfs && \
 done
 
 # clone rootfs into a file, so we can safely repartition the media
+# but do not clone again if file already exists
+[ -f /tmp/rootfs ] || \
 sudo dd if=/dev/disk/by-label/rootfs of=/tmp/rootfs bs=4096k \
         status=progress
 
