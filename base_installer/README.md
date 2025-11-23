@@ -3,7 +3,7 @@
   - A Debian Bookworm system (or newer) - derivatives like Devuan and Ubuntu should work, too
   - A microSD card or USB flash memory stick, or a Compute Module with onboard eMMC flash, at least 32 GB in size
   - Approximately 15 GB free space in /tmp
-  - The rpi-imager tool (which can be downloaded from https://downloads.raspberrypi.com/imager/imager_latest_amd64.deb - install it via ''sudo apt install ./imager_latest_amd64.deb afterwards - or installed directly via apt install rpi-image, or via flatpack/snap, depending on your distribution)
+  - The rpi-imager tool (which can be downloaded from https://downloads.raspberrypi.com/imager/imager_latest_amd64.deb - install it via ''sudo apt install ./rpi-imager-amd64*.deb afterwards - or installed directly via apt install rpi-image, or via flatpack/snap, depending on your distribution)
   - ONLY when using a Compute Module with onboard eMMC flash, please follow the additional directions from: https://www.jeffgeerling.com/blog/2020/how-flash-raspberry-pi-os-compute-module-4-emmc-usbboot>
     - Put the switch/jumper on your CM baseboard in the proper position to flash the eMMC
     - Connect the CM to the CM baseboard, if you have not already done so
