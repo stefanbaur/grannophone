@@ -118,8 +118,8 @@ while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # write rootfs contents into proper partition
 sudo dd if=/tmp/rootfs of=${BASEDEV}5 bs=4096k status=progress
-# delete temporary rootfs copy
-sudo rm /tmp/rootfs
+# delete temporary rootfs and partition table copy
+sudo rm -f /tmp/rootfs /tmp/sfdisk.$(basename $BASEDEV)
 
 # make sure everything is written to disk/media
 sudo sync
