@@ -58,38 +58,31 @@ done
 # clone rootfs into a file, so we can safely repartition the media
 sudo dd if=/dev/disk/by-label/rootfs of=/tmp/rootfs bs=4096k \
         status=progress
+
+BASEDEV=$(realpath /dev/disk/by-label/bootfs | sed -e 's/[0-9]$//')
+if echo -n "$BASEDEV" | grep -q "mmc" ; then
+	BASEDEV=$(echo -n "$BASEDEV" | sed -e 's/p$//')
+fi
+
 # block first sectors with a fake partition
-echo ",,c"  | sudo sfdisk -N 2 $(realpath \
-     /dev/disk/by-label/bootfs | tr -d "[0-9]")
+echo ",,c"  | sudo sfdisk -N 2 $BASEDEV
 # create another fale partition as placeholder for ENV2/ENV3
-echo ",1G,c"  | sudo sfdisk -N 3 $(realpath \
-     /dev/disk/by-label/bootfs | tr -d "[0-9]")
+echo ",1G,c"  | sudo sfdisk -N 3 $BASEDEV
 # create extended partition
-echo ",,Ex"  | sudo sfdisk -N 4 $(realpath \
-     /dev/disk/by-label/bootfs | tr -d "[0-9]")
+echo ",,Ex"  | sudo sfdisk -N 4 $BASEDEV
 # delete fake partitions
-sudo sfdisk --delete $(realpath \
-     /dev/disk/by-label/bootfs | tr -d "[0-9]") 3
-sudo sfdisk --delete $(realpath \
-     /dev/disk/by-label/bootfs | tr -d "[0-9]") 2
+sudo sfdisk --delete $BASEDEV 3
+sudo sfdisk --delete $BASEDEV 2
 # create actual permanent partitions
-echo ",512M,c"  | sudo sfdisk -N 2 $(realpath \
-     /dev/disk/by-label/bootfs | tr -d "[0-9]")
-echo ",512M,c"  | sudo sfdisk -N 3 $(realpath \
-     /dev/disk/by-label/bootfs | tr -d "[0-9]")
-echo ",8G"  | sudo sfdisk -N 5 $(realpath \
-     /dev/disk/by-label/bootfs | tr -d "[0-9]")
-echo ",8G"  | sudo sfdisk -N 6 $(realpath \
-     /dev/disk/by-label/bootfs | tr -d "[0-9]")
-echo ",8G"  | sudo sfdisk -N 7 $(realpath \
-     /dev/disk/by-label/bootfs | tr -d "[0-9]")
-echo ","  | sudo sfdisk -N 8 $(realpath \
-     /dev/disk/by-label/bootfs | tr -d "[0-9]")
+echo ",512M,c"  | sudo sfdisk -N 2 $BASEDEV
+echo ",512M,c"  | sudo sfdisk -N 3 $BASEDEV
+echo ",8G"  | sudo sfdisk -N 5 $BASEDEV
+echo ",8G"  | sudo sfdisk -N 6 $BASEDEV
+echo ",8G"  | sudo sfdisk -N 7 $BASEDEV
+echo ","  | sudo sfdisk -N 8 $BASEDEV
 
 # write rootfs contents into proper partition
-sudo dd if=/tmp/rootfs of=$(realpath \
-     /dev/disk/by-label/bootfs | tr -d \
-     "[0-9]")5 bs=4096k status=progress
+sudo dd if=/tmp/rootfs of=${BASEDEV}5 bs=4096k status=progress
 # delete temporary rootfs copy
 sudo rm /tm/rootfs
 # make sure everything is written to disk/media
@@ -248,12 +241,9 @@ echo "dhcp-option=6" | sudo tee -a /media/etc/dnsmasq.q/usb0 >/dev/null
 sudo umount -R /media
 
 # we start by cloning ENV1 rootfs to ENV2 rootfs
-sudo dd if=$(realpath /dev/disk/by-label/bootfs | tr -d "[0-9]")5 \
-        of=$(realpath /dev/disk/by-label/bootfs | tr -d "[0-9]")6 \
-        bs=4096k status=progress
+sudo dd if=${BASEDEV}5 of=${BASEDEV}6 bs=4096k status=progress
 # to make sure we can tell our clones apart, we set a new LABEL and UUID
-sudo tune2fs -L rootfs2 -U $(uuid) $(realpath \
-     /dev/disk/by-label/bootfs | tr -d "[0-9]")6
+sudo tune2fs -L rootfs2 -U $(uuid) ${BASEDEV}6
 
 # re-read partition table
 sudo partprobe
@@ -268,12 +258,9 @@ sudo sed -e 's/-01 /-02 /g' -e 's/-05 /-06 /g' -i \
 sudo umount -R /media
 
 # now we are cloning ENV1 rootfs to ENV3 rootfs
-sudo dd if=$(realpath /dev/disk/by-label/bootfs | tr -d "[0-9]")5 \
-        of=$(realpath /dev/disk/by-label/bootfs | tr -d "[0-9]")7 \
-        bs=4096k status=progress
+sudo dd if=${BASEDEV}5 of=${BASEDEV}7 bs=4096k status=progress
 # to make sure we can tell our clones apart, we set a new LABEL and UUID
-sudo tune2fs -L rootfs3 -U $(uuid) $(realpath \
-     /dev/disk/by-label/bootfs | tr -d "[0-9]")7
+sudo tune2fs -L rootfs3 -U $(uuid) ${BASEDEV}7
 
 # re-read partition table
 sudo partprobe
@@ -288,19 +275,15 @@ sudo sed -e 's/-01 /-03 /g'-e 's/-05 /-07 /g' -i \
 sudo umount -R /media
 
 # now let's create the file system on the data partition
-sudo mkfs.ext4 -L data $(realpath /dev/disk/by-label/bootfs | tr -d \
-     "[0-9]")8
+sudo mkfs.ext4 -L data ${BASEDEV}8
 
 # re-read partition table
 sudo partprobe
 
 # next step is cloning ENV1 bootfs to ENV2 bootfs
-sudo dd if=$(realpath /dev/disk/by-label/rootfs | tr -d "[0-9]")1 \
-        of=$(realpath /dev/disk/by-label/rootfs | tr -d "[0-9]")2 \
-        bs=4096k status=progress
+sudo dd if=${BASEDEV}1 of=${BASEDEV}2 bs=4096k status=progress
 # to make sure we can tell our clones apart, we set a new LABEL
-sudo fatlabel $(realpath /dev/disk/by-label/rootfs | tr -d "[0-9]")2 \
-     bootfs2
+sudo fatlabel ${BASEDEV}2 bootfs2
 
 # re-read partition table
 sudo partprobe
@@ -314,12 +297,9 @@ sudo sed -e 's/-05 /-06 /g' -i /media/cmdline.txt
 sudo umount -R /media
 
 # finally, let's clone ENV1 bootfs to ENV3 bootfs
-sudo dd if=$(realpath /dev/disk/by-label/rootfs | tr -d "[0-9]")1 \
-        of=$(realpath /dev/disk/by-label/rootfs | tr -d "[0-9]")3 \
-        bs=4096k status=progress
+sudo dd if=${BASEDEV}1 of=${BASEDEV}3 bs=4096k status=progress
 # to make sure we can tell our clones apart, we set a new LABEL
-sudo fatlabel $(realpath /dev/disk/by-label/rootfs | tr -d "[0-9]")2 \
-     bootfs3
+sudo fatlabel ${BASEDEV}2 bootfs3
 
 # re-read partition table
 sudo partprobe
