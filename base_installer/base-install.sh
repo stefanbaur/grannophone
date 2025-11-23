@@ -1,5 +1,60 @@
 #!/bin/bash -e
 
+if [ $(uname -m) == "aarch64" ] ; then
+	echo "It looks like you're trying to run this script"
+	echo "on a Raspberry Pi. This is a bad idea, as"
+	echo "your booted environment will already use the"
+	echo "partition labels that this script is expecting."
+	echo "Therefore, we need to abort here."
+	exit 1
+elif ! [ -x /usr/bin/qemu-aarch64-static ]; then
+	echo "This is not 'aarch64' hardware, yet we need to"
+	echo "chroot into an 'aarch64' environment later on."
+	echo "Therefore, we will now install qemu-user-static."
+	sudo apt update
+	sudo apt -y install qemu-user-static
+fi
+
+if ! [ -x /usr/bin/sudo ]; then
+	echo "Command 'sudo' not found."
+	echo "You should install the sudo package to fix this."
+	echo "Also, once installed, make sure you run this script"
+	echo "with a user account that has sudo rights."
+	echo "Suggested commands (as root):"
+	echo "apt update && apt -y install sudo"
+	echo "Terminating now, so you can fix this."
+	exit 1
+fi
+
+if ! [ -x /sbin/partprobe ]; then
+	echo "Command 'partprobe' not found."
+	echo "Installing parted package to fix this."
+	sudo apt update
+	sudo apt -y install parted
+fi
+
+if ! [ -x /sbin/fatlabel ]; then
+	echo "Command 'fatlabel' not found."
+	echo "Installing dosfstools package to fix this."
+	sudo apt update
+	sudo apt -y install dosfstools
+fi
+
+if ! [ -x /bin/uuid ]; then
+	echo "Command 'uuid' not found."
+	echo "Installing uuid package to fix this."
+	sudo apt update
+	sudo apt -y install uuid
+fi
+
+while ! (test -L /dev/disk/by-label/bootfs && \
+	 test -L /dev/disk/by-label/rootfs); do
+	echo "No partitions labelled bootfs and rootfs found."
+	echo "Try removing and reinserting the media."
+	echo "Sleeping 30 seconds and trying again ..."
+	sleep 30
+done
+
 # clone rootfs into a file, so we can safely repartition the media
 sudo dd if=/dev/disk/by-label/rootfs of=/tmp/rootfs bs=4096k \
         status=progress
