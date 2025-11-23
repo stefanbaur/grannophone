@@ -58,6 +58,9 @@ done
 BASEDEV=$(realpath /dev/disk/by-label/bootfs | sed -e 's/[0-9]$//')
 if echo -n "$BASEDEV" | grep -q "mmc" ; then
 	BASEDEV=$(echo -n "$BASEDEV" | sed -e 's/p$//')
+	PARTFIVE=${BASEDEV}p5
+else
+	PARTFIVE=${BASEDEV}5
 fi
 
 # test for buggy sfdisk version (can't calculate partition sizes properly, either)
@@ -117,17 +120,20 @@ echo ","  | sudo sfdisk -N 8 $BASEDEV
 while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # write rootfs contents into proper partition
-test -b ${BASEDEV}5 && \
-sudo dd if=/tmp/rootfs of=${BASEDEV}5 bs=4096k status=progress
+if test -b $PARTFIVE ; then
+	sudo dd if=/tmp/rootfs of=$PARTFIVE bs=4096k status=progress
+else
+	echo "Partition 5 ($PARTFIVE) not accessible. Terminating."
+	exit 1
 # delete temporary rootfs and partition table copy
 sudo rm -f /tmp/rootfs /tmp/sfdisk.$(basename $BASEDEV)
 
 # make sure everything is written to disk/media
 sudo sync
 # force fsck (required for resize)
-sudo fsck -f -y /dev/disk/by-label/rootfs
+sudo fsck -f -y $PARTFIVE
 # resize rootfs to partition size
-sudo resize2fs /dev/disk/by-label/rootfs
+sudo resize2fs $PARTFIVE
 # mount rootfs and bootfs the way they would be in ENV1
 sudo mount /dev/disk/by-label/rootfs /media
 sudo mount /dev/disk/by-label/bootfs /media/boot/firmware
