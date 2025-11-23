@@ -55,6 +55,11 @@ while ! (test -L /dev/disk/by-label/bootfs && \
 	sleep 30
 done
 
+BASEDEV=$(realpath /dev/disk/by-label/bootfs | sed -e 's/[0-9]$//')
+if echo -n "$BASEDEV" | grep -q "mmc" ; then
+	BASEDEV=$(echo -n "$BASEDEV" | sed -e 's/p$//')
+fi
+
 # test for buggy sfdisk version (can't calculate partition sizes properly, either)
 echo ",,Ex"  | sudo sfdisk -n -N 4 $BASEDEV || (echo "Your sfdisk version is too old. Terminating for safety reasons." ; exit 1)
 
@@ -63,11 +68,6 @@ echo ",,Ex"  | sudo sfdisk -n -N 4 $BASEDEV || (echo "Your sfdisk version is too
 [ -f /tmp/rootfs ] || \
 sudo dd if=/dev/disk/by-label/rootfs of=/tmp/rootfs bs=4096k \
         status=progress
-
-BASEDEV=$(realpath /dev/disk/by-label/bootfs | sed -e 's/[0-9]$//')
-if echo -n "$BASEDEV" | grep -q "mmc" ; then
-	BASEDEV=$(echo -n "$BASEDEV" | sed -e 's/p$//')
-fi
 
 # free partition number 2
 sudo sfdisk --delete $BASEDEV 2
