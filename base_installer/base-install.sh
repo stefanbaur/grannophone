@@ -55,12 +55,25 @@ while ! (test -L /dev/disk/by-label/bootfs && \
 	sleep 30
 done
 
+# set BASEDEV and PARTITIONxyz variables depending on removable storage type
 BASEDEV=$(realpath /dev/disk/by-label/bootfs | sed -e 's/[0-9]$//')
 if echo -n "$BASEDEV" | grep -q "mmc" ; then
 	BASEDEV=$(echo -n "$BASEDEV" | sed -e 's/p$//')
+	PARTONE="${BASEDEV}p1"
+	PARTTWO="${BASEDEV}p2"
+	PARTTHREE="${BASEDEV}p3"
 	PARTFIVE="${BASEDEV}p5"
+	PARTSIX="${BASEDEV}p6"
+	PARTSEVEN="${BASEDEV}p7"
+	PARTEIGHT="${BASEDEV}p8"
 else
+	PARTONE="${BASEDEV}1"
+	PARTTWO="${BASEDEV}2"
+	PARTTHREE="${BASEDEV}3"
 	PARTFIVE="${BASEDEV}5"
+	PARTSIX="${BASEDEV}6"
+	PARTSEVEN="${BASEDEV}7"
+	PARTEIGHT="${BASEDEV}8"
 fi
 
 # test for buggy sfdisk version (can't calculate partition sizes properly, either)
@@ -71,10 +84,9 @@ sudo sfdisk --dump $BASEDEV >/tmp/sfdisk.$(basename $BASEDEV)
 
 # clone rootfs into a file, so we can safely repartition the media
 # but do not clone again if file already exists
-[ -f /tmp/rootfs ] || \
-sudo dd if=/dev/disk/by-label/rootfs of=/tmp/rootfs bs=4096k \
-        status=progress
-
+if ! [ -f /tmp/rootfs ] ; then
+	sudo dd if=${PARTTWO} of=/tmp/rootfs bs=4096k status=progress
+fi
 # free partition number 2
 sudo sfdisk --delete $BASEDEV 2
 # re-read partition table
@@ -136,8 +148,8 @@ sudo fsck -f -y $PARTFIVE
 # resize rootfs to partition size
 sudo resize2fs $PARTFIVE
 # mount rootfs and bootfs the way they would be in ENV1
-sudo mount /dev/disk/by-label/rootfs /media
-sudo mount /dev/disk/by-label/bootfs /media/boot/firmware
+sudo mount $PARTFIVE /media
+sudo mount $PARTONE /media/boot/firmware
 # mount pseudo-filesystems 
 sudo mount -R /dev/ /media/dev
 sudo mount -R /sys/ /media/sys
@@ -283,15 +295,15 @@ echo "dhcp-option=6" | sudo tee -a /media/etc/dnsmasq.q/usb0 >/dev/null
 sudo umount -R /media
 
 # we start by cloning ENV1 rootfs to ENV2 rootfs
-sudo dd if=${BASEDEV}5 of=${BASEDEV}6 bs=4096k status=progress
+sudo dd if=$PARTFIVE of=$PARTSIX bs=4096k status=progress
 # to make sure we can tell our clones apart, we set a new LABEL and UUID
-sudo tune2fs -L rootfs2 -U $(uuid) ${BASEDEV}6
+sudo tune2fs -L rootfs2 -U $(uuid) $PARTSIX
 
 # re-read partition table
 while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # mount the ENV2 rootfs and update /etc/fstab
-sudo mount /dev/disk/by-label/rootfs2 /media
+sudo mount $PARTSIX /media
 sudo sed -e 's/-01 /-02 /g' -e 's/-05 /-06 /g' -i \
      /media/etc/fstab
 
@@ -300,15 +312,15 @@ sudo sed -e 's/-01 /-02 /g' -e 's/-05 /-06 /g' -i \
 sudo umount -R /media
 
 # now we are cloning ENV1 rootfs to ENV3 rootfs
-sudo dd if=${BASEDEV}5 of=${BASEDEV}7 bs=4096k status=progress
+sudo dd if=$PARTFIVE of=$PARTSEVEN bs=4096k status=progress
 # to make sure we can tell our clones apart, we set a new LABEL and UUID
-sudo tune2fs -L rootfs3 -U $(uuid) ${BASEDEV}7
+sudo tune2fs -L rootfs3 -U $(uuid) $PARTSEVEN
 
 # re-read partition table
 while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # mount the ENV3 rootfs and update /etc/fstab
-sudo mount /dev/disk/by-label/rootfs3 /media
+sudo mount $PARTSEVEN /media
 sudo sed -e 's/-01 /-03 /g'-e 's/-05 /-07 /g' -i \
      /media/etc/fstab
 
@@ -317,21 +329,21 @@ sudo sed -e 's/-01 /-03 /g'-e 's/-05 /-07 /g' -i \
 sudo umount -R /media
 
 # now let's create the file system on the data partition
-sudo mkfs.ext4 -L data ${BASEDEV}8
+sudo mkfs.ext4 -L data $PARTEIGHT
 
 # re-read partition table
 while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # next step is cloning ENV1 bootfs to ENV2 bootfs
-sudo dd if=${BASEDEV}1 of=${BASEDEV}2 bs=4096k status=progress
+sudo dd if=$PARTONE of=$PARTTWO bs=4096k status=progress
 # to make sure we can tell our clones apart, we set a new LABEL
-sudo fatlabel ${BASEDEV}2 bootfs2
+sudo fatlabel $PARTTWO bootfs2
 
 # re-read partition table
 while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # mount the ENV2 rootfs and update cmdline.txt
-sudo mount /dev/disk/by-label/bootfs2 /media
+sudo mount $PARTTWO /media
 sudo sed -e 's/-05 /-06 /g' -i /media/cmdline.txt
 
 # we're done making changes to ENV2's bootfs, so let's unmount
@@ -339,15 +351,15 @@ sudo sed -e 's/-05 /-06 /g' -i /media/cmdline.txt
 sudo umount -R /media
 
 # finally, let's clone ENV1 bootfs to ENV3 bootfs
-sudo dd if=${BASEDEV}1 of=${BASEDEV}3 bs=4096k status=progress
+sudo dd if=$PARTONE of=$PARTTHREE bs=4096k status=progress
 # to make sure we can tell our clones apart, we set a new LABEL
-sudo fatlabel ${BASEDEV}2 bootfs3
+sudo fatlabel $PARTTWO bootfs3
 
 # re-read partition table
 while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # mount the ENV3 rootfs and update cmdline.txt
-sudo mount /dev/disk/by-label/bootfs3 /media
+sudo mount $PARTTHREE /media
 sudo sed -e 's/-05 /-07 /g' -i /media/cmdline.txt
 
 # we're done making changes to ENV3's bootfs, so let's unmount
