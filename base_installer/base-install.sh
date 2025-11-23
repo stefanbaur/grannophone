@@ -58,9 +58,9 @@ done
 BASEDEV=$(realpath /dev/disk/by-label/bootfs | sed -e 's/[0-9]$//')
 if echo -n "$BASEDEV" | grep -q "mmc" ; then
 	BASEDEV=$(echo -n "$BASEDEV" | sed -e 's/p$//')
-	PARTFIVE=${BASEDEV}p5
+	PARTFIVE="${BASEDEV}p5"
 else
-	PARTFIVE=${BASEDEV}5
+	PARTFIVE="${BASEDEV}5"
 fi
 
 # test for buggy sfdisk version (can't calculate partition sizes properly, either)
@@ -125,6 +125,7 @@ if test -b $PARTFIVE ; then
 else
 	echo "Partition 5 ($PARTFIVE) not accessible. Terminating."
 	exit 1
+fi
 # delete temporary rootfs and partition table copy
 sudo rm -f /tmp/rootfs /tmp/sfdisk.$(basename $BASEDEV)
 
