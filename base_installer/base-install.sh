@@ -71,7 +71,8 @@ echo ",,c"  | sudo sfdisk -N 2 $BASEDEV
 # create another fale partition as placeholder for ENV2/ENV3
 echo ",1G,c"  | sudo sfdisk -N 3 $BASEDEV
 # create extended partition
-echo ",,Ex"  | sudo sfdisk -N 4 $BASEDEV
+echo ",,Ex"  | sudo sfdisk -N 4 $BASEDEV || \
+echo ",,E"  | sudo sfdisk -N 4 $BASEDEV
 # delete fake partitions
 sudo sfdisk --delete $BASEDEV 3
 sudo sfdisk --delete $BASEDEV 2
