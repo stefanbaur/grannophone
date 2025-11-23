@@ -55,6 +55,9 @@ while ! (test -L /dev/disk/by-label/bootfs && \
 	sleep 30
 done
 
+# test for buggy sfdisk version (can't calculate partition sizes properly, either)
+echo ",,Ex"  | sudo sfdisk -n -N 4 $BASEDEV || ((echo "Your sfdisk version is too old. Terminating for safety reasons." ; exit 1)
+
 # clone rootfs into a file, so we can safely repartition the media
 # but do not clone again if file already exists
 [ -f /tmp/rootfs ] || \
@@ -65,14 +68,14 @@ BASEDEV=$(realpath /dev/disk/by-label/bootfs | sed -e 's/[0-9]$//')
 if echo -n "$BASEDEV" | grep -q "mmc" ; then
 	BASEDEV=$(echo -n "$BASEDEV" | sed -e 's/p$//')
 fi
-
+# free partition number 2
+sudo sfdisk --delete $BASEDEV 2
 # block first sectors with a fake partition
 echo ",,c"  | sudo sfdisk -N 2 $BASEDEV
 # create another fake partition as placeholder for ENV2/ENV3
 echo ",1G,c"  | sudo sfdisk -N 3 $BASEDEV
 # create extended partition
-echo ",,Ex"  | sudo sfdisk -N 4 $BASEDEV || \
-echo ",,E"  | sudo sfdisk -N 4 $BASEDEV
+echo ",,Ex"  | sudo sfdisk -N 4 $BASEDEV
 # delete fake partitions
 sudo sfdisk --delete $BASEDEV 3
 sudo sfdisk --delete $BASEDEV 2
