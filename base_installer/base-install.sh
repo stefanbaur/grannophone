@@ -40,7 +40,7 @@ if ! [ -x /sbin/fatlabel ]; then
 	sudo apt -y install dosfstools
 fi
 
-if ! [ -x /bin/uuid ]; then
+if ! ( [ -x /bin/uuid ] || [ -x /usr/bin/uuid ] ) ; then
 	echo "Command 'uuid' not found."
 	echo "Installing uuid package to fix this."
 	sudo apt update
