@@ -68,33 +68,58 @@ BASEDEV=$(realpath /dev/disk/by-label/bootfs | sed -e 's/[0-9]$//')
 if echo -n "$BASEDEV" | grep -q "mmc" ; then
 	BASEDEV=$(echo -n "$BASEDEV" | sed -e 's/p$//')
 fi
+
 # free partition number 2
 sudo sfdisk --delete $BASEDEV 2
+# re-read partition table
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 # block first sectors with a fake partition
 echo ",,c"  | sudo sfdisk -N 2 $BASEDEV
+# re-read partition table
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 # create another fake partition as placeholder for ENV2/ENV3
 echo ",1G,c"  | sudo sfdisk -N 3 $BASEDEV
+# re-read partition table
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 # create extended partition
 echo ",,Ex"  | sudo sfdisk -N 4 $BASEDEV
-# delete fake partitions
+# re-read partition table
+while ! sudo partprobe $BASEDEV; do sleep 1; done
+# delete fake partition 3
 sudo sfdisk --delete $BASEDEV 3
+# re-read partition table
+while ! sudo partprobe $BASEDEV; do sleep 1; done
+# delete fake partition 2
 sudo sfdisk --delete $BASEDEV 2
+# re-read partition table
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 # create actual permanent partitions
 echo ",512M,c"  | sudo sfdisk -N 2 $BASEDEV
+# re-read partition table
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 echo ",512M,c"  | sudo sfdisk -N 3 $BASEDEV
+# re-read partition table
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 echo ",8G"  | sudo sfdisk -N 5 $BASEDEV
+# re-read partition table
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 echo ",8G"  | sudo sfdisk -N 6 $BASEDEV
+# re-read partition table
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 echo ",8G"  | sudo sfdisk -N 7 $BASEDEV
+# re-read partition table
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 echo ","  | sudo sfdisk -N 8 $BASEDEV
+# re-read partition table
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # write rootfs contents into proper partition
 sudo dd if=/tmp/rootfs of=${BASEDEV}5 bs=4096k status=progress
 # delete temporary rootfs copy
 sudo rm /tm/rootfs
+
 # make sure everything is written to disk/media
 sudo sync
-# re-read partition table
-sudo partprobe
 # force fsck (required for resize)
 sudo fsck -f -y /dev/disk/by-label/rootfs
 # resize rootfs to partition size
@@ -252,7 +277,7 @@ sudo dd if=${BASEDEV}5 of=${BASEDEV}6 bs=4096k status=progress
 sudo tune2fs -L rootfs2 -U $(uuid) ${BASEDEV}6
 
 # re-read partition table
-sudo partprobe
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # mount the ENV2 rootfs and update /etc/fstab
 sudo mount /dev/disk/by-label/rootfs2 /media
@@ -269,7 +294,7 @@ sudo dd if=${BASEDEV}5 of=${BASEDEV}7 bs=4096k status=progress
 sudo tune2fs -L rootfs3 -U $(uuid) ${BASEDEV}7
 
 # re-read partition table
-sudo partprobe
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # mount the ENV3 rootfs and update /etc/fstab
 sudo mount /dev/disk/by-label/rootfs3 /media
@@ -284,7 +309,7 @@ sudo umount -R /media
 sudo mkfs.ext4 -L data ${BASEDEV}8
 
 # re-read partition table
-sudo partprobe
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # next step is cloning ENV1 bootfs to ENV2 bootfs
 sudo dd if=${BASEDEV}1 of=${BASEDEV}2 bs=4096k status=progress
@@ -292,7 +317,7 @@ sudo dd if=${BASEDEV}1 of=${BASEDEV}2 bs=4096k status=progress
 sudo fatlabel ${BASEDEV}2 bootfs2
 
 # re-read partition table
-sudo partprobe
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # mount the ENV2 rootfs and update cmdline.txt
 sudo mount /dev/disk/by-label/bootfs2 /media
@@ -308,7 +333,7 @@ sudo dd if=${BASEDEV}1 of=${BASEDEV}3 bs=4096k status=progress
 sudo fatlabel ${BASEDEV}2 bootfs3
 
 # re-read partition table
-sudo partprobe
+while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # mount the ENV3 rootfs and update cmdline.txt
 sudo mount /dev/disk/by-label/bootfs3 /media
