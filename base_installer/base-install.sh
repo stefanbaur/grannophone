@@ -56,7 +56,7 @@ while ! (test -L /dev/disk/by-label/bootfs && \
 done
 
 # test for buggy sfdisk version (can't calculate partition sizes properly, either)
-echo ",,Ex"  | sudo sfdisk -n -N 4 $BASEDEV || ((echo "Your sfdisk version is too old. Terminating for safety reasons." ; exit 1)
+echo ",,Ex"  | sudo sfdisk -n -N 4 $BASEDEV || (echo "Your sfdisk version is too old. Terminating for safety reasons." ; exit 1)
 
 # clone rootfs into a file, so we can safely repartition the media
 # but do not clone again if file already exists
