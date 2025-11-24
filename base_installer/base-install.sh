@@ -276,19 +276,19 @@ echo "        netmask 255.255.255.0" | sudo tee -a \
 # can receive an IP address via DHCP (by disabling dhcp options 3
 # and 6, we avoid messing with the host's routing and DNS settings)
 echo "# Bind to usb0 only" | sudo tee \
-     /media/etc/dnsmasq.q/usb0 >/dev/null
+     /media/etc/dnsmasq.d/usb0 >/dev/null
 echo "interface=usb0" | sudo tee -a /media/etc/dnsmasq.q/usb0 >/dev/null
 echo "bind-interfaces" | sudo tee -a \
-     /media/etc/dnsmasq.q/usb0 >/dev/null
+     /media/etc/dnsmasq.d/usb0 >/dev/null
 echo "# Set range and lease time" | sudo tee -a \
-     /media/etc/dnsmasq.q/usb0 >/dev/null
+     /media/etc/dnsmasq.d/usb0 >/dev/null
 echo "dhcp-range=192.168.134.20,192.168.134.10,1h" | sudo tee -a \
-     /media/etc/dnsmasq.q/usb0 >/dev/null
+     /media/etc/dnsmasq.d/usb0 >/dev/null
 echo "# Send no default route" | sudo tee -a \
-     /media/etc/dnsmasq.q/usb0 >/dev/null
+     /media/etc/dnsmasq.d/usb0 >/dev/null
 echo "dhcp-option=3" | sudo tee -a /media/etc/dnsmasq.q/usb0 >/dev/null
 echo "# Send no DNS server info" | sudo tee -a \
-      /media/etc/dnsmasq.q/usb0 >/dev/null
+      /media/etc/dnsmasq.d/usb0 >/dev/null
 echo "dhcp-option=6" | sudo tee -a /media/etc/dnsmasq.q/usb0 >/dev/null
 
 # we're done making changes to ENV1, so let's unmount everything
