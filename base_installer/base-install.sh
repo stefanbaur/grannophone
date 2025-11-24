@@ -151,8 +151,9 @@ sudo resize2fs $PARTFIVE
 sudo mount $PARTFIVE /media
 sudo mount $PARTONE /media/boot/firmware
 # mount pseudo-filesystems 
-sudo mount -R /dev/ /media/dev
-sudo mount -R /sys/ /media/sys
+sudo mount -B /dev/ /media/dev
+sudo mount -t devpts none /media/dev/pts
+sudo mount -B /sys/ /media/sys
 sudo mount -t proc proc /media/proc
 
 # update fstab and cmdline.txt with new partition numbers
