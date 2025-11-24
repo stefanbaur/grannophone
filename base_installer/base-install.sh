@@ -322,7 +322,7 @@ while ! sudo partprobe $BASEDEV; do sleep 1; done
 
 # mount the ENV3 rootfs and update /etc/fstab
 sudo mount $PARTSEVEN /media
-sudo sed -e 's/-01 /-03 /g'-e 's/-05 /-07 /g' -i \
+sudo sed -e 's/-01 /-03 /g' -e 's/-05 /-07 /g' -i \
      /media/etc/fstab
 
 # we're done making changes to ENV3's rootfs, so let's unmount
@@ -343,7 +343,7 @@ sudo fatlabel $PARTTWO bootfs2
 # re-read partition table
 while ! sudo partprobe $BASEDEV; do sleep 1; done
 
-# mount the ENV2 rootfs and update cmdline.txt
+# mount the ENV2 bootfs and update cmdline.txt
 sudo mount $PARTTWO /media
 sudo sed -e 's/-05 /-06 /g' -i /media/cmdline.txt
 
@@ -359,7 +359,7 @@ sudo fatlabel $PARTTWO bootfs3
 # re-read partition table
 while ! sudo partprobe $BASEDEV; do sleep 1; done
 
-# mount the ENV3 rootfs and update cmdline.txt
+# mount the ENV3 bootfs and update cmdline.txt
 sudo mount $PARTTHREE /media
 sudo sed -e 's/-05 /-07 /g' -i /media/cmdline.txt
 
