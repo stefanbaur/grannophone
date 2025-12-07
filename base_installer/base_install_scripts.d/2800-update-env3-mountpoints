@@ -1,4 +1,5 @@
 #!/bin/bash -e
 
+echo "Setting new partition numbers in cmdline.txt and fstab ..."
 # update /etc/fstab
 sed -e 's/-01 /-03 /g' -e 's/-05 /-07 /g' -i $MOUNTPOINT/etc/fstab
