@@ -4,5 +4,5 @@
 sed -e 's/^en_GB/# en_GB/' \
     -e "s/^# $OUR_LOCALE/$OUR_LOCALE/" \
     -i $MOUNTPOINT/etc/locale.gen
-sed -e 's/=en_GB/='${OUR_LOCALE%%.}'/' -i $MOUNTPOINT/etc/locale.conf
+sed -e 's/=en_GB.*$/='$OUR_LOCALE'/' -i $MOUNTPOINT/etc/locale.conf
 chroot $MOUNTPOINT locale-gen
