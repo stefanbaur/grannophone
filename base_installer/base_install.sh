@@ -22,8 +22,13 @@ while ! (test -L /dev/disk/by-label/bootfs && \
 done
 
 # source our config variables
+source ./base_install.conf
+
+# override settings with custom file if present
+if [ -s ./base_install_custom.conf ]; then
+	source ./base_install_custom.conf
+fi
 # TODO check that all required variables are set
-. ./base_install.conf
 
 #set dynamic variables
 export MOUNTPOINT=$(mktemp -d)
