@@ -70,12 +70,11 @@ echo ",8G" | sfdisk -N 7 $BASEDEV >/dev/null 2>&1
 # re-read partition table
 while ! partprobe $BASEDEV; do sleep 1; done
 echo "," | sfdisk -N 8 $BASEDEV >/dev/null 2>&1
+# re-read partition table
+while ! partprobe $BASEDEV; do sleep 1; done
 
 # sync changes
 sync
-
-# re-read partition table
-while ! partprobe $BASEDEV; do sleep 1; done
 
 # wait until device/partition becomes available
 while ! test -b $PARTFIVE ; do sleep 1; done
