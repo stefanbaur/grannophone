@@ -4,12 +4,19 @@
 while ! test -b $PARTONE ; do sleep 1; done
 while ! test -b $PARTTHREE ; do sleep 1; done
 
+echo "Cloning ENV1's bootfs to ENV3's bootfs ..."
 # finally, let's clone ENV1 bootfs to ENV3 bootfs
 while ! dd if=$PARTONE of=$PARTTHREE bs=4096k status=progress; do sleep 1; done
 
 # check if write to block device really succeeded
-test -b $PARTTHREE || (echo "Device $PARTTHREE is no longer a block device!" ; exit 1)
+if [ -b $PARTTHREE ]; then
+	echo "Cloning complete."
+else
+	echo "Error: Device $PARTTHREE is no longer a block device! Aborting."
+	exit 1
+fi
 
+echo "Changing partition label to bootfs3 ..."
 # to make sure we can tell our clones apart, we set a new LABEL
 fatlabel $PARTTHREE bootfs3
 
