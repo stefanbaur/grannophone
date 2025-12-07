@@ -8,7 +8,7 @@ if [ -x ./ENV1-custom-install.sh ] && bash -n ./ENV1-custom-install.sh ; then
 	rsync -aPvH ./ENV1-custom-install.sh $MOUNTPOINT/ENV1-custom-install.sh && \
 	chroot $MOUNTPOINT ./ENV1-custom-install.sh && \
 	chmod -x $MOUNTPOINT/ENV1-custom-install.sh
-elif ! bash -n ./ENV1-custom-install.sh ; then
+elif [ -x ./ENV1-custom-install.sh ] && ! bash -n ./ENV1-custom-install.sh ; then
 	echo "Syntax error in ./ENV1-custom-install.sh detected. Skipping, but continuing ..."
 	exit 0
 else
