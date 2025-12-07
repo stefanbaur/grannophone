@@ -1,19 +1,30 @@
 #!/bin/bash -e
 
 # test for buggy sfdisk version (can't calculate partition sizes properly, either)
-echo ",,Ex"  |  sfdisk -n -N 4 $BASEDEV || (echo "Your sfdisk version is too old. Terminating for safety reasons." ; exit 1)
+echo "Testing sfdisk version ..."
+if echo ",,Ex"  |  sfdisk -n -N 4 $BASEDEV >/dev/null 2>&1; then
+	echo "This sfdisk version is new enough. Continuing ..."
+else
+	echo "This sfdisk version is too old. Terminating for safety reasons."
+        exit 1
+fi
 
 # wait until device/partition becomes available
+
+echo "Waiting for device/partition to become available ..."
 while ! test -b $BASEDEV ; do sleep 1; done
 while ! test -b $PARTTWO ; do sleep 1; done
 
 # make a copy of the partition table for debug purposes
+echo "Dumping a copy of the old partition table for debug purposes ..."
 sfdisk --dump $BASEDEV >$TEMPIMAGEDIR/sfdisk.$(basename $BASEDEV)
 
 # clone rootfs into a file, so we can safely repartition the media
+echo "Cloning the rootfs into a temporary file ..."
 while ! dd if=${PARTTWO} of=$TEMPIMAGEDIR/rootfs bs=4096k status=progress; do sleep 1; done
 
 # free partition number 2
+echo "Removing partition 2 ..."
 sfdisk --delete $BASEDEV 2
 
 # sync changes
