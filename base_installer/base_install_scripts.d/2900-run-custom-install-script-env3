@@ -1,4 +1,10 @@
 #!/bin/bash -e
 
 # check for custom install script; execute it if present, and remove the executable bit afterwards (so it runs only once)
-test -x ./ENV3-custom-install.sh && rsync -aPvH ./ENV3-custom-install.sh $MOUNTPOINT/ENV3-custom-install.sh && chroot $MOUNTPOINT ./ENV3-custom-install.sh && chmod -x $MOUNTPOINT/ENV3-custom-install.sh
+if [ -x ./ENV3-custom-install.sh ]; then
+	rsync -aPvH ./ENV3-custom-install.sh $MOUNTPOINT/ENV3-custom-install.sh && \
+	chroot $MOUNTPOINT ./ENV3-custom-install.sh && \
+	chmod -x $MOUNTPOINT/ENV3-custom-install.sh
+else
+	exit 0
+fi

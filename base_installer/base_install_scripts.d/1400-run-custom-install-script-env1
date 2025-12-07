@@ -3,4 +3,10 @@
 # check for custom install scripts; execute it if present, and remove the executable bit afterwards (so it runs only once)
 #test -x ./custom-install.sh && rsync -aPvH ./custom-install.sh $MOUNTPOINT/custom-install.sh && chroot $MOUNTPOINT ./custom-install.sh && chmod -x $MOUNTPOINT/custom-install.sh
 # TODO note that since this will be cloned to ENV2 and ENV3, it it actually more of an ENVALL than an ENV1 custom script
-test -x ./ENV1-custom-install.sh && rsync -aPvH ./ENV1-custom-install.sh $MOUNTPOINT/ENV1-custom-install.sh && chroot $MOUNTPOINT ./ENV1-custom-install.sh && chmod -x $MOUNTPOINT/ENV1-custom-install.sh
+if [ -x ./ENV1-custom-install.sh ]; then
+	rsync -aPvH ./ENV1-custom-install.sh $MOUNTPOINT/ENV1-custom-install.sh && \
+	chroot $MOUNTPOINT ./ENV1-custom-install.sh && \
+	chmod -x $MOUNTPOINT/ENV1-custom-install.sh
+else
+	exit 0
+fi
