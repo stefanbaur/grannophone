@@ -1,4 +1,6 @@
 #!/bin/bash -e
 
 # we're done making changes to the data partition, so let's unmount everything
+echo "Unmounting data partition ..."
 while ! umount -R $MOUNTPOINT; do sleep 1; done
+echo "Finished unmounting data partition."

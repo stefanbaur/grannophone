@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
 # inject a sample autostart.sh
+echo "Injecting a sample autostart.sh into the data partition ..."
 while ! mount $PARTEIGHT $MOUNTPOINT; do sleep 1; done
 cat > $MOUNTPOINT/autostart.sh <<AUTOSTART
 #!/bin/bash
@@ -42,4 +43,6 @@ if [ \$(grep \$(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 1 ] ; then #r
 	fi #runonce
 fi #runonce
 AUTOSTART
+
+echo "Setting executable bit for autostart.sh ..."
 chmod +x $MOUNTPOINT/autostart.sh

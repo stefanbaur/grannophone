@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
 # cleanup
+echo "Removing mountpoints and temporary directories ..."
 rmdir $MOUNTPOINT
 rm -rf $TEMPIMAGEDIR
 

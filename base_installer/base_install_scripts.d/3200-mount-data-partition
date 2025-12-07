@@ -1,4 +1,6 @@
 #!/bin/bash -e
 
+echo "Mounting data partition ..."
 # mount the data partition
 while ! mount $PARTEIGHT $MOUNTPOINT; do sleep 1; done
+echo "Mount succeeded!"

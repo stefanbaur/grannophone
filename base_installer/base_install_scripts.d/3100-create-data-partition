@@ -1,7 +1,9 @@
 #!/bin/bash -e
 
 # now let's create the file system on the data partition
+echo "Creating filesystem on data partition ..."
 mkfs.ext4 -L data $PARTEIGHT
+echo "Finished creating fileystem."
 
 # sync changes
 sync
