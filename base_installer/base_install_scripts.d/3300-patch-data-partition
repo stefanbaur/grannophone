@@ -2,7 +2,6 @@
 
 # inject a sample autostart.sh
 echo "Injecting a sample autostart.sh into the data partition ..."
-while ! mount $PARTEIGHT $MOUNTPOINT; do sleep 1; done
 cat > $MOUNTPOINT/autostart.sh <<AUTOSTART
 #!/bin/bash
 
