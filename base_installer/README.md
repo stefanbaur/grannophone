@@ -45,7 +45,7 @@
   - Remove the removable media and re-insert it after a good 10-15 seconds
 
 # Result
-  - The above steps, combined with the base-install.sh script in this directory, will set you up with three boot environments you can choose from.
+  - The above steps, combined with the base_install.sh script in this directory, will set you up with three boot environments you can choose from.
   - These environments are called ENV1, ENV2, and ENV3:
     - ENV1 uses the first partition as /boot/firmware and the fifth partition as /
     - ENV2 uses the second partition as /boot/firmware and the sixth partition as /
@@ -60,7 +60,7 @@
   - You will need to apply updates to ENV1 as well, but hopefully, due to the minimal installation there, updates should occur way less frequently than in the other two environments.
 
 # Customization
-The script ''base-install.sh'' already contains a rudimentary mechanism to apply further customizations during the installation. However, it still needs further work. At the moment, there is no way to install a package or run a command only in ENV2 or ENV3. This still needs some more work. However, you can give it a try by creating a file named custom-install.sh that starts with a ''#!/bin/bash'' header and contains all the commands you wish to run once during the patching/setup phase.
+The script ''base_install.sh'' already contains a rudimentary mechanism to apply further customizations during the installation. However, it still needs further work. At the moment, there is no way to install a package or run a command only in ENV2 or ENV3. This still needs some more work. However, you can give it a try by creating a file named custom-install.sh that starts with a ''#!/bin/bash'' header and contains all the commands you wish to run once during the patching/setup phase.
 
 To activate this script, run the following commands, with the removable media connected to your computer, and from within the directory where you saved custom-install.sh:
 ''sudo mount /dev/disk/by-label/rootfs /media''
