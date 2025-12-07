@@ -4,14 +4,16 @@
 while ! test -b $PARTONE ; do sleep 1; done
 while ! test -b $PARTTWO ; do sleep 1; done
 
+echo "Updating cmdline.txt ..."
 # mount the ENV2 bootfs and update cmdline.txt
 while ! mount $PARTTWO $MOUNTPOINT; do sleep 1; done
 sed -e 's/-05 /-06 /g' -i $MOUNTPOINT/cmdline.txt
 
+echo "Removing autoboot.txt from partition two ..."
 # remove autoboot.txt from ENV2 bootfs
 rm $MOUNTPOINT/autoboot.txt
 
 # we're done making changes to ENV2's bootfs, so let's unmount everything
+echo "Unmounting ENV2's bootfs ..."
 while ! umount -R $MOUNTPOINT; do sleep 1; done
-
-
+echo "Finished unmounting ENV2's bootfs."
