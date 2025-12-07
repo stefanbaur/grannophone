@@ -26,6 +26,7 @@ source ./base_install.conf
 
 # override settings with custom file if present
 if [ -s ./base_install_custom.conf ]; then
+	echo "Custom base install file found, overriding default settings."
 	source ./base_install_custom.conf
 fi
 # TODO check that all required variables are set
@@ -56,6 +57,8 @@ else
 fi
 
 # now run our configuration steps
+
+echo "Now executing all our base install/config scripts ..."
 if test -d ./base_install_scripts.d ; then
         run-parts --exit-on-error ./base_install_scripts.d
 else

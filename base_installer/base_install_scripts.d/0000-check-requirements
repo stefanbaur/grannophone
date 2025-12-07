@@ -16,10 +16,10 @@ if ! [ -x /usr/bin/qemu-aarch64-static ] ||  \
    ! [ -x /sbin/fatlabel ] || \
    ! ( [ -x /bin/uuid ] || [ -x /usr/bin/uuid ] ) ; then
 	echo "At least one required software package is missing."
-	echo "Attempting to install required packages."
+	echo "Attempting to install required packages ..."
 	echo "Updating package lists ..."
 	apt-get update
-	echo "Now fetching and installing packages."
+	echo "Now fetching and installing packages ..."
 	apt-get -d -y install qemu-user-static parted dosfstools install uuid && \
 	apt-get -y install qemu-user-static parted dosfstools install uuid || exit 1
 fi

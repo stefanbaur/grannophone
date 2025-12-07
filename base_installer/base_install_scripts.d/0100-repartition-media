@@ -25,50 +25,51 @@ while ! dd if=${PARTTWO} of=$TEMPIMAGEDIR/rootfs bs=4096k status=progress; do sl
 
 # free partition number 2
 echo "Removing partition 2 ..."
-sfdisk --delete $BASEDEV 2
+sfdisk --delete $BASEDEV 2 >/dev/null 2>&1
 
 # sync changes
 sync
 
+echo "Rearranging/creating partitions ..."
 # re-read partition table
 while ! partprobe $BASEDEV; do sleep 1; done
 # block first sectors with a fake partition
-echo ",,c" | sfdisk -N 2 $BASEDEV
+echo ",,c" | sfdisk -N 2 $BASEDEV >/dev/null 2>&1
 # re-read partition table
 while ! partprobe $BASEDEV; do sleep 1; done
 # create another fake partition as placeholder for ENV2/ENV3
-echo ",1G,c" | sfdisk -N 3 $BASEDEV
+echo ",1G,c" | sfdisk -N 3 $BASEDEV >/dev/null 2>&1
 # re-read partition table
 while ! partprobe $BASEDEV; do sleep 1; done
 # create extended partition
-echo ",,Ex" | sfdisk -N 4 $BASEDEV
+echo ",,Ex" | sfdisk -N 4 $BASEDEV >/dev/null 2>&1
 # re-read partition table
 while ! partprobe $BASEDEV; do sleep 1; done
 # delete fake partition 3
-sfdisk --delete $BASEDEV 3
+sfdisk --delete $BASEDEV 3 >/dev/null 2>&1
 # re-read partition table
 while ! partprobe $BASEDEV; do sleep 1; done
 # delete fake partition 2
-sfdisk --delete $BASEDEV 2
+sfdisk --delete $BASEDEV 2 >/dev/null 2>&1
 # re-read partition table
 while ! partprobe $BASEDEV; do sleep 1; done
 # create actual permanent partitions
-echo ",512M,c" | sfdisk -N 2 $BASEDEV
+echo ",512M,c" | sfdisk -N 2 $BASEDEV >/dev/null 2>&1
 # re-read partition table
 while ! partprobe $BASEDEV; do sleep 1; done
-echo ",512M,c" | sfdisk -N 3 $BASEDEV
+echo ",512M,c" | sfdisk -N 3 $BASEDEV >/dev/null 2>&1
 # re-read partition table
 while ! partprobe $BASEDEV; do sleep 1; done
-echo ",8G" | sfdisk -N 5 $BASEDEV
+echo ",8G" | sfdisk -N 5 $BASEDEV >/dev/null 2>&1
 # re-read partition table
 while ! partprobe $BASEDEV; do sleep 1; done
-echo ",8G" | sfdisk -N 6 $BASEDEV
+echo ",8G" | sfdisk -N 6 $BASEDEV >/dev/null 2>&1
 # re-read partition table
 while ! partprobe $BASEDEV; do sleep 1; done
-echo ",8G" | sfdisk -N 7 $BASEDEV
+echo ",8G" | sfdisk -N 7 $BASEDEV >/dev/null 2>&1
 # re-read partition table
 while ! partprobe $BASEDEV; do sleep 1; done
-echo "," | sfdisk -N 8 $BASEDEV
+echo "," | sfdisk -N 8 $BASEDEV >/dev/null 2>&1
 
 # sync changes
 sync
@@ -80,12 +81,19 @@ while ! partprobe $BASEDEV; do sleep 1; done
 while ! test -b $PARTFIVE ; do sleep 1; done
 
 # write rootfs contents into proper partition
+echo "Restoring bitwise copy of rootfs partition into partition five ..."
 while ! dd if=$TEMPIMAGEDIR/rootfs of=$PARTFIVE bs=4096k status=progress; do sleep 1; done
 
 # check if write to block device really succeeded
-test -b $PARTFIVE || (echo "Device $PARTFIVE is no longer a block device!" ; exit 1)
+if [ -b $PARTFIVE ]; then
+	echo "Restore complete."
+else
+	echo "Error: Device $PARTFIVE is no longer a block device! Aborting."
+	exit 1
+fi
 
 # delete temporary rootfs and partition table copy
+echo "Deleting temporary rootfs and partition table copies ..."
 rm -f $TEMPIMAGEDIR/rootfs $TEMPIMAGEDIR/sfdisk.$(basename $BASEDEV)
 
 # make sure everything is written to disk/media
