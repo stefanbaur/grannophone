@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-echo "Updating package lists and installing etckeepet ..."
+echo "Updating package lists and installing etckeeper ..."
 # update package list, install etckeeper so we get a log of our upcoming changes
 chroot $MOUNTPOINT apt-get update
 chroot $MOUNTPOINT apt-get install -y etckeeper
