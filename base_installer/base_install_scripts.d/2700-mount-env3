@@ -3,6 +3,7 @@
 # wait until device/partition becomes available
 while ! test -b $PARTSEVEN ; do sleep 1; done
 
+echo "Mounting ENV2 rootfs and bootfs ..."
 # mount rootfs and bootfs the way they would be in ENV2
 while ! mount $PARTSEVEN $MOUNTPOINT; do sleep 1; done
 while ! mount $PARTTHREE $MOUNTPOINT/boot/firmware; do sleep 1; done
@@ -12,3 +13,5 @@ mount -B /dev/ $MOUNTPOINT/dev
 mount -t devpts none $MOUNTPOINT/dev/pts
 mount -B /sys/ $MOUNTPOINT/sys
 mount -t proc proc $MOUNTPOINT/proc
+
+echo "All mounts succeeded!"

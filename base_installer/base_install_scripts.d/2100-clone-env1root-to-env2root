@@ -1,11 +1,18 @@
 #!/bin/bash -e
 
 # we start by cloning ENV1 rootfs to ENV2 rootfs
+echo "Cloning ENV1's rootfs to ENV2's rootfs ..."
 while ! dd if=$PARTFIVE of=$PARTSIX bs=4096k status=progress; do sleep 1; done
 
 # check if write to block device really succeeded
-test -b $PARTSIX || (echo "Device $PARTSIX is no longer a block device!" ; exit 1)
+if [ -b $PARTSIX ]; then
+	echo "Cloning complete."
+else
+	echo "Error: Device $PARTSIX is no longer a block device! Aborting."
+	exit 1
+fi
 
+echo "Changing partition label to rootfs2 and assigning new UUID ..."
 # to make sure we can tell our clones apart, we set a new LABEL and UUID
 tune2fs -L rootfs2 -U $(uuid) $PARTSIX
 
