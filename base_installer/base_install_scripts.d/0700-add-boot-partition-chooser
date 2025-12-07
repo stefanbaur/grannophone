@@ -1,0 +1,5 @@
+#!/bin/bash -e
+
+# add boot partition chooser config file
+echo "[all]" >> $MOUNTPOINT/boot/firmware/autoboot.txt
+echo "boot_partition=1" >> $MOUNTPOINT/boot/firmware/autoboot.txt

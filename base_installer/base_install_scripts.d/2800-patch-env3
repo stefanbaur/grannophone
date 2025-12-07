@@ -1,0 +1,4 @@
+#!/bin/bash -e
+
+# update /etc/fstab
+sed -e 's/-01 /-03 /g' -e 's/-05 /-07 /g' -i $MOUNTPOINT/etc/fstab

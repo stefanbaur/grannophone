@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+# set and generate locale so the following update steps won't complain
+sed -e 's/^# de_DE.UTF-8/de_DE.UTF-8/' \
+         -e 's/^# C.UTF-8/C.UTF-8/' \
+         -e 's/^en_GB/# en_GB/' \
+         -i $MOUNTPOINT/etc/locale.gen
+sed -e 's/=en_GB/=de_DE/' -i $MOUNTPOINT/etc/locale.conf
+chroot $MOUNTPOINT locale-gen

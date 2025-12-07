@@ -1,0 +1,12 @@
+#!/bin/bash -e
+
+# make sure booted environment (ENV1/2/3) is shown at the login console
+cat > $MOUNTPOINT/etc/cron.d/showsysenv <<SHOWSYSENV
+@reboot root bash -c "export SYSENV=\$(awk '\$2=="/boot/firmware" {print \$1}' /proc/mounts | tr -cs '[:digit:]' '\n' | tail -n 1) ; test -n \"\\\$SYSENV\" && /usr/bin/sed -e 's/^ENV[0-9]-//' -e 's/^Debian/ENV'\\\${SYSENV}'-Debian/' -i /etc/issue /etc/issue.net"
+@reboot root bash -c "export SYSENV=\$(awk '\$2=="/boot/firmware" {print \$1}' /proc/mounts | tr -cs '[:digit:]' '\n' | tail -n 1) ; test -n \"\\\$SYSENV\" && echo \"ENV\\\${SYSENV}-\$(hostname -s)\"" > /etc/ssh/banner
+SHOWSYSENV
+# make sure autostart scripts get triggered on reboot
+cat > $MOUNTPOINT/etc/cron.d/autostart <<AUTOSTARTS
+@reboot root bash -c "export SYSENV=\$(awk '\$2=="/boot/firmware" {print \$1}' /proc/mounts | tr -cs '[:digit:]' '\n' | tail -n 1) ; test -n \"\\\$SYSENV\" && test -x \"/data/ENV\\\${SYSENV}-autostart.sh\" && /data/ENV\\\${SYSENV}-autostart.sh"
+@reboot root test -x "/data/autostart.sh" && /data/autostart.sh
+AUTOSTARTS

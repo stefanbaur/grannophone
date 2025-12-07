@@ -1,0 +1,81 @@
+#!/bin/bash -e
+
+# test for buggy sfdisk version (can't calculate partition sizes properly, either)
+echo ",,Ex"  |  sfdisk -n -N 4 $BASEDEV || (echo "Your sfdisk version is too old. Terminating for safety reasons." ; exit 1)
+
+# wait until device/partition becomes available
+while ! test -b $BASEDEV ; do sleep 1; done
+while ! test -b $PARTTWO ; do sleep 1; done
+
+# make a copy of the partition table for debug purposes
+sfdisk --dump $BASEDEV >$TEMPIMAGEDIR/sfdisk.$(basename $BASEDEV)
+
+# clone rootfs into a file, so we can safely repartition the media
+while ! dd if=${PARTTWO} of=$TEMPIMAGEDIR/rootfs bs=4096k status=progress; do sleep 1; done
+
+# free partition number 2
+sfdisk --delete $BASEDEV 2
+
+# sync changes
+sync
+
+# re-read partition table
+while ! partprobe $BASEDEV; do sleep 1; done
+# block first sectors with a fake partition
+echo ",,c" | sfdisk -N 2 $BASEDEV
+# re-read partition table
+while ! partprobe $BASEDEV; do sleep 1; done
+# create another fake partition as placeholder for ENV2/ENV3
+echo ",1G,c" | sfdisk -N 3 $BASEDEV
+# re-read partition table
+while ! partprobe $BASEDEV; do sleep 1; done
+# create extended partition
+echo ",,Ex" | sfdisk -N 4 $BASEDEV
+# re-read partition table
+while ! partprobe $BASEDEV; do sleep 1; done
+# delete fake partition 3
+sfdisk --delete $BASEDEV 3
+# re-read partition table
+while ! partprobe $BASEDEV; do sleep 1; done
+# delete fake partition 2
+sfdisk --delete $BASEDEV 2
+# re-read partition table
+while ! partprobe $BASEDEV; do sleep 1; done
+# create actual permanent partitions
+echo ",512M,c" | sfdisk -N 2 $BASEDEV
+# re-read partition table
+while ! partprobe $BASEDEV; do sleep 1; done
+echo ",512M,c" | sfdisk -N 3 $BASEDEV
+# re-read partition table
+while ! partprobe $BASEDEV; do sleep 1; done
+echo ",8G" | sfdisk -N 5 $BASEDEV
+# re-read partition table
+while ! partprobe $BASEDEV; do sleep 1; done
+echo ",8G" | sfdisk -N 6 $BASEDEV
+# re-read partition table
+while ! partprobe $BASEDEV; do sleep 1; done
+echo ",8G" | sfdisk -N 7 $BASEDEV
+# re-read partition table
+while ! partprobe $BASEDEV; do sleep 1; done
+echo "," | sfdisk -N 8 $BASEDEV
+
+# sync changes
+sync
+
+# re-read partition table
+while ! partprobe $BASEDEV; do sleep 1; done
+
+# wait until device/partition becomes available
+while ! test -b $PARTFIVE ; do sleep 1; done
+
+# write rootfs contents into proper partition
+while ! dd if=$TEMPIMAGEDIR/rootfs of=$PARTFIVE bs=4096k status=progress; do sleep 1; done
+
+# check if write to block device really succeeded
+test -b $PARTFIVE || (echo "Device $PARTFIVE is no longer a block device!" ; exit 1)
+
+# delete temporary rootfs and partition table copy
+rm -f $TEMPIMAGEDIR/rootfs $TEMPIMAGEDIR/sfdisk.$(basename $BASEDEV)
+
+# make sure everything is written to disk/media
+sync

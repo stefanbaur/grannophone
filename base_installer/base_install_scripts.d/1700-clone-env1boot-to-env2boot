@@ -1,0 +1,17 @@
+#!/bin/bash -e
+
+# wait until devices/partitions become available
+while ! test -b $PARTONE ; do sleep 1; done
+while ! test -b $PARTTWO ; do sleep 1; done
+
+# next step is cloning ENV1 bootfs to ENV2 bootfs
+while ! dd if=$PARTONE of=$PARTTWO bs=4096k status=progress; do sleep 1; done
+
+# check if write to block device really succeeded
+test -b $PARTTWO || (echo "Device $PARTTWO is no longer a block device!" ; exit 1)
+
+# to make sure we can tell our clones apart, we set a new LABEL
+fatlabel $PARTTWO bootfs2
+
+# sync changes
+sync

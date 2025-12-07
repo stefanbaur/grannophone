@@ -1,0 +1,15 @@
+#!/bin/bash -e
+
+# wait until devices/partitions become available
+while ! test -b $PARTONE ; do sleep 1; done
+while ! test -b $PARTTHREE ; do sleep 1; done
+
+# mount the ENV3 bootfs and update cmdline.txt
+while ! mount $PARTTHREE $MOUNTPOINT; do sleep 1; done
+sed -e 's/-05 /-07 /g' -i $MOUNTPOINT/cmdline.txt
+
+# remove autoboot.txt from ENV3 bootfs
+rm $MOUNTPOINT/autoboot.txt
+
+# we're done making changes to ENV3's bootfs, so let's unmount everything
+while ! umount -R $MOUNTPOINT; do sleep 1; done

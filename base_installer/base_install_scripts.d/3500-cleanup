@@ -1,0 +1,11 @@
+#!/bin/bash -e
+
+# cleanup
+rmdir $MOUNTPOINT
+rm -rf $TEMPIMAGEDIR
+
+# sync changes
+sync
+
+# all done
+echo "Done."

@@ -1,0 +1,10 @@
+#!/bin/bash -e
+
+# now let's create the file system on the data partition
+mkfs.ext4 -L data $PARTEIGHT
+
+# sync changes
+sync
+
+# wait until device/partition becomes available
+while ! test -b $PARTEIGHT ; do sleep 1; done

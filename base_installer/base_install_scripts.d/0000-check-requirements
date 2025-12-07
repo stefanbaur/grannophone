@@ -1,0 +1,27 @@
+#!/bin/bash -e
+
+# check arch
+if [ $(uname -m) == "aarch64" ] ; then
+	echo "It looks like you're trying to run this script"
+	echo "on a Raspberry Pi. This is a bad idea, as"
+	echo "your booted environment will already use the"
+	echo "partition labels that this script is expecting."
+	echo "Therefore, we need to abort here."
+	exit 1
+fi
+
+# check for missing packages
+if ! [ -x /usr/bin/qemu-aarch64-static ] ||  \
+   ! [ -x /sbin/partprobe ] || \
+   ! [ -x /sbin/fatlabel ] || \
+   ! ( [ -x /bin/uuid ] || [ -x /usr/bin/uuid ] ) ; then
+	echo "At least one required software package is missing."
+	echo "Attempting to install required packages."
+	echo "Updating package lists ..."
+	apt-get update
+	echo "Now fetching and installing packages."
+	apt-get -d -y install qemu-user-static parted dosfstools install uuid && \
+	apt-get -y install qemu-user-static parted dosfstools install uuid || exit 1
+fi
+
+exit 0

@@ -1,0 +1,4 @@
+#!/bin/bash -e
+
+# mount the data partition
+while ! mount $PARTEIGHT $MOUNTPOINT; do sleep 1; done

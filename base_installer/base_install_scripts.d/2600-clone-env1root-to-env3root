@@ -1,0 +1,13 @@
+#!/bin/bash -e
+
+# now we are cloning ENV1 rootfs to ENV3 rootfs
+while ! dd if=$PARTFIVE of=$PARTSEVEN bs=4096k status=progress; do sleep 1; done
+
+# check if write to block device really succeeded
+test -b $PARTSEVEN || (echo "Device $PARTSEVEN is no longer a block device!" ; exit 1)
+
+# to make sure we can tell our clones apart, we set a new LABEL and UUID
+tune2fs -L rootfs3 -U $(uuid) $PARTSEVEN
+
+# sync changes
+sync

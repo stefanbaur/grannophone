@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+# create SSH host keys
+echo "Creating SSH2 RSA key; this may take some time ..." 
+ssh-keygen -q -f "$MOUNTPOINT/etc/ssh/ssh_host_rsa_key" -t rsa -N '' -C "root@$(cat $MOUNTPOINT/etc/hostname)"
+echo "Creating SSH2 ECDSA key; this may take some time ..."
+ssh-keygen -q -f "$MOUNTPOINT/etc/ssh/ssh_host_ecdsa_key" -t ecdsa -N '' -C "root@$(cat $MOUNTPOINT/etc/hostname)"
+echo "Creating SSH2 ED25519 key; this may take some time ..."
+ssh-keygen -q -f "$MOUNTPOINT/etc/ssh/ssh_host_ed25519_key" -t ed25519 -N '' -C "root@$(cat $MOUNTPOINT/etc/hostname)"

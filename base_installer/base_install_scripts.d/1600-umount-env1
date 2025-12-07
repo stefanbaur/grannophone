@@ -1,0 +1,4 @@
+#!/bin/bash -e
+
+# we're done making changes to ENV1, so let's unmount everything
+while ! umount -R $MOUNTPOINT; do sleep 1; done

@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+# force fsck (required for resize)
+fsck -f -y $PARTFIVE
+# resize rootfs to partition size
+resize2fs $PARTFIVE
+
+# make sure everything is written to disk/media
+sync

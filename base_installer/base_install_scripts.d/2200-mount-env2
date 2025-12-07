@@ -1,0 +1,14 @@
+#!/bin/bash -e
+
+# wait until device/partition becomes available
+while ! test -b $PARTSIX ; do sleep 1; done
+
+# mount rootfs and bootfs the way they would be in ENV2
+while ! mount $PARTSIX $MOUNTPOINT; do sleep 1; done
+while ! mount $PARTTWO $MOUNTPOINT/boot/firmware; do sleep 1; done
+
+# mount pseudo-filesystems 
+mount -B /dev/ $MOUNTPOINT/dev
+mount -t devpts none $MOUNTPOINT/dev/pts
+mount -B /sys/ $MOUNTPOINT/sys
+mount -t proc proc $MOUNTPOINT/proc

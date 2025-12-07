@@ -1,0 +1,5 @@
+#!/bin/bash -e
+
+# make sshd display a banner
+echo "Banner /etc/ssh/banner" > $MOUNTPOINT/etc/ssh/sshd_config.d/banner.conf
+touch /etc/ssh/banner

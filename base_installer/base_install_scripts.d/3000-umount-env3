@@ -1,0 +1,3 @@
+#!/bin/bash -e 
+# we're done making changes to ENV3's rootfs, so let's unmount everything
+while ! umount -R $MOUNTPOINT; do sleep 1; done
