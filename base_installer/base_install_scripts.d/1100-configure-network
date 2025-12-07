@@ -1,5 +1,6 @@
 #!/bin/bash -e
 
+echo "Adding network configuration ..."
 # add loopback network configuration
 echo "auto lo" >> $MOUNTPOINT/etc/network/interfaces
 echo "iface lo inet loopback" >> $MOUNTPOINT/etc/network/interfaces

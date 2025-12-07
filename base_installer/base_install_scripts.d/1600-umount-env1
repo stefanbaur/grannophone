@@ -1,4 +1,6 @@
 #!/bin/bash -e
 
 # we're done making changes to ENV1, so let's unmount everything
+echo "Unmounting ENV1 ..."
 while ! umount -R $MOUNTPOINT; do sleep 1; done
+echo "Finished unmounting ENV1."

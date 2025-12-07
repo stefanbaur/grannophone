@@ -1,5 +1,6 @@
 #!/bin/bash -e
 
+echo "Setting and generating locale ..."
 # set and generate locale so the following update steps won't complain
 sed -e 's/^en_GB/# en_GB/' \
     -e "s/^# $OUR_LOCALE/$OUR_LOCALE/" \
