@@ -1,5 +1,6 @@
 #!/bin/bash -e
 
+echo "Making sure the booted ENV is already visible at login ..."
 # make sure booted environment (ENV1/2/3) is shown at the login console
 cat > $MOUNTPOINT/etc/cron.d/showsysenv <<SHOWSYSENV
 @reboot root bash -c "export SYSENV=\$(awk '\$2=="/boot/firmware" {print \$1}' /proc/mounts | tr -cs '[:digit:]' '\n' | tail -n 1) ; test -n \"\\\$SYSENV\" && /usr/bin/sed -e 's/^ENV[0-9]-//' -e 's/^Debian/ENV'\\\${SYSENV}'-Debian/' -i /etc/issue /etc/issue.net"

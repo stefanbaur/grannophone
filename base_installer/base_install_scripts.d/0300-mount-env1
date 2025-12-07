@@ -1,5 +1,6 @@
 #!/bin/bash -e
 
+echo "Mounting ENV1 ..."
 # mount rootfs and bootfs the way they would be in ENV1
 while ! mount $PARTFIVE $MOUNTPOINT; do sleep 1; done
 while ! mount $PARTONE $MOUNTPOINT/boot/firmware; do sleep 1; done
@@ -8,3 +9,5 @@ mount -B /dev/ $MOUNTPOINT/dev
 mount -t devpts none $MOUNTPOINT/dev/pts
 mount -B /sys/ $MOUNTPOINT/sys
 mount -t proc proc $MOUNTPOINT/proc
+
+echo "All mounts succeeded!"

@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+echo "Patching cloud-init's user-data file .."
+
 # patch cloud-init's user-data file in case the imager messed up
 # (this may happen with authorized_keys files instead of id_*.pub files,
 # as authorized_keys may contain multiple keys, but the imager currently

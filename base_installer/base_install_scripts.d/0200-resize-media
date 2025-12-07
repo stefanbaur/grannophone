@@ -1,8 +1,12 @@
 #!/bin/bash -e
 
+echo "Resizing partition five ..."
+
 # force fsck (required for resize)
+echo "First, a forced fsck ..."
 fsck -f -y $PARTFIVE
 # resize rootfs to partition size
+echo "Resizing filesystem to full size of partition five ..."
 resize2fs $PARTFIVE
 
 # make sure everything is written to disk/media
