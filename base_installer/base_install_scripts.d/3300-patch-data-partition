@@ -2,34 +2,44 @@
 
 # inject a sample autostart.sh
 while ! mount $PARTEIGHT $MOUNTPOINT; do sleep 1; done
-echo '#!/bin/bash' > $MOUNTPOINT/autostart.sh
-echo '# test if cloud-init is still running (generic homedir not renamed/moved yet)' >> $MOUNTPOINT/autostart.sh
-echo 'test -d /home/$(grep -A1 "^users:" /boot/firmware/user-data | awk '"'"'$2=="name:" { print $3 }'"'"') || (echo "cloud-init incomplete $(date)" >>/data/reboot.log && exit 0)' > $MOUNTPOINT/autostart.sh
-echo 'chvt 8' > $MOUNTPOINT/autostart.sh
-echo 'while ! test -s /etc/ssh/banner; do clear >/dev/tty8 ; echo "banner not set yet $(date)" >/dev/tty8 ; sleep 10; done' >> $MOUNTPOINT/autostart.sh
-echo 'echo "$(cat /etc/ssh/banner) - $(date)">>/data/reboot.log' >> $MOUNTPOINT/autostart.sh
-echo '# is this the second reboot (first one does not log our ENV)? then remove cloud-init and set reboot cycle to ENV2 #runonce' >> $MOUNTPOINT/autostart.sh
-echo 'if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 1 ] ; then #runonce' >> $MOUNTPOINT/autostart.sh
-echo '  ## remove cloud-init #runonce' >> $MOUNTPOINT/autostart.sh
-echo '  #apt purge cloud-init -y && apt autopurge -y #runonce' >> $MOUNTPOINT/autostart.sh
-echo '  # enable overlay file system #runonce' >> $MOUNTPOINT/autostart.sh
-echo '  shutdown -r 1 2>&1 | tee -a /data/reboot.log >/dev/tty8 #runonce' >> $MOUNTPOINT/autostart.sh
-echo '  sed -e "s#overlayroot=tmpfs #overlayroot=tmpfs:recurse=0 #" -i /boot/firmware/cmdline.txt #runonce' >> $MOUNTPOINT/autostart.sh
-echo '  # set reboot cycle to next ENV #runonce' >> $MOUNTPOINT/autostart.sh
-echo '  if grep -q "^ENV1" /etc/ssh/banner; then #runonce' >> $MOUNTPOINT/autostart.sh
-echo '    sed -e "s#^boot_partition=1#boot_partition=2#" -i /boot/firmware/autoboot.txt #runonce' >> $MOUNTPOINT/autostart.sh
-echo '    shutdown -r 1 2>&1 | tee -a /data/reboot.log >/dev/tty8 || touch /data/could-not-reboot #runonce' >> $MOUNTPOINT/autostart.sh
-echo '  elif grep -q "^ENV2" /etc/ssh/banner; then #runonce' >> $MOUNTPOINT/autostart.sh
-echo '    mount /dev/disk/by-label/bootfs /mnt #runonce' >> $MOUNTPOINT/autostart.sh
-echo '    sed -e "s#^boot_partition=2#boot_partition=3#" -i /mnt/autoboot.txt #runonce' >> $MOUNTPOINT/autostart.sh
-echo '    umount /dev/disk/by-label/bootfs #runonce' >> $MOUNTPOINT/autostart.sh
-echo '    reboot || touch /data/could-not-reboot #runonce' >> $MOUNTPOINT/autostart.sh
-echo '  elif grep -q "^ENV3" /etc/ssh/banner; then #runonce' >> $MOUNTPOINT/autostart.sh
-echo '    mount /dev/disk/by-label/bootfs /mnt #runonce' >> $MOUNTPOINT/autostart.sh
-echo '    sed -e "s#^boot_partition=3#boot_partition=2#" -i /mnt/autoboot.txt #runonce' >> $MOUNTPOINT/autostart.sh
-echo '    touch /mnt/config_complete.txt #runonce' >> $MOUNTPOINT/autostart.sh
-echo '    umount /dev/disk/by-label/bootfs #runonce' >> $MOUNTPOINT/autostart.sh
-echo '    sed -e "/#runonce$/d" -i /data/autostart.sh && shutdown -r 1 2>&1 | tee -a /data/reboot.log >/dev/tty8 #runonce' >> $MOUNTPOINT/autostart.sh
-echo '  fi #runonce' >> $MOUNTPOINT/autostart.sh
-echo 'fi #runonce' >> $MOUNTPOINT/autostart.sh
+cat > $MOUNTPOINT/autostart.sh <<AUTOSTART
+#!/bin/bash
+
+# test if cloud-init is still running (generic homedir not renamed/moved yet)
+if ! [ -d /home/\$(grep -A1 "^users:" /boot/firmware/user-data | awk '$2=="name:" { print $3 }') ]; then
+	echo "cloud-init incomplete $(date)" >>/data/reboot.log
+	exit 0
+fi
+chvt 8
+
+while ! test -s /etc/ssh/banner; do clear >/dev/tty8 ; echo "banner not set yet $(date)" >/dev/tty8 ; sleep 10; done
+
+echo "$(cat /etc/ssh/banner) - $(date)">>/data/reboot.log
+
+# is this the second reboot (first one does not log our ENV)? then remove cloud-init and set reboot cycle to ENV2 #runonce
+if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 1 ] ; then #runonce
+	## removal currently disabled #runonce
+	## remove cloud-init #runonce
+	#apt purge cloud-init -y && apt autopurge -y #runonce
+	# enable overlay file system #runonce
+	sed -e "s#overlayroot=tmpfs #overlayroot=tmpfs:recurse=0 #" -i /boot/firmware/cmdline.txt #runonce
+	# set reboot cycle to next ENV #runonce
+	shutdown -r 1 2>&1 | tee -a /data/reboot.log >/dev/tty8 #runonce
+	if grep -q "^ENV1" /etc/ssh/banner; then #runonce
+		sed -e "s#^boot_partition=1#boot_partition=2#" -i /boot/firmware/autoboot.txt #runonce
+		shutdown -r 1 2>&1 | tee -a /data/reboot.log >/dev/tty8 || touch /data/could-not-reboot #runonce
+	elif grep -q "^ENV2" /etc/ssh/banner; then #runonce
+		mount /dev/disk/by-label/bootfs /mnt #runonce
+		sed -e "s#^boot_partition=2#boot_partition=3#" -i /mnt/autoboot.txt #runonce
+		umount /dev/disk/by-label/bootfs #runonce
+		reboot || touch /data/could-not-reboot #runonce
+	elif grep -q "^ENV3" /etc/ssh/banner; then #runonce
+		mount /dev/disk/by-label/bootfs /mnt #runonce
+		sed -e "s#^boot_partition=3#boot_partition=2#" -i /mnt/autoboot.txt #runonce
+		touch /mnt/config_complete.txt #runonce
+		umount /dev/disk/by-label/bootfs #runonce
+		sed -e "/#runonce$/d" -i /data/autostart.sh && shutdown -r 1 2>&1 | tee -a /data/reboot.log >/dev/tty8 #runonce'
+	fi #runonce
+fi #runonce
+AUTOSTART
 chmod +x $MOUNTPOINT/autostart.sh
