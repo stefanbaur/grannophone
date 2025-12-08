@@ -16,7 +16,7 @@ echo "$(cat /etc/ssh/banner) - bootup complete - $(date)">>/data/reboot.log
 # is this the second reboot (first one does not log our ENV)? then remove cloud-init and set reboot cycle to ENV2 #runonce
 if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 1 ] ; then #runonce
 	# remove cloud-init #runonce
-	apt purge cloud-init -y #runonce
+	apt purge cloud-init -y 2>&1 | tee /data/cloudinit-purge.log  #runonce
 	# do not use apt autopurge -y or apt clean here, or you might wipe the overlayfs packages we already downloaded during the chroot phase #runonce
 	# enable overlay file system #runonce
 	raspi-config nonint enable_overlayfs #runonce
