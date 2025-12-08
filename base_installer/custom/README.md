@@ -11,7 +11,7 @@ in the `/base_install_scripts.d` folder expect scripts named
 
   - ENV1-custom-install.sh, 
   - ENV2-custom-install.sh,
-  - ENV1-custom-install.sh, and 
+  - ENV3-custom-install.sh, and 
   - autostart.sh, 
 
 respectively.
@@ -19,5 +19,5 @@ respectively.
 If the folder this README.md is in (currently named `custom`) is empty, the scripts will pull a corresponding template file from the folder `templates`.
 
 **Notes:**
-  - **ENV1-custom-install.sh will be run first, and ENV2 and ENV2 are clones of ENV1, with the cloning process starting *after* ENV1-custom-install.sh is run, so whatever you put in the custom script for ENV1 will also end up in ENV2 and ENV3.**
+  - **ENV1-custom-install.sh will be run first, and ENV2 and ENV3 are clones of ENV1, with the cloning process starting *after* ENV1-custom-install.sh is run, so whatever you put in the custom script for ENV1 will also end up in ENV2 and ENV3.**
   - **There is a `.gitignore` file in the parent directory that excludes files named ENV?-custom-install.sh and autostart.sh in this directory, so you can safely put your own versions here, a `git pull` command  will not overwrite them.**
