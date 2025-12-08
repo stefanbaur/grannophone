@@ -35,12 +35,12 @@ if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 1 ] ; then #run
 	apt purge cloud-init -y 2>&1 | tee -a /data/$(cat /etc/ssh/banner)-apt.log >/dev/tty8 #runonce
 	# do not use apt autopurge -y or apt clean here, or you might wipe the overlayfs packages we already downloaded during the chroot phase #runonce
 	# enable overlay file system #runonce
-	raspi-config nonint enable_overlayfs 2>&1 | tee /data/$(cat /etc/ssh/banner)-overlayfs.log >/dev/tty8 #runonce
+	raspi-config nonint enable_overlayfs 2>&1 | tee -a /data/$(cat /etc/ssh/banner)-apt.log >/dev/tty8 #runonce
 	# make sure /data is not affected by overlayfs #runonce
 	sed -e "s#overlayroot=tmpfs #overlayroot=tmpfs:recurse=0 #" -i /boot/firmware/cmdline.txt #runonce
 	if grep -q "^ENV1" /etc/ssh/banner; then #runonce
-		apt clean 2>&1 | tee /data/$(cat /etc/ssh/banner)-apt.log > /dev/tty8 #runonce
-		apt autopurge -y 2>&1 | tee /data/$(cat /etc/ssh/banner)-apt.log > /dev/tty8 #runonce
+		apt clean 2>&1 | tee -a /data/$(cat /etc/ssh/banner)-apt.log > /dev/tty8 #runonce
+		apt autopurge -y 2>&1 | tee -a /data/$(cat /etc/ssh/banner)-apt.log > /dev/tty8 #runonce
 		sed -e "s#^boot_partition=1#boot_partition=2#" -i /boot/firmware/autoboot.txt #runonce
 		echo "Current date: $(date)" | tee -a /data/reboot.log >/dev/tty8 #runonce
 		if /sbin/shutdown -r 1 1 2>&1 | tee -a /data/reboot.log >/dev/tty8; then #runonce
@@ -50,21 +50,21 @@ if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 1 ] ; then #run
 		fi #runonce
 	elif grep -q "^ENV2" /etc/ssh/banner; then #runonce
 		# as we already downloaded the required packages during the chroot phase, we can install sl without needing internet access #runonce
-		apt install -y sl 2>&1 | tee /dev/tty8 #runonce
+		apt install -y sl 2>&1 | tee /data/$(cat /etc/ssh/banner)-apt.log > /dev/tty8 #runonce
 		apt clean 2>&1 | tee /data/$(cat /etc/ssh/banner)-apt.log > /dev/tty8 #runonce
 		apt autopurge -y 2>&1 | tee /data/$(cat /etc/ssh/banner)-apt.log > /dev/tty8 #runonce
 		mount /dev/disk/by-label/bootfs /mnt #runonce
 		sed -e "s#^boot_partition=2#boot_partition=3#" -i /mnt/autoboot.txt #runonce
 		umount /dev/disk/by-label/bootfs #runonce
 		echo "Current date: $(date)" | tee -a /data/reboot.log >/dev/tty8 #runonce
-		if /sbin/shutdown -r 1 ; then #runonce
+		if /sbin/shutdown -r 1 2>&1 tee /data/reboot.log > /dev/tty8; then #runonce
 			touch /data/ENV2-stage-complete #runonce
 		else #runonce
 			touch /data/ENV2-could-not-perform-reboot #runonce
 		fi #runonce
 	elif grep -q "^ENV3" /etc/ssh/banner; then #runonce
 		# as we already downloaded the required packages during the chroot phase, we can install sl without needing internet access #runonce
-		apt install -y sl #runonce
+		apt install -y sl 2>&1 | tee /data/$(cat /etc/ssh/banner)-apt.log > /dev/tty8 #runonce
 		apt clean 2>&1 | tee /data/$(cat /etc/ssh/banner)-apt.log > /dev/tty8 #runonce
 		apt autopurge -y 2>&1 | tee /data/$(cat /etc/ssh/banner)-apt.log > /dev/tty8 #runonce
 		mount /dev/disk/by-label/bootfs /mnt #runonce
