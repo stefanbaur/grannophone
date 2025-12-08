@@ -1,64 +1,11 @@
 #!/bin/bash -e
 
 # inject a sample autostart.sh
-echo "Injecting a sample autostart.sh into the data partition ..."
-cat > $MOUNTPOINT/autostart.sh <<AUTOSTART
-#!/bin/bash
-
-# test if cloud-init is still running (generic homedir not renamed/moved yet)
-if ! [ -d /home/\$(grep -A1 "^users:" /boot/firmware/user-data | awk '\$2=="name:" { print \$3 }') ]; then
-	echo "cloud-init incomplete \$(date)" >>/data/reboot.log
-	exit 0
+echo "Injecting autostart.sh into the data partition ..."
+if ! [ -f ../custom/autostart.sh ] ; then
+	echo "No custom file found, using template from template directory."
+	cp ../templates/autostart.sh ../custom/
 fi
-chvt 8
-
-while ! test -s /etc/ssh/banner; do clear >/dev/tty8 ; echo "banner not set yet \$(date)" >/dev/tty8 ; sleep 10; done
-
-echo "\$(cat /etc/ssh/banner) - \$(date)">>/data/reboot.log
-
-# is this the second reboot (first one does not log our ENV)? then remove cloud-init and set reboot cycle to ENV2 #runonce
-if [ \$(grep \$(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 1 ] ; then #runonce
-	## removal currently disabled #runonce
-	## remove cloud-init #runonce
-	#apt purge cloud-init -y && apt autopurge -y #runonce
-	# enable overlay file system #runonce
-	# sed -e "s#overlayroot=tmpfs #overlayroot=tmpfs:recurse=0 #" -i /boot/firmware/cmdline.txt #runonce
-	# set reboot cycle to next ENV #runonce
-	# echo "Date is now: \$(date)" | tee -a /data/reboot.log >/dev/tty8 #runonce
-	# /sbin/shutdown -r 1 1 2>&1 | tee -a /data/reboot.log >/dev/tty8 #runonce
-	if grep -q "^ENV1" /etc/ssh/banner; then #runonce
-		sed -e "s#^boot_partition=1#boot_partition=2#" -i /boot/firmware/autoboot.txt #runonce
-		echo "Date is now: \$(date)" | tee -a /data/reboot.log >/dev/tty8 #runonce
-		if /sbin/shutdown -r 1 1 2>&1 | tee -a /data/reboot.log >/dev/tty8; then #runonce
-			touch /data/ENV1-stage-complete #runonce
-		else #runonce
-			touch /data/ENV1-could-not-reboot #runonce
-		fi #runonce
-	elif grep -q "^ENV2" /etc/ssh/banner; then #runonce
-		mount /dev/disk/by-label/bootfs /mnt #runonce
-		sed -e "s#^boot_partition=2#boot_partition=3#" -i /mnt/autoboot.txt #runonce
-		umount /dev/disk/by-label/bootfs #runonce
-		echo "Date is now: \$(date)" | tee -a /data/reboot.log >/dev/tty8 #runonce
-		if /sbin/reboot ; then #runonce
-			touch /data/ENV2-stage-complete #runonce
-		else #runonce
-			touch /data/ENV2-could-not-reboot #runonce
-		fi #runonce
-	elif grep -q "^ENV3" /etc/ssh/banner; then #runonce
-		mount /dev/disk/by-label/bootfs /mnt #runonce
-		sed -e "s#^boot_partition=3#boot_partition=2#" -i /mnt/autoboot.txt #runonce
-		touch /mnt/config_complete.txt #runonce
-		umount /dev/disk/by-label/bootfs #runonce
-		touch /data/ENV3-stage-complete
-		echo "Date is now: \$(date)" | tee -a /data/reboot.log >/dev/tty8 #runonce
-		if sed -e "/#runonce$/d" -i /data/autostart.sh && /sbin/shutdown -r 1 1 2>&1 | tee -a /data/reboot.log >/dev/tty8; then #runonce
-			touch /data/ENV3-runonce-removed #runonce
-		else #runonce
-			touch /data/ENV3-could-not-remove-runonce #runonce
-		fi #runonce
-	fi #runonce
-fi #runonce
-AUTOSTART
 
 echo "Setting executable bit for autostart.sh ..."
 chmod +x $MOUNTPOINT/autostart.sh

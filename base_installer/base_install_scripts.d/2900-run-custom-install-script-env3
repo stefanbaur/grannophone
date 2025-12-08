@@ -3,6 +3,7 @@
 # check for custom install script; execute it if present, and remove the executable bit afterwards (so it runs only once)
 
 if ! [ -f ../custom/ENV3-custom-install.sh ] ; then
+	echo "No custom file found, using template from template directory."
 	cp ../templates/ENV3-custom-install.sh ../custom/
 fi
 if bash -n ../custom/ENV3-custom-install.sh ; then

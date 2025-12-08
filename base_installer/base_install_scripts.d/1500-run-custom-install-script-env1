@@ -5,6 +5,7 @@
 # Note that since ENV1 will be cloned to ENV2 and ENV3, ENV1-custom-install.sh is actually more of an ENVALL than an ENV1 custom script
 
 if ! [ -f ../custom/ENV1-custom-install.sh ] ; then
+	echo "No custom file found, using template from template directory."
 	cp ../templates/ENV1-custom-install.sh ../custom/
 fi
 if bash -n ../custom/ENV1-custom-install.sh ; then
