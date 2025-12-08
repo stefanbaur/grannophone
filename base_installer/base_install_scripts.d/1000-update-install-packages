@@ -16,4 +16,4 @@ chroot $MOUNTPOINT apt-get autopurge -y
 
 echo "Installing the minimum required packages ..."
 # install the minimum required packages
-chroot $MOUNTPOINT apt-get install -y ifupdown bridge-utils screen git vim
+chroot $MOUNTPOINT apt-get install -y ifupdown haveged fake-hwclock bridge-utils screen git vim
