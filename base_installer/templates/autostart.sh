@@ -12,18 +12,21 @@ chvt 1
 # log our ENV and date
 echo "$(cat /etc/ssh/banner) - bootup complete - $(date)">>/data/reboot.log
 
-# wait a minute and reboot to apply all post-installation changes #runonce
-if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 1 ] ; then #runonce
-	chvt 8 #runonce
-	if /sbin/shutdown -r 1 2>&1 | tee -a /data/reboot.log >/dev/tty8; then #runonce
-		touch /data/$(cat /etc/ssh/banner)-first-reboot-triggered #runonce
-	else #runonce
-		touch /data/$(cat /etc/ssh/banner)-could-not-perform-first-reboot #runonce
-	fi #runonce
-fi #runonce
+## wait a minute and reboot to apply all post-installation changes #runonce
+#if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 1 ] ; then #runonce
+#	chvt 8 #runonce
+#	if /sbin/shutdown -r 1 2>&1 | tee -a /data/reboot.log >/dev/tty8; then #runonce
+#		touch /data/$(cat /etc/ssh/banner)-first-reboot-triggered #runonce
+#	else #runonce
+#		touch /data/$(cat /etc/ssh/banner)-could-not-perform-first-reboot #runonce
+#	fi #runonce
+#fi #runonce
 
-# if this is the second reboot then remove cloud-init and set reboot cycle to ENV2 #runonce
-if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 2 ] ; then #runonce
+## if this is the second reboot then remove cloud-init and set reboot cycle to ENV2 #runonce
+#if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 2 ] ; then #runonce
+
+# if this is the first reboot then remove cloud-init and set reboot cycle to ENV2 #runonce
+if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 1 ] ; then #runonce
 	chvt 8 #runonce
 	# remove cloud-init #runonce
 	apt purge cloud-init -y 2>&1 | tee -a /data/$(cat /etc/ssh/banner)-apt.log >/dev/tty8 #runonce
@@ -40,7 +43,7 @@ if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 2 ] ; then #run
 		if /sbin/shutdown -r 1 1 2>&1 | tee -a /data/reboot.log >/dev/tty8; then #runonce
 			touch /data/ENV1-stage-complete #runonce
 		else #runonce
-			touch /data/ENV1-could-not-perform-second-reboot #runonce
+			touch /data/ENV1-could-not-perform-reboot #runonce
 		fi #runonce
 	elif grep -q "^ENV2" /etc/ssh/banner; then #runonce
 		# as we already downloaded the required packages during the chroot phase, we can install sl without needing internet access #runonce
@@ -54,7 +57,7 @@ if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 2 ] ; then #run
 		if /sbin/shutdown -r 1 ; then #runonce
 			touch /data/ENV2-stage-complete #runonce
 		else #runonce
-			touch /data/ENV2-could-not-perform-second-reboot #runonce
+			touch /data/ENV2-could-not-perform-reboot #runonce
 		fi #runonce
 	elif grep -q "^ENV3" /etc/ssh/banner; then #runonce
 		# as we already downloaded the required packages during the chroot phase, we can install sl without needing internet access #runonce
