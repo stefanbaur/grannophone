@@ -18,4 +18,6 @@ respectively.
 
 If the folder `custom` is empty, the scripts will pull a corresponding template from the folder this README.md is in (currently named `templates`).
 
-**Note: that ENV1-custom-install.sh will be run first, and ENV2 and ENV2 are clones of ENV1, with the cloning process starting *after* ENV1-custom-install.sh is run, so whatever you put in the custom script for ENV1 will also end up in ENV2 and ENV3.**
+**Notes:**
+  - **ENV1-custom-install.sh will be run first, and ENV2 and ENV2 are clones of ENV1, with the cloning process starting *after* ENV1-custom-install.sh is run, so whatever you put in the custom script for ENV1 will also end up in ENV2 and ENV3.**
+  - **There is a `.gitignore` file in the parent directory that excludes files named ENV?-custom-install.sh and autostart.sh in the `custom` directory, so you can safely put your own versions there, a `git pull` command  will not overwrite them. Files in this directory (`templates`), however, will be overwritten.**
