@@ -15,3 +15,7 @@ mount -B /sys/ $MOUNTPOINT/sys
 mount -t proc proc $MOUNTPOINT/proc
 
 echo "All mounts succeeded!"
+
+# remove leftovers of ENV1
+echo "Removing ENV1-custom-install.sh from ENV2 ..."
+rm $MOUNTPOINT/ENV1-custom-install.sh
