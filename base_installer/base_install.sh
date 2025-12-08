@@ -67,18 +67,19 @@ else
 fi
 
 ####################
-#
 
 # TODO
+# - Make ENV1,2,3 do a "reboot dance" straight after base install, ending up in ENV2 - work in progress -> investigate autostart.sh
 # - try mkfs and rsync -avPAHXx --numeric-ids origin destination/ instead of dd - is it faster?
-# - investigate why dnsmasq/ip config of ENV1 wouldn't start up at first boot - might be a flaky cable
-# - Make ENV1,2,3 do a "reboot dance" straight after base install, ending up in ENV2 - work in progress
-# - maybe use partx instead of partprobe? or no partprobe at all ...
-# - raspi-config nonint enable_overlayfs
+# - note: rsync now supports -HS --inplace and possibly --no-whole-file as well
+# - command line to enable overlayfs: sudo raspi-config nonint enable_overlayfs
 # - update-rc.d alsa-utils disable
 # - update-rc.d dnsmasq disable
-# was sagt wdctl?
-# was passiert bei einem minimalsten Linux (direkt vom imager), nur mit watchdog?
+# - watchdog is messed up?
+#   - try combining systemd and userland watchdog settings
+#   - what's the output of wdctl?
+#   - what happens when using a minimal Linux image (straight out of the imager), only with the watchdog-userland package?
+# manual mount commands for an attempted switch to sysvinit:
 # mount /dev/sda7 /mnt/
 # mount /dev/sda3 /mnt/boot/firmware/
 # mount --bind /dev /mnt/dev
@@ -89,4 +90,3 @@ fi
 # apt install --allow-remove-essential sysvinit-core initscripts orphan-sysvinit-scripts rsyslog watchdog ntpsec-ntpdate uuid netcat-openbsd fake-hwclock systemd-sysv- systemd- apparmor- bluez-
 # apt purge systemd-timesyncd systemd-zram-generator network-manager cloud-init
 # apt autopurge -y
-# 
