@@ -42,7 +42,7 @@ if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 1 ] ; then #run
 		apt clean 2>&1 | tee /data/$(cat /etc/ssh/banner)-apt.log > /dev/tty8 #runonce
 		apt autopurge -y 2>&1 | tee /data/$(cat /etc/ssh/banner)-apt.log > /dev/tty8 #runonce
 		sed -e "s#^boot_partition=1#boot_partition=2#" -i /boot/firmware/autoboot.txt #runonce
-		echo "Date is now: $(date)" | tee -a /data/reboot.log >/dev/tty8 #runonce
+		echo "Current date: $(date)" | tee -a /data/reboot.log >/dev/tty8 #runonce
 		if /sbin/shutdown -r 1 1 2>&1 | tee -a /data/reboot.log >/dev/tty8; then #runonce
 			touch /data/ENV1-stage-complete #runonce
 		else #runonce
@@ -56,7 +56,7 @@ if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 1 ] ; then #run
 		mount /dev/disk/by-label/bootfs /mnt #runonce
 		sed -e "s#^boot_partition=2#boot_partition=3#" -i /mnt/autoboot.txt #runonce
 		umount /dev/disk/by-label/bootfs #runonce
-		echo "Date is now: $(date)" | tee -a /data/reboot.log >/dev/tty8 #runonce
+		echo "Current date: $(date)" | tee -a /data/reboot.log >/dev/tty8 #runonce
 		if /sbin/shutdown -r 1 ; then #runonce
 			touch /data/ENV2-stage-complete #runonce
 		else #runonce
@@ -71,7 +71,7 @@ if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 1 ] ; then #run
 		sed -e "s#^boot_partition=3#boot_partition=2#" -i /mnt/autoboot.txt #runonce
 		umount /dev/disk/by-label/bootfs #runonce
 		touch /data/ENV3-stage-complete #runonce
-		echo "Date is now: $(date)" | tee -a /data/reboot.log >/dev/tty8 #runonce
+		echo "Current date: $(date)" | tee -a /data/reboot.log >/dev/tty8 #runonce
 		# this line removes all lines ending with #runonce from this autostart.sh file #runonce
 		if sed -e "/#runonce$/d" -i /data/autostart.sh && /sbin/shutdown -r 1 1 2>&1 | tee -a /data/reboot.log >/dev/tty8; then #runonce
 			touch /data/ENV3-runonce-removed #runonce
