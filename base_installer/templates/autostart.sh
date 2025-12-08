@@ -66,7 +66,7 @@ if [ $(grep $(cat /etc/ssh/banner) /data/reboot.log | wc -l) -eq 2 ] ; then #run
 		umount /dev/disk/by-label/bootfs #runonce
 		touch /data/ENV3-stage-complete #runonce
 		echo "Date is now: $(date)" | tee -a /data/reboot.log >/dev/tty8 #runonce
-		# this line removes all lines ending with #runonce from this autostart.sh file
+		# this line removes all lines ending with #runonce from this autostart.sh file #runonce
 		if sed -e "/#runonce$/d" -i /data/autostart.sh && /sbin/shutdown -r 1 1 2>&1 | tee -a /data/reboot.log >/dev/tty8; then #runonce
 			touch /data/ENV3-runonce-removed #runonce
 		else #runonce
