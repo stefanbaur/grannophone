@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # make sure apt/dpkg don't try to pop up any dialog boxes
-DEBIAN_FRONTEND=noninteractive
+export DEBIAN_FRONTEND=noninteractive
 
 # test if cloud-init is still running #runonce
 echo "Checking/waiting for cloud-init to finish - $(date)" >>/data/reboot.log #runonce
