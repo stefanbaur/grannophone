@@ -15,38 +15,23 @@
   - Start rpi-imager:
     - `chmod +x imager_latest_amd64.AppImage`
     - `sudo imager_latest_amd64.AppImage`
-  - Select your language, click 
-  - At "CHOOSE DEVICE", select your Raspberry Pi Model (Pi 4 or Pi 5, or the corresponding entry for a Compute Module 4 or 5)
-  - At "CHOOSE OS", select the proper Raspberry Pi OS version - do NOT use the default image, rather, pick: "Raspberry Pi OS (other)" -> "Raspberry Pi OS Lite (64-bit)"
-  - At "CHOOSE STORAGE", select the destination media: rpi-imager should be smart enough to show only removable media (i.e. your microSD card or USB flash stick)
-  - Click "NEXT"
-  - Click "EDIT SETTINGS"
-    - Select the "General" tab
-      - Note that depending on the size of your screen and the rpi-imager window, you may have to scroll down to reach all the items you need to check/set.
-      - Make sure "Set hostname" is checked and enter a suitable, unique hostname (e.g. grnp-donny-duck, grnp-daisy-duck) - the .local gets added automatically
-      - Make sure "Set username and password" is checked and choose a username that will be common across all the devices you intend to manage. For now, choose a random password with at least 16 characters and make sure to store it in a safe place. (The configuration as per these instructions will block remote logins using this password, but still, please don't choose something generic and easy to guess like "raspberry".)
-      - Make sure "Configure wireless LAN" is NOT checked.
-      - Make sure "Set locale settings" is checked and the Time zone and Keyboard layout correspond to your region's usual settings.
-      - DO NOT CLICK THE "SAVE" BUTTON JUST YET!
-    - Select the "Services" tab
-      - Make sure "Enable SSH" is checked
-      - Select "Allow public-key authentication only"
-        - If you do not already have a public/private SSH key pair:
-          - If the button "RUN SSH-KEYGEN" is greyed out for you, open a new console and run the "ssh-keygen" command there. You can accept all default settings; and when prompted for a passphrase, enter a passphrase that is at least 16 characters long. Feel free to use a complete sentence. Make sure you store this passphrase/sentence somewhere safe.
-          - If the button "RUN SSH-KEYGEN" works for you, feel free to use it and follow the instructions on screen.
-        - If/Once you have a public/private SSH key pair, press the "ADD SSH KEY" button and paste the text string of your public key (usually stored in a text file matching ~/.ssh/id_*.pub) here.
-      - AGAIN, DO NOT CLICK THE "SAVE" BUTTON JUST YET!
-    - Select the "Options" tab
-      - Feel free to check "Play sound when finished"
-      - Make sure "Eject media when finished" is checked.
-      - Make sure "Enable telemetry" is NOT checked.
-      - Now, click the "SAVE" button
-    - Click "YES" to confirm you want to apply these settings
-  - Confirm that you wish to completely erase and overwrite the selected destination media
-  - At this point, you may be prompted for your sudo/root/administrator password
+  - Select your language, click "NEXT"
+  - Select "APP OPTIONS" (the button in the lower left corner), disable telemetry, click "SAVE"
+  - Select your Raspberry Pi Model (Pi 4 or Pi 5, or the corresponding entry for a Compute Module 4 or 5), click "NEXT"
+  - Select the proper Raspberry Pi OS version - do NOT use the default image, rather, pick: "Raspberry Pi OS (other)" -> "Raspberry Pi OS Lite (64-bit)" (Note that depending on the size of your screen and the rpi-imager window, you may have to scroll down to reach that selection), click "NEXT"
+  - Select the destination media (rpi-imager should be smart enough to show only removable media, i.e. your microSD card or USB flash stick), click "NEXT"
+  - Eenter a suitable, unique hostname (e.g. grnp-donny-duck, grnp-daisy-duck), click "NEXT"
+  - Select your country's capital, time zone, and keyboard (you can type the first letter to speed up scrolling, but only the first), click "NEXT"
+  - Choose a username that will be common across all the devices you intend to manage, choose a random password with at least 16 characters and make sure to store it in a safe place. (The `base_install.sh` script will make sure remote logins using this password will not be permitted, but still, please don't choose something generic and easy to guess like "raspberry".), click "NEXT"
+  - Blank all the fields regarding Wifi, click "NEXT"
+  - Select "Enable SSH" and "Use public key authentication", then select your keyfile - do NOT copy-paste its contents, even though the form suggests you could - and click "NEXT" (The `base_install.sh` script will make sure even multi-line keyfiles containing multiple keys will work)
+  - Disable Raspberry Pi Connect, click "NEXT"
+  - Review the summary and if everything seems okay, click "WRITE"
+  - Wait until the safety timer expires and the button "PLEASE WAIT" changes to "I UNDERSTAND, ERASE AND WRITE", then click the latter.
   - Once rpi-imager has completed writing and verifying the image, exit rpi-imager
   - Remove the removable media and re-insert it after a good 10-15 seconds (if you are using a CM with flash, this means you need to re-run `rpiboot`)
   - Review the default settings in `base_install.conf`, if you need to make any changes, save them as `base_install_custom.conf` so they won't get overwritten by a `git pull`
+  - Review the templates in the `templates` folder, copy them over to the `custom` folder and make any changes you deem neccessary
   - Run `sudo ./base_install.sh 2>&1 | tee base_install.log`
   - When `base_install.sh` has finished its work, remove the media and boot your Pi from it (note that it will reboot several times until the installation is complete)
 
