@@ -1,11 +1,22 @@
 #!/bin/bash -e
 
 # inject a sample autostart.sh
-echo "Injecting autostart.sh into the data partition ..."
-if ! [ -f ../custom/autostart.sh ] ; then
-	echo "No custom file found, using template from template directory."
+if ! [ -x ../custom/autostart.sh ] ; then
+	echo "No executable autostart.sh file found, using template from template directory."
 	cp ../templates/autostart.sh ../custom/
+	chmod +x ../custom/autostart.sh
+	AUTOSTART_NO_CUSTOM=true
+fi
+if bash -n ../custom/autostart.sh ; then
+	echo "A syntactically correct autostart.sh file has been detected. Injecting it into the data partition ..."
+	rsync -aPvH ../custom/autostart.sh $MOUNTPOINT/autostart.sh 
+elif ! bash -n ../custom/autostart.sh ; then
+	echo "Syntax error in autostart.sh detected. Aborting."
+	exit 1
 fi
 
-echo "Setting executable bit for autostart.sh ..."
-chmod +x $MOUNTPOINT/autostart.sh
+if [ -n "$AUTOSTART_NO_CUSTOM" ]; then
+	rm ../custom/autostart.sh
+fi
+
+exit 0
