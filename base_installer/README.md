@@ -28,7 +28,7 @@
   - Disable Raspberry Pi Connect, click "NEXT"
   - Review the summary and if everything seems okay, click "WRITE"
   - Wait until the safety timer expires and the button "PLEASE WAIT" changes to "I UNDERSTAND, ERASE AND WRITE", then click the latter.
-  - Once rpi-imager has completed writing and verifying the image, exit rpi-imager
+  - Once rpi-imager has completed writing and verifying the image, click "FINISH" and exit rpi-imager
   - Remove the removable media and re-insert it after a good 10-15 seconds (if you are using a CM with flash, this means you need to re-run `rpiboot`)
   - Review the default settings in `base_install.conf`, if you need to make any changes, save them as `base_install_custom.conf` so they won't get overwritten by a `git pull`
   - Review the templates in the `templates` folder, copy them over to the `custom` folder and make any changes you deem neccessary
