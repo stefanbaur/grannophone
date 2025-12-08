@@ -1,0 +1,17 @@
+#!/bin/bash -e
+
+# check for custom install scripts; execute it if present, and remove the executable bit afterwards (so it runs only once)
+#test -x ./custom-install.sh && rsync -aPvH ./custom-install.sh $MOUNTPOINT/custom-install.sh && chroot $MOUNTPOINT ./custom-install.sh && chmod -x $MOUNTPOINT/custom-install.sh
+# TODO note that since this will be cloned to ENV2 and ENV3, it it actually more of an ENVALL than an ENV1 custom script
+if [ -x ./ENV1-custom-install.sh ] && bash -n ./ENV1-custom-install.sh ; then
+	echo "A syntactically correct custom install file for ENV1 has been detected. Executing in changeroot ..."
+	rsync -aPvH ./ENV1-custom-install.sh $MOUNTPOINT/ENV1-custom-install.sh && \
+	chroot $MOUNTPOINT ./ENV1-custom-install.sh && \
+	chmod -x $MOUNTPOINT/ENV1-custom-install.sh
+elif [ -x ./ENV1-custom-install.sh ] && ! bash -n ./ENV1-custom-install.sh ; then
+	echo "Syntax error in ./ENV1-custom-install.sh detected. Skipping, but continuing ..."
+	exit 0
+else
+	echo "No custom install file found, continuing ..."
+	exit 0
+fi

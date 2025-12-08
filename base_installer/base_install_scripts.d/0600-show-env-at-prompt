@@ -1,0 +1,21 @@
+#!/bin/bash -e
+
+echo "Making sure the booted ENV and overlayfs state are shown at the prompt ..."
+# create a etc/profile.d directory if it doesn't already exist
+mkdir -p $MOUNTPOINT/etc/profile.d
+
+# add scripts to detect booted ENV (ENV1/2/3) and active overlay filesystem - add corresponding tags to shell prompt
+echo "if grep -q '^overlayroot /' /proc/mounts ; then" > $MOUNTPOINT/etc/profile.d/zz10-overlay-prompt.sh
+echo '  PS1="OFS-${PS1}"' >> $MOUNTPOINT/etc/profile.d/zz10-overlay-prompt.sh
+echo 'fi' >> $MOUNTPOINT/etc/profile.d/zz10-overlay-prompt.sh
+chmod 644 $MOUNTPOINT/etc/profile.d/zz10-overlay-prompt.sh
+
+echo 'ENV=$(awk '"'"'$2=="/boot/firmware" {print $1}'"'"' /proc/mounts | tr -cs '"'"'[:digit:]'"'"' '"'"'\n'"'"' | tail -n 1)' > $MOUNTPOINT/etc/profile.d/zz20-bootedenv-prompt.sh
+echo 'PS1="ENV${ENV}-${PS1}"' >> $MOUNTPOINT/etc/profile.d/zz20-bootedenv-prompt.sh
+echo '[ $UID -eq 0 ] && sed -e "s/^ENV[0-9]-//" -e "s/^Debian/ENV${ENV}-Debian/" -i /etc/issue /etc/issue.net' >> $MOUNTPOINT/etc/profile.d/zz20-bootedenv-prompt.sh
+chmod 644 $MOUNTPOINT/etc/profile.d/zz20-bootedenv-prompt.sh
+
+# make sure that when logging in as regular user, the tags get applied to the default shell prompt as well
+for bashrc in $MOUNTPOINT/home/*/.bashrc ; do
+    echo 'echo $PS1 | grep -q "^ENV" || for setprompt in /etc/profile.d/zz* ; do source "${setprompt}"; done' >> $bashrc
+done

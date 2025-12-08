@@ -1,0 +1,14 @@
+#!/bin/bash -e
+
+echo "Adding network configuration ..."
+# add loopback network configuration
+echo "auto lo" >> $MOUNTPOINT/etc/network/interfaces
+echo "iface lo inet loopback" >> $MOUNTPOINT/etc/network/interfaces
+
+# add DHCP network configuration for br0/eth0
+echo "" >> $MOUNTPOINT/etc/network/interfaces
+echo "allow-hotplug eth0" >> $MOUNTPOINT/etc/network/interfaces
+echo "iface eth0 inet manual" >> $MOUNTPOINT/etc/network/interfaces
+echo "auto br0" >> $MOUNTPOINT/etc/network/interfaces
+echo "iface br0 inet dhcp" >> $MOUNTPOINT/etc/network/interfaces
+echo "        bridge_ports eth0" >> $MOUNTPOINT/etc/network/interfaces

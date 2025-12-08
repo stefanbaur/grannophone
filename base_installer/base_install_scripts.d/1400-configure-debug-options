@@ -1,0 +1,48 @@
+#!/bin/bash -e
+
+echo "Checking if any debug settings were requested ..."
+# add settings and packages for debugging via USB ethernet gadget
+if [ -n "$DEBUG_VIA_USBETH" ] ; then
+	echo "Debugging via USB-Ethernet gadget device requested."
+	echo "Changing configuration files accordingly ..."
+	# add cmdline.txt parameters for USB ethernet gadget
+	sed 	-e 's/$/ modules-load=dwc2,g_ether g_ether.host_addr=00:11:22:33:44:55/' \
+		-i $MOUNTPOINT/boot/firmware/cmdline.txt
+
+	# add config.txt parameters for USB ethernet gadget
+	tail -n 1 $MOUNTPOINT/boot/firmware/config.txt | grep -q '^\[all\]$' || echo "[all]" >> $MOUNTPOINT/boot/firmware/config.txt
+	echo "# for USB Ethernet Gadget" >> $MOUNTPOINT/boot/firmware/config.txt
+	echo "dtoverlay=dwc2" >> $MOUNTPOINT/boot/firmware/config.txt
+
+	# add static network configuration for usb0
+	echo "allow-hotplug usb0" > $MOUNTPOINT/etc/network/interfaces.d/usb0
+	echo "iface usb0 inet static" >> $MOUNTPOINT/etc/network/interfaces.d/usb0
+	echo "        address ${FIRSTTHREEOCTETS}.1" >> $MOUNTPOINT/etc/network/interfaces.d/usb0
+	echo "        netmask $NETMASK" >> $MOUNTPOINT/etc/network/interfaces.d/usb0
+
+	echo "Installing and configuring DNSmasq for USB ethernet gadget ..."
+	# install dnsmasq
+	chroot $MOUNTPOINT apt-get install -y dnsmasq
+	# configure dnsmasq on usb0 so a host device connecting via usb0
+	# can receive an IP address via DHCP (by disabling dhcp options 3
+	# and 6, we avoid messing with the host's routing and DNS settings)
+	echo "# Bind to usb0 only" > $MOUNTPOINT/etc/dnsmasq.d/usb0
+	echo "interface=usb0" >> $MOUNTPOINT/etc/dnsmasq.d/usb0
+	echo "bind-interfaces" >> $MOUNTPOINT/etc/dnsmasq.d/usb0
+	echo "# Set range and lease time" >> $MOUNTPOINT/etc/dnsmasq.d/usb0
+	echo "dhcp-range=${FIRSTTHREEOCTETS}.20,${FIRSTTHREEOCTETS}.10,1h" >> $MOUNTPOINT/etc/dnsmasq.d/usb0
+	echo "# Send no default route" >> $MOUNTPOINT/etc/dnsmasq.d/usb0
+	echo "dhcp-option=3" >> $MOUNTPOINT/etc/dnsmasq.d/usb0
+	echo "# Send no DNS server info" >> $MOUNTPOINT/etc/dnsmasq.d/usb0
+	echo "dhcp-option=6" >> $MOUNTPOINT/etc/dnsmasq.d/usb0
+fi
+
+# add config.txt parameters for SPI touchscreen
+if [ -n "$DEBUG_VIA_SPI" ] ; then
+	echo "Debugging via SPI Touchscreen requested."
+	echo "Changing configuration files accordingly ..."
+	tail -n 1 $MOUNTPOINT/boot/firmware/config.txt | grep -q '^\[all\]$' || echo "[all]" >> $MOUNTPOINT/boot/firmware/config.txt
+	echo "# for SPI TouchScreen" >> $MOUNTPOINT/boot/firmware/config.txt
+	echo "dtparam=spi=on" >> $MOUNTPOINT/boot/firmware/config.txt
+	echo "dtoverlay=piscreen,speed=16000000,rotate=270" >> $MOUNTPOINT/boot/firmware/config.txt
+fi

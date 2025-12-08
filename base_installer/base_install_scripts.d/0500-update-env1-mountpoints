@@ -1,0 +1,11 @@
+#!/bin/bash -e
+
+echo "Setting new partition numbers in cmdline.txt and fstab ..."
+# update fstab and cmdline.txt with new partition numbers
+sed -e 's/-02 /-05 /g' -i $MOUNTPOINT/etc/fstab $MOUNTPOINT/boot/firmware/cmdline.txt
+# add an fstab entry for the data partition
+grep "PARTUUID" $MOUNTPOINT/etc/fstab | grep " / " | sed -e 's/-05/-08/' -e 's# / # /data#' -e 's/defaults/defaults,sync/' >> $MOUNTPOINT/etc/fstab
+
+echo "Adding mountpoint /data inside chroot ..."
+# data partition also needs a mount point
+mkdir $MOUNTPOINT/data
