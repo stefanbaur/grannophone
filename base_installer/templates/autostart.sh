@@ -1,10 +1,9 @@
 #!/bin/bash
 
-# test if cloud-init is still running (generic homedir not renamed/moved yet) #runonce
-if ! [ -d /home/$(grep -A1 "^users:" /boot/firmware/user-data | awk '$2=="name:" { print $3 }') ]; then #runonce
-	echo "cloud-init incomplete $(date)" >>/data/reboot.log #runonce
-	exit 0 #runonce
-fi #runonce
+# test if cloud-init is still running #runonce
+echo "Checking/waiting for cloud-init to finish - $(date)" >>/data/reboot.log #runonce
+cloud-init status --wait #runonce
+echo "cloud-init incomplete $(date)" >>/data/reboot.log #runonce
 
 # switch to console #8 and show that we're not yet ready if the banner is not set yet
 while ! test -s /etc/ssh/banner; do chvt 8; clear >/dev/tty8 ; echo "banner not set yet $(date)" >/dev/tty8 ; sleep 10; done
