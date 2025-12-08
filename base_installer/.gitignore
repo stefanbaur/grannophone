@@ -1,3 +1,4 @@
 base_install_custom.conf
+base_install.log
 custom/autostart.sh
 custom/ENV?-custom-install.sh
