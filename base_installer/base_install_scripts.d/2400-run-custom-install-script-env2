@@ -2,22 +2,22 @@
 
 # check for custom install script; execute it if present, and remove the executable bit afterwards (so it runs only once)
 
-if ! [ -x ../custom/ENV2-custom-install.sh ] ; then
+if ! [ -x ./custom/ENV2-custom-install.sh ] ; then
 	echo "No executable custom file found, using template from template directory."
-	cp ../templates/ENV2-custom-install.sh ../custom/
-	chmod +x ../custom/ENV2-custom-install.sh
+	cp ./templates/ENV2-custom-install.sh ./custom/
+	chmod +x ./custom/ENV2-custom-install.sh
 	ENV2_NO_CUSTOM=true
 fi
-if bash -n ../custom/ENV2-custom-install.sh ; then
+if bash -n ./custom/ENV2-custom-install.sh ; then
 	echo "A syntactically correct custom install file for ENV2 has been detected. Executing in changeroot ..."
-	rsync -aPvH ../custom/ENV2-custom-install.sh $MOUNTPOINT/ENV2-custom-install.sh && \
+	rsync -aPvH ./custom/ENV2-custom-install.sh $MOUNTPOINT/ENV2-custom-install.sh && \
 	chroot $MOUNTPOINT ./ENV2-custom-install.sh && \
 	chmod -x $MOUNTPOINT/ENV2-custom-install.sh
-elif ! bash -n ../custom/ENV2-custom-install.sh ; then
+elif ! bash -n ./custom/ENV2-custom-install.sh ; then
 	echo "Syntax error in ENV2-custom-install.sh detected. Skipping, but continuing ..."
 	mv $MOUNTPOINT/ENV2-custom-install.sh $MOUNTPOINT/ENV2-custom-install.broken
 fi
 if [ -n "$ENV2_NO_CUSTOM" ]; then
-	rm ../custom/ENV2-custom-install.sh
+	rm ./custom/ENV2-custom-install.sh
 fi
 exit 0

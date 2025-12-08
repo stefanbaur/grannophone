@@ -1,18 +1,21 @@
 
 # Prerequisites:
-  - A Debian Bookworm system (or newer) - derivatives like Devuan and Ubuntu should work, too
+  - A Debian Bookworm system (or newer) - derivatives like Devuan and Ubuntu should work, too, as long as they are at least based on Debian Bookworm
   - A microSD card or USB flash memory stick, or a Compute Module with onboard eMMC flash, at least 32 GB in size
   - Approximately 15 GB free space in /tmp
-  - The rpi-imager tool (which can be downloaded from https://downloads.raspberrypi.com/imager/imager_latest_amd64.deb - install it via ''sudo apt install ./rpi-imager-amd64*.deb afterwards - or installed directly via apt install rpi-image, or via flatpack/snap, depending on your distribution)
+  - The rpi-imager tool (which can be downloaded from `https://downloads.raspberrypi.com/imager/imager_latest_amd64.AppImage`)
+# Required steps:
   - ONLY when using a Compute Module with onboard eMMC flash, please follow the additional directions from: https://www.jeffgeerling.com/blog/2020/how-flash-raspberry-pi-os-compute-module-4-emmc-usbboot>
     - Put the switch/jumper on your CM baseboard in the proper position to flash the eMMC
     - Connect the CM to the CM baseboard, if you have not already done so
     - Connect the CM baseboard to your computer
-    - Run rpiboot
-
-# Required steps:
+    - Run `rpiboot` (if it's throwing errors and the connection seems unstable/your image writing process ends prematurely, try `rpiboot -d mass-storage-gadget64`)
   - ONLY when NOT using a Compute Module with onboard eMMC flash: connect your media (microSD card/USB flash stick) to your computer
-  - Start rpi-imager
+  - Make sure you are either using "pristine" media straight out of the original packaging, or wipe the entire media with zeroes - else `base_install.sh` might detect traces of previous partitions/file systems on it and abort.
+  - Start rpi-imager:
+    - `chmod +x imager_latest_amd64.AppImage`
+    - `sudo imager_latest_amd64.AppImage`
+  - Select your language, click 
   - At "CHOOSE DEVICE", select your Raspberry Pi Model (Pi 4 or Pi 5, or the corresponding entry for a Compute Module 4 or 5)
   - At "CHOOSE OS", select the proper Raspberry Pi OS version - do NOT use the default image, rather, pick: "Raspberry Pi OS (other)" -> "Raspberry Pi OS Lite (64-bit)"
   - At "CHOOSE STORAGE", select the destination media: rpi-imager should be smart enough to show only removable media (i.e. your microSD card or USB flash stick)
@@ -39,20 +42,23 @@
       - Make sure "Enable telemetry" is NOT checked.
       - Now, click the "SAVE" button
     - Click "YES" to confirm you want to apply these settings
-  - Confirm that you wish to completely erasea and overwrite the selected destination media
+  - Confirm that you wish to completely erase and overwrite the selected destination media
   - At this point, you may be prompted for your sudo/root/administrator password
   - Once rpi-imager has completed writing and verifying the image, exit rpi-imager
-  - Remove the removable media and re-insert it after a good 10-15 seconds
+  - Remove the removable media and re-insert it after a good 10-15 seconds (if you are using a CM with flash, this means you need to re-run `rpiboot`)
+  - Review the default settings in `base_install.conf`, if you need to make any changes, save them as `base_install_custom.conf` so they won't get overwritten by a `git pull`
+  - Run `sudo ./base_install.sh 2>&1 | tee base_install.log`
+  - When `base_install.sh` has finished its work, remove the media and boot your Pi from it (note that it will reboot several times until the installation is complete)
 
 # Result
-  - The above steps, combined with the base_install.sh script in this directory, will set you up with three boot environments you can choose from.
+  - The above steps, combined with the `base_install.sh` script in this directory, will set you up with three boot environments you can choose from.
   - These environments are called ENV1, ENV2, and ENV3:
     - ENV1 uses the first partition as /boot/firmware and the fifth partition as /
     - ENV2 uses the second partition as /boot/firmware and the sixth partition as /
     - ENV3 uses the third partition as /boot/firmware and the seventh partition as /
     - All three environments share the eight partition as /data, so you can transfer data between them by saving it to /data and rebooting to a different environment
-  - You can switch between the three environments by running ''sudo reboot n'', where n is a number between 1 and 3.
-  - The default partition is set in the file ''autoboot.txt'' located on the first partition.
+  - You can switch between the three environments by running `sudo reboot n`, where n is a number between 1 and 3.
+  - The default partition is set in the file `autoboot.txt` located on the first partition.
   - The idea behind this approach is that you leave ENV1 as a minimal installation, from which you can service/repair the other two.
   - In ENV2 and ENV3, you can install all the applications your users need:
     - Whenever you need to apply updates, do so in the environment that is currently not active, check if there were any errors, and if not, reboot into the other environment.
@@ -60,14 +66,4 @@
   - You will need to apply updates to ENV1 as well, but hopefully, due to the minimal installation there, updates should occur way less frequently than in the other two environments.
 
 # Customization
-The script ''base_install.sh'' already contains a rudimentary mechanism to apply further customizations during the installation. However, it still needs further work. At the moment, there is no way to install a package or run a command only in ENV2 or ENV3. This still needs some more work. However, you can give it a try by creating a file named custom-install.sh that starts with a ''#!/bin/bash'' header and contains all the commands you wish to run once during the patching/setup phase.
-
-To activate this script, run the following commands, with the removable media connected to your computer, and from within the directory where you saved custom-install.sh:
-''sudo mount /dev/disk/by-label/rootfs /media''
-
-''sudo cp custom-install.sh /media/''
-
-''sudo chmod +x /media/custom-install.sh''
-
-''sudo umount /media''
-
+Please see the README.md files in the folders `templates` and `custom` for details on how to add your own packages and scripts.
