@@ -9,4 +9,4 @@ echo "Patching cloud-init's user-data file .."
 sed -e 's/^ssh-/    - ssh-/g' -i $MOUNTPOINT/boot/firmware/user-data
 
 # disable password authentication (add parameter disabling it after the "enable_ssh: true" line)
-sed -e '/enable_ssh: true /a ssh_pwauth: false' -i $MOUNTPOINT/boot/firmware/user-data
+sed -e '/enable_ssh: true/a ssh_pwauth: false' -i $MOUNTPOINT/boot/firmware/user-data
