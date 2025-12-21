@@ -1,54 +1,5 @@
+# The files from this directory have been moved to a separate repository
 
-# Prerequisites:
-  - A Debian Bookworm system (or newer) - derivatives like Devuan and Ubuntu should work, too, as long as they are at least based on Debian Bookworm
-  - A microSD card or USB flash memory stick, or a Compute Module with onboard eMMC flash, at least 32 GB in size
-  - Approximately 15 GB free space in /tmp
-  - The rpi-imager tool (which can be downloaded from `https://downloads.raspberrypi.com/imager/imager_latest_amd64.AppImage`)
-# Required steps:
-  - ONLY when using a Compute Module with onboard eMMC flash, please follow the additional directions from: https://www.jeffgeerling.com/blog/2020/how-flash-raspberry-pi-os-compute-module-4-emmc-usbboot>
-    - Put the switch/jumper on your CM baseboard in the proper position to flash the eMMC
-    - Connect the CM to the CM baseboard, if you have not already done so
-    - Connect the CM baseboard to your computer
-    - Run `rpiboot` (if it's throwing errors and the connection seems unstable/your image writing process ends prematurely, try `rpiboot -d mass-storage-gadget64`)
-  - ONLY when NOT using a Compute Module with onboard eMMC flash: connect your media (microSD card/USB flash stick) to your computer
-  - Make sure you are either using "pristine" media straight out of the original packaging, or wipe the entire media with zeroes - else `base_install.sh` might detect traces of previous partitions/file systems on it and abort.
-  - Start rpi-imager:
-    - `chmod +x imager_latest_amd64.AppImage`
-    - `sudo imager_latest_amd64.AppImage`
-  - Select your language, click "NEXT"
-  - Select "APP OPTIONS" (the button in the lower left corner), disable telemetry, click "SAVE"
-  - Select your Raspberry Pi Model (Pi 4 or Pi 5, or the corresponding entry for a Compute Module 4 or 5), click "NEXT"
-  - Select the proper Raspberry Pi OS version - do NOT use the default image, rather, pick: "Raspberry Pi OS (other)" -> "Raspberry Pi OS Lite (64-bit)" (Note that depending on the size of your screen and the rpi-imager window, you may have to scroll down to reach that selection), click "NEXT"
-  - Select the destination media (rpi-imager should be smart enough to show only removable media, i.e. your microSD card or USB flash stick), click "NEXT"
-  - Eenter a suitable, unique hostname (e.g. grnp-donny-duck, grnp-daisy-duck), click "NEXT"
-  - Select your country's capital, time zone, and keyboard (you can type the first letter to speed up scrolling, but only the first), click "NEXT"
-  - Choose a username that will be common across all the devices you intend to manage, choose a random password with at least 16 characters and make sure to store it in a safe place. (The `base_install.sh` script will make sure remote logins using this password will not be permitted, but still, please don't choose something generic and easy to guess like "raspberry".), click "NEXT"
-  - Blank all the fields regarding Wifi, click "NEXT"
-  - Select "Enable SSH" and "Use public key authentication", then select your keyfile - do NOT copy-paste its contents, even though the form suggests you could - and click "NEXT" (The `base_install.sh` script will make sure even multi-line keyfiles containing multiple keys will work)
-  - Disable Raspberry Pi Connect, click "NEXT"
-  - Review the summary and if everything seems okay, click "WRITE"
-  - Wait until the safety timer expires and the button "PLEASE WAIT" changes to "I UNDERSTAND, ERASE AND WRITE", then click the latter.
-  - Once rpi-imager has completed writing and verifying the image, click "FINISH" and exit rpi-imager
-  - Remove the removable media and re-insert it after a good 10-15 seconds (if you are using a CM with flash, this means you need to re-run `rpiboot`)
-  - Review the default settings in `base_install.conf`, if you need to make any changes, save them as `base_install_custom.conf` so they won't get overwritten by a `git pull`
-  - Review the templates in the `templates` folder, copy them over to the `custom` folder and make any changes you deem neccessary
-  - Run `sudo ./base_install.sh 2>&1 | tee base_install.log`
-  - When `base_install.sh` has finished its work, remove the media and boot your Pi from it (note that it will reboot several times until the installation is complete)
+Please visit https://github.com/stefanbaur/rrpi-base-install
 
-# Result
-  - The above steps, combined with the `base_install.sh` script in this directory, will set you up with three boot environments you can choose from.
-  - These environments are called ENV1, ENV2, and ENV3:
-    - ENV1 uses the first partition as /boot/firmware and the fifth partition as /
-    - ENV2 uses the second partition as /boot/firmware and the sixth partition as /
-    - ENV3 uses the third partition as /boot/firmware and the seventh partition as /
-    - All three environments share the eight partition as /data, so you can transfer data between them by saving it to /data and rebooting to a different environment
-  - You can switch between the three environments by running `sudo reboot n`, where n is a number between 1 and 3.
-  - The default partition is set in the file `autoboot.txt` located on the first partition.
-  - The idea behind this approach is that you leave ENV1 as a minimal installation, from which you can service/repair the other two.
-  - In ENV2 and ENV3, you can install all the applications your users need:
-    - Whenever you need to apply updates, do so in the environment that is currently not active, check if there were any errors, and if not, reboot into the other environment.
-    - Once in the other environment, you can either set it to be the default until the next update, or apply the updates again to the now inactive environment.
-  - You will need to apply updates to ENV1 as well, but hopefully, due to the minimal installation there, updates should occur way less frequently than in the other two environments.
-
-# Customization
-Please see the README.md files in the folders `templates` and `custom` for details on how to add your own packages and scripts.
+(There will be a grannophone-specific branch $SOON)
