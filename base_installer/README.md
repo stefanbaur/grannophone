@@ -2,4 +2,10 @@
 
 Please visit https://github.com/stefanbaur/rrpi-base-install
 
-(There will be a grannophone-specific branch $SOON)
+Installation instructions:
+```
+git clone https://github.com/stefanbaur/rrpi-base-install.git
+
+git checkout grannophone
+```
+After that, follow the instructions in the `README.md` files.
