@@ -6,7 +6,7 @@
    height="842.16pt"
    width="595.68pt"
    sodipodi:docname="sheet_3_opistech_gespiegelt.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,16 +23,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1517"
-     inkscape:window-height="812"
+     inkscape:window-width="1912"
+     inkscape:window-height="990"
      id="namedview2724"
      showgrid="false"
-     inkscape:zoom="0.5944614"
-     inkscape:cx="280.92657"
-     inkscape:cy="515.59277"
-     inkscape:window-x="75"
+     inkscape:zoom="2.3778456"
+     inkscape:cx="485.31326"
+     inkscape:cy="516.43387"
+     inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg115"
      inkscape:showpageshadow="2"
      inkscape:pagecheckerboard="0"
@@ -825,9 +825,10 @@
   </g>
   <path
      id="rect1740"
-     d="m 489.83079,272.31873 v 21.56251 h -24.77783 v 83.24707 h 24.77783 v 21.56397 h 16.65675 v -21.56397 -83.24707 -21.56251 z"
+     d="m 506.48754,272.31873 h -16.65675 v 21.56251 h -24.77783 v 83.24707 h 24.77783 v 21.56397 h 16.65675"
      style="fill:none;stroke:#00ff00;stroke-width:1.38157;stroke-miterlimit:10"
-     inkscape:connector-curvature="0" />
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccccc" />
   <g
      transform="matrix(0,-2.8346458,-2.8346458,0,791.6247,183.18433)"
      id="g2060-83-9">

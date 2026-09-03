@@ -6,7 +6,7 @@
    height="842.16pt"
    width="595.68pt"
    sodipodi:docname="sheet_3_digitus_gespiegelt.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,9 +25,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="0.80353048"
-     inkscape:cx="576.20714"
-     inkscape:cy="539.49416"
+     inkscape:zoom="2.2727274"
+     inkscape:cx="572.65997"
+     inkscape:cy="448.79997"
      inkscape:window-width="1517"
      inkscape:window-height="812"
      inkscape:window-x="0"
@@ -848,9 +848,10 @@
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.3333px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#00aeee;fill-opacity:1;stroke:none;stroke-width:0.748306" />
   <path
      id="rect1740"
-     d="m 489.83079,272.31873 v 21.56251 h -24.77783 v 83.24707 h 24.77783 v 21.56397 h 16.65675 v -21.56397 -83.24707 -21.56251 z"
+     d="m 506.48754,272.31873 h -16.65675 v 21.56251 h -24.77783 v 83.24707 h 24.77783 v 21.56397 h 16.65675"
      style="fill:none;stroke:#00ff00;stroke-width:1.38157;stroke-miterlimit:10"
-     inkscape:connector-curvature="0" />
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccccc" />
   <g
      transform="matrix(0,-2.8346458,-2.8346458,0,791.6247,183.18433)"
      id="g2060-83-9">
@@ -910,9 +911,7 @@
        id="path569-2-4-4-1-2-8-8-2-5-2-0-6-9-3-1-0" />
   </g>
   <g
-     aria-label="Nur für Wave-
-Share-Laut-
-sprecher aussägen"
+     aria-label="Nur für Wave- Share-Laut- sprecher aussägen"
      transform="matrix(0,-0.75,0.75,0,467.25223,-149.44908)"
      id="text16909"
      style="font-weight:bold;font-size:13.3333px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;shape-inside:url(#rect16911);display:inline">
