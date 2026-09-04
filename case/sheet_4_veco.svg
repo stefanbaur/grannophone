@@ -26,8 +26,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.2861848"
-     inkscape:cx="217.69812"
-     inkscape:cy="688.08155"
+     inkscape:cx="214.58814"
+     inkscape:cy="688.85902"
      inkscape:window-width="1912"
      inkscape:window-height="990"
      inkscape:window-x="0"
@@ -48,10 +48,6 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path
-     style="fill:none;stroke:#ff00ff;stroke-width:0.35078275;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="M 41.977597,253.45569 H 178.65481 V 43.806472 H 41.977597 Z m 0,0"
-     id="path294" />
   <path
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.26404655"
      id="path20692"
@@ -420,4 +416,15 @@
      id="path7291-4"
      style="font-size:13.33333302px;-inkscape-font-specification:'monospace Bold';fill-opacity:1;letter-spacing:0px;word-spacing:0px;stroke:none;stroke-width:0.26458332;font-style:normal;fill:#0000ff;font-family:monospace;font-stretch:normal;font-variant:normal;font-weight:bold;line-height:1.25"
      d="m 127.77888,140.116 v -0.56844 h -1.66915 l 0.13091,0.52882 h -0.45819 l -0.12748,-0.53227 v -0.49092 h 2.12391 v -0.56844 h 0.44786 v 1.63125 z" />
+  <path
+     style="fill:none;stroke:#ff00ff;stroke-width:0.350783;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     d="M 41.977598,43.806473 V 253.45569"
+     id="path294"
+     inkscape:label="hauptrahmen"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;stroke:#0000a0;stroke-width:0.350783;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     d="M 41.977598,253.45569 H 178.65481 V 43.806473 H 41.977598"
+     id="path294-2"
+     sodipodi:nodetypes="cccc" />
 </svg>

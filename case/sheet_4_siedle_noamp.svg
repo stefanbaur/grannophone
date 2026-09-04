@@ -25,9 +25,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.647615"
-     inkscape:cx="234.17302"
-     inkscape:cy="223.59746"
+     inkscape:zoom="0.93607326"
+     inkscape:cx="232.88775"
+     inkscape:cy="571.53646"
      inkscape:window-width="1912"
      inkscape:window-height="990"
      inkscape:window-x="0"
@@ -53,10 +53,6 @@
      transform="scale(0.26458333)"
      d="M 363.20312 499.44141 L 363.20312 501.33008 L 363.20312 582.5 L 408.44922 582.5 L 408.44922 618.30078 L 446.15625 618.30078 L 446.15625 656.03516 L 408.44922 656.03516 L 408.44922 691.92969 L 363.20312 691.92969 L 363.20312 773.00391 L 363.20312 774.98828 L 461.23633 774.98828 L 461.23633 773.05078 L 461.23633 731.49609 L 502.70898 731.49609 L 502.70898 674.89844 L 615.83008 674.89844 L 615.83008 599.4375 L 502.70898 599.4375 L 502.70898 542.83984 L 461.23633 542.83984 L 461.23633 501.33008 L 461.23633 499.44141 L 363.20312 499.44141 z "
      style="fill:none;stroke:#00e000;stroke-width:1.3306284;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
-  <path
-     style="fill:none;stroke:#ff00ff;stroke-width:0.35078275;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-     d="M 41.977597,253.45569 H 178.65481 V 43.806472 H 41.977597 Z m 0,0"
-     id="path294" />
   <path
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.33333302px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.26404655"
      id="path20692"
@@ -365,4 +361,15 @@
      style="fill:none;stroke:#d0d000;stroke-width:0.09063596;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
      d="M 41.977597,253.45569 H 30.873378 V 43.804921 h 11.104219"
      id="path296" />
+  <path
+     style="fill:none;stroke:#ff00ff;stroke-width:0.350783;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     d="M 41.977598,43.806473 V 253.45569"
+     id="path294"
+     inkscape:label="hauptrahmen"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;stroke:#0000a0;stroke-width:0.350783;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     d="M 41.977598,253.45569 H 178.65481 V 43.806473 H 41.977598"
+     id="path294-2"
+     sodipodi:nodetypes="cccc" />
 </svg>

@@ -26,8 +26,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.1367284"
-     inkscape:cx="219.04969"
-     inkscape:cy="949.21531"
+     inkscape:cx="215.53082"
+     inkscape:cy="861.24355"
      inkscape:window-width="1912"
      inkscape:window-height="990"
      inkscape:window-x="0"
@@ -404,10 +404,6 @@
      id="path12603"
      transform="matrix(0.000000,-0.264583,0.264583,0.000000,-61.030845,147.316470)" />
   <path
-     id="path294"
-     d="M 41.977598,253.45569 H 178.65481 V 43.806473 H 41.977598 Z m 0,0"
-     style="fill:none;stroke:#ff00ff;stroke-width:0.35078275;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
-  <path
      transform="matrix(1.000000,0.000000,0.000000,1.000000,0.095970,0.000000)"
      id="path561-9-1-81"
      style="stroke:#ff0000;clip-rule:evenodd;stroke-opacity:1;fill-rule:nonzero;stroke-miterlimit:10;stroke-width:0.35203058;fill:none"
@@ -663,4 +659,15 @@
      d="m 37.200588,109.569 q 0.07234,0.17569 0.108518,0.35829 0.03617,0.18259 0.03617,0.38585 0,0.48403 -0.258381,0.74069 -0.260104,0.25494 -0.747583,0.25494 -0.471977,0 -0.745863,-0.24633 -0.273884,-0.24632 -0.273884,-0.67179 0,-0.42891 0.254937,-0.6649 0.253214,-0.23771 0.714857,-0.23771 h 0.20498 v 1.30741 q 0.227378,-0.002 0.339342,-0.13436 0.111966,-0.13264 0.111966,-0.39619 0,-0.17397 -0.04995,-0.34278 -0.04995,-0.16881 -0.158475,-0.35312 z m -1.085202,0.42719 q -0.199816,0.003 -0.301445,0.10335 -0.103354,0.0982 -0.103354,0.29111 0,0.17398 0.106799,0.27733 0.105074,0.10335 0.299722,0.1223 z"
      id="path9010"
      style="font-weight:bold;font-size:13.3333px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;stroke-width:0.264583" />
+  <path
+     style="fill:none;stroke:#ff00ff;stroke-width:0.350783;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     d="M 41.977598,43.806473 V 253.45569"
+     id="path294"
+     inkscape:label="hauptrahmen"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;stroke:#0000a0;stroke-width:0.350783;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     d="M 41.977598,253.45569 H 178.65481 V 43.806473 H 41.977598"
+     id="path294-2"
+     sodipodi:nodetypes="cccc" />
 </svg>
