@@ -96,7 +96,7 @@
      d="M 41.977598,253.48585 H 31.08676 V 43.806473 h 10.890838"
      style="fill:none;stroke:#d0d000;stroke-width:0.06714574;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
   <path
-     style="fill:none;stroke:#ec008c;stroke-width:0.35078275;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+     style="fill:none;stroke:#ff00ff;stroke-width:0.35078275;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
      d="M 41.977598,253.45569 H 178.65481 V 43.806473 H 41.977598 Z m 0,0"
      id="path294" />
   <path
@@ -225,7 +225,7 @@
      height="112.7628"
      width="97.857796"
      id="rect23990-7"
-     style="stroke:#ec008c;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:10;stroke-width:0.25319642;fill:none"
+     style="stroke:#ff00ff;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:10;stroke-width:0.25319642;fill:none"
      transform="matrix(1.000000,0.000000,0.000000,1.000000,-2.420661,0.000000)" />
   <g
      id="g2090-1-0"
